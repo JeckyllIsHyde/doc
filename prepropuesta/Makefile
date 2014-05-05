@@ -12,4 +12,4 @@ $(TARGET).aux: refsprop.bib $(TARGET).tex
 	@echo "  ******************** Making AUX-file *********************************  "
 	pdflatex $(TARGET).tex
 clear:
-	rm -f $(TARGET).aux $(TARGET).log $(TARGET).bbl $(TARGET).blg
+	rm -f $(TARGET).aux $(TARGET).log $(TARGET).bbl $(TARGET).blg $(TARGET).out
