@@ -1,6 +1,5 @@
-%\documentclass[10pt,oneside,twocolumn,letterpaper]{article}
-%\documentclass[12pt,oneside,onecolumn,letterpaper]{article}
-\documentclass[12pt,twoside,onecolumn,letterpaper]{article}
+%\documentclass[12pt,twoside,onecolumn,letterpaper]{article}
+%\documentclass[12pt,twoside,onecolumn,letterpaper]{article}
 %\documentclass[10pt,oneside,onecolumn,letterpaper]{article}
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
@@ -12,6 +11,7 @@
 \usepackage{colortbl}
 \definecolor{gray}{cmyk}{0.0,0.0,0.0,0.60}
  
+\mode<article>{
 \hoffset-25mm
 \voffset-25mm
 %\marginparwidth=0mm
@@ -30,6 +30,7 @@
 \fancyhead[LE]{\includegraphics[scale=0.05]{../images/unlogo.png} \small{\textcolor{gray}{\textsc{Doctorado en ingenieria: Mecanica y Mecatronica}}}}
 \fancyfoot[CO,CE]{\thepage}
 \fancyfoot[LO,RE]{\scriptsize{\textcolor{gray}{\emph{Version 0.4}}}}
+}
 
 \title{\includegraphics[scale=0.15]{../images/unescudobn.png}\\\vspace{-0.2cm}
   \textsc{\underline{\small{Universidad Nacional de Colombia}}\\\tiny{Sede Bogot\'a}\\\small{Facultad de Ingenier\'ia\\\vspace{-0.2cm}Unidad de Posgrado}}\\\vspace{0.5cm}
@@ -41,6 +42,12 @@
 \renewcommand{\tablename}{Tabla}
 
 \maketitle
+\mode<presentation>{
+\begin{frame}
+  HOLA\cite{Castillo2007}\\
+  Un libro\cite{Braham2014}
+\end{frame}
+}
 {\large\textbf{Director de investigaci\'on:} PhD. Ing. Ricardo Ram\'irez Heredia}\par\vspace{0.7cm}
 {\large\textbf{L\'inea de investigaci\'on:} Rob\'otica}
 \section{Justificaci\'on}
@@ -253,9 +260,11 @@ Aplicaci\'on de los conocimientos que se obtengan servir\'an en:
 \item El entretenimiento,el área de la teor\'ia de juegos y agentes inteligentes como es el caso del fútbol de robots.
 \end{itemize}
 
+\mode<article|presentation>{
 \bibliographystyle{plain}
 \bibliography{refsprop}
 %\nocite{*}
+}
 \vspace{2cm}
 
 \section*{Firmas:}
