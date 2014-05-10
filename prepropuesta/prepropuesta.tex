@@ -27,15 +27,25 @@
 \fancyhf{}
 \fancyhead[RO]{\small{\textcolor{gray}{\textsc{Propuesta de investgaci\'on: Locomoci\'on b\'ipeda ...}}}}
 \fancyhead[LO]{\includegraphics[scale=0.05]{../images/unlogo.png}}
-\fancyhead[LE]{\includegraphics[scale=0.05]{../images/unlogo.png} \small{\textcolor{gray}{\textsc{Doctorado en ingenieria: Mecanica y Mecatronica}}}}
+\fancyhead[LE]{\includegraphics[scale=0.05]{../images/unlogo.png}\quad\small{\textcolor{gray}{\textsc{Doctorado en ingenieria: Mecanica y Mecatronica}}}}
 \fancyfoot[CO,CE]{\thepage}
 \fancyfoot[LO,RE]{\scriptsize{\textcolor{gray}{\emph{Version 0.4}}}}
 }
 
+\mode<article>{
 \title{\includegraphics[scale=0.15]{../images/unescudobn.png}\\\vspace{-0.2cm}
   \textsc{\underline{\small{Universidad Nacional de Colombia}}\\\tiny{Sede Bogot\'a}\\\small{Facultad de Ingenier\'ia\\\vspace{-0.2cm}Unidad de Posgrado}}\\\vspace{0.5cm}
-       \LARGE \textbf{Locomoci\'on de caminadores b\'ipedos: Rob\'otica subactuada, control, dise\~no y aplicaciones}}
+       \LARGE \textbf{Locomoci\'on de caminadores b\'ipedos: Rob\'otica subactuada, control, planeaci\'on, dise\~no y aplicaciones}}
 \author{J.A. Castillo Le\'on \thanks{jacastillol@unal.edu.co}}
+}
+\mode<presentation>{
+\usetheme[secheader]{PaloAlto}%PaloAlto,Marburg,Hannover
+\usecolortheme[RGB={12,75,96}]{structure}%beetle,albatross,structure
+\logo{\includegraphics[height=1.3cm]{../images/unescudobn.png}}
+\title[Locomoci\'on b\'ipeda ...]{\textbf{Locomoci\'on de caminadores b\'ipedos: Rob\'otica subactuada, control, planeaci\'on, dise\~no y aplicaciones}}
+\author[J.A. Castillo Le\'on]{\textbf{Proponente:} Jaime Andr\'es Castillo Le\'on\inst{1} \and \\\textbf{Director:} PhD. Ing. Ricardo Ram\'irez Heredia\inst{1}}
+\institute[UN]{\inst{1}Departamento de Ingenier\'ia Mec\'anica y Mecatr\'onica \\Universidad Nacional de Colombia}
+}
 \date{}
 \begin{document}
 
@@ -44,14 +54,22 @@
 \maketitle
 \mode<presentation>{
 \begin{frame}
-  HOLA\cite{Castillo2007}\\
-  Un libro\cite{Braham2014}
+  \titlepage
+  \frametitle{Propuesta de Investigaci\'on}
 \end{frame}
 }
 {\large\textbf{Director de investigaci\'on:} PhD. Ing. Ricardo Ram\'irez Heredia}\par\vspace{0.7cm}
 {\large\textbf{L\'inea de investigaci\'on:} Rob\'otica}
-\section{Justificaci\'on}
+\section[Justificaci\'on]{Justificaci\'on}
 \label{sec:justify}
+
+\mode<presentation>{
+\begin{frame}
+  \frametitle{Por qu\'e esta investigaci\'on?}
+  HOLA\cite{Castillo2007}\\
+  Un libro\cite{Braham2014}
+\end{frame}
+}
 Buscando una proliferaci\'on robusta de la rob\'otica en el pa\'is a nivel tecnol\'ogico y del conocimiento de esta \'area, se da acontinuaci\'on la justificaci\'on de este proyecto de investigaci\'on, propuesta que se ve acotada a ser trabajada en el mundo de la r\'obotica de caminadores.  Las tendencias a nivel mundial que se desarrollan en este tema actu\'almente, crecen cada d\'ia a pasos agigantados provocados por cientos de grupos de investigaci\'on pertenecientes a Universidades, Institutos, Centros y Laboratorios en todo el mundo.\par
 Aunque la Universidad Nacional de Colombia ya comenz\'o sus investigaciones en el \'area con interesantes resultados\cite{M2005,M2005a,Roa2006,Heredia2007}, en donde se han construido lazos por medio de investigadores, profesores y estudiantes de la Universidad con otros grupos de vital importancia a nivel mundial en el \'area, como es el caso de \cite{Englsberger2011,Ott2011,M2013}. Desde hace unos siete a\~nos no se han desarrollado proyectos importantes en el \'area de caminadores.\par
 El campo de la rob\'otica b\'ipeda ha superado algunos problemas y han surgido unos nuevos, en donde las soluciones encontradas han sido generadas integrando m\'ultiples fuentes de conocimiento, en \'areas como: los sistemas embebidos\cite{Barker2010,Pan2010,Kimm2012,Wang2011,Amir2013}, la biomec\'anica\cite{Mahmoodi2013,Lim2014,Wu2013,Aoustin2013,Chiang2013,Xiang2010,Hobon2014}, el modelado de sistemas mec\'anicos\cite{Chiang2013}, la s\'intesis de mecanismos\cite{Li2008,Aoustin2013,Wu2013a,Xu2013,Hobon2014}, la optimizaci\'on\cite{Xiang2010,Lim2014,Kherici2014,Mahmoodabadi2014}, la computaci\'on flexible\cite{Wang2013,Kherici2014,Mahmoodabadi2014}, la inteligencia artificial\cite{Treesatayapun2014,Yuan2014,Wu2014,Wang2013} y el control\cite{Dou2013,Treesatayapun2014,Yuan2014,Wu2014}.\par
@@ -71,11 +89,26 @@ A continuaci\'on se organizan algunos aspectos que forman parte de la justificac
   \end{enumerate}
 \end{itemize}
 
-\section{Objetivo general y objetivos espec\'ificos}
+\section[Objetivos]{Objetivo general y objetivos espec\'ificos}
 \label{sec:objs}
 
-\subsection{Objetivo general}
+\mode<presentation>{
+\begin{frame}
+  \frametitle{Qu\'e se busca con esta investigaci\'on?}
+  HOLA\cite{Castillo2007}\\
+  Un libro\cite{Braham2014}
+\end{frame}
+}
+\subsection[General]{Objetivo general}
 \label{sec:objgen}
+\mode<presentation>{
+\begin{frame}
+  \frametitle{Qu\'e se quiere lograr con esta investigaci\'on?}
+  \framesubtitle{Framework de investigaci\'on y desarrollo de rob\'otica b\'ipeda}
+  HOLA\cite{Castillo2007}\\
+  Un libro\cite{Braham2014}
+\end{frame}
+}
 El principal objetivo de esta investigaci\'on se describe de forma global y gr\'afica en la Figura \ref{fig:objGen}, y es enunciado a continuaci\'on:\par
 \textbf{OG:} Dise\~nar y construir un \emph{marco de experimentaci\'on}\footnote{compuesto por el dise\~no de una red de sensores-actuadores distribuida y un conjunto de dise\~no de eslanbones y articulaciones modulares para frabricados mediante prototipado r\'apido} mediante el cual se pueda implementar\footnote{estudiar, proponer y/o comprobar} las hip\'otesis que solucionen los problemas de locomoci\'on de la rob\'otica subactuada y de caminadores\footnote{que permita la b\'usqueda de estructuras mecatr\'onicas eficientes energ\'eticamente, capaces de lograr la locomoci\'on requerida por las necesidades fundamentales de los robots caminadores}.\par
 \begin{figure}[!htb]
@@ -85,8 +118,16 @@ El principal objetivo de esta investigaci\'on se describe de forma global y gr\'
   \label{fig:objGen}
 \end{figure}
 
-\subsection{Objetivos espec\'ificos}
+\subsection[Especificos]{Objetivos espec\'ificos}
 \label{sec:objesp}
+\mode<presentation>{
+\begin{frame}
+  \frametitle{Qu\'e se requiere y qu\'e se obtiene para el Obj. Gen?}
+  \framesubtitle{Algunos logros requeridos para el objetivo principal}
+  HOLA\cite{Castillo2007}\\
+  Un libro\cite{Braham2014}
+\end{frame}
+}
 \begin{enumerate}[\textbf{OE:} 1.]
 \item Modelar, simular, analizar y sintetizar mecanismos subactuados que optimicen la energ\'ia para la locomoci\'on de caminar, saltar o correr.\par 
 \item Dise\~nar y construir una plataforma rob\'otica modular modular y para prototipado (ver Figura \ref{fig:objCapas} Capa Física), capaz de configurar cadenas cinem\'aticas  controladas y/o monitoreadas bajo el sistema distribuido.\par
@@ -104,8 +145,17 @@ El principal objetivo de esta investigaci\'on se describe de forma global y gr\'
   \label{fig:objCapas}
 \end{figure}
 
-\section{Estado del arte}
+\section[Estado del arte]{Estado del arte}
 \label{sec:arte}
+
+\mode<presentation>{
+\begin{frame}
+  \frametitle{Cu\'al es el estado actual de la Caminata B\'ipeda?}
+  \framesubtitle{Antecedentes y tendencias mundiales de investigaci\'on}
+  HOLA\cite{Castillo2007}\\
+  Un libro\cite{Braham2014}
+\end{frame}
+}
 Revisando la amplia literatura encontrada sobre \emph{la locomoci\'on}, la mayor inquietud citada viene de la Rob\'otica\cite{Xiang2010,Mattar2013} y la Biomec\'anica\cite{Xiang2010,Mattar2013}, \'areas que muestran su interés en replicar las estructuras y/o las funcionalidades de movilidad de diferentes seres vivos\cite{Xu2013,Chiang2013} o como muchos autores\cite{Xu2013} y congresos\cite{RB2009} hacen referencia a \emph{biom\'imesis}. Estas necesidades van desde solo comprobar las leyes f\'isicas sobre un sistema mecatr\'onico\cite{Barker2010,Lens2011} hasta dise\~nar m\'aquinas robotizadas que sirvan al hombre en ambientes de riesgo donde \'este no deber\'ia encontrarse\cite{Seifried2014,Wu2013a}, o desde solo entender la marcha humana para proponer una terap\'ia sobre alg\'un m\'usculo lesionado\cite{Kang2013} hasta el remplazo de una extremidad que mejore la calidad de vida de una persona v\'ictima de alg\'un accidente\cite{Roa2006,Wu2013a}.\par
 Dentro de la locomoci\'on b\'ipeda se diferencia dos formas generales del modo de andar: una bajo el r\'egimen de caminata y otra bajo el r\'egimen de correr, trotar o galopar\cite{Geyer2006}. La manera de distinguir estos modos viene dada por las distintas fase que definen un ciclo de andar, la diferencia entre caminar y trotar, ser\'a que durante la caminata habr\'an fases con doble contacto con el piso, mientras que en el r\'egimen de trotar o correr no existirá fases con doble contacto\cite{Geyer2006}, adem\'as en el regim\'en de correr existe una fase en la que no ocurre ningún contacto, fase que se encuentra con el nombre de vuelo.\par
 Una de las posibles clasificaciones que se pude hacer en caminadores es seg\'un su tipo de balance durante la caminata, este balance puede ser est\'atico o din\'amico\cite{Braunl2008}. Las mayores inquietudes y retos al d\'ia de hoy se encuentran en el balance din\'amico, pues este tipo de balance se acerca m\'as a una caminata \'optima y natural, como la que han logrado los seres humanos durante toda su evoluci\'on.\par
@@ -117,9 +167,16 @@ Una vez se logra un modelo f\'isico del caminador, surgen los problemas de gener
 Las dificultades presentes en la generaci\'on de trayectorias tienen 1) la complejidad computacional de la programaci\'on no-lineal adem\'as de una optimizaci\'on multiobjetivo, en la que se pueden encontrar restricciones de diferentes clases\cite{Mahmoodabadi2014}, 2) los modelos h\'ibridos presentes en los modelos de mec\'anica multicuerpo introducen discontinuidades en las funciones objetivo, lo que propone que los m\'etodos de b\'usqueda basados gradiente sean descartados\cite{Xiang2010}, tambi\'en se proponer mediciones del rendimiento de la marcha que eviten dichas discontinuidades para usar los m\'etodos de b\'usqueda basados en gradiente\cite{Xiang2010}.\par
 Dependiendo como se aborde el problema de la din\'amica, inverso o directo, es posible que la generaci\'on de las trayectorias implique, la soluci\'on de las ecuaciones diferenciales, este es el caso de la d\'inamica directa en el que se proponen las cargas sobre el sistema pero se desconocen las trayectorias, es ac\'a cuando la variable de dise\~no en este caso las cargas, se deben buscar la mejor evoluci\'on de cargas en el tiempo, que satisfaga las condiciones de dise\~no.\par
 
-\subsection{Estado del arte en al Universidad Nacional de Colombia}
+\subsection[Estado del arte UN]{Estado del arte en al Universidad Nacional de Colombia}
 \label{sec:estadoUN}
-
+\mode<presentation>{
+\begin{frame}
+  \frametitle{Cual es la actualidad y antecedentes en la UN?}
+  \framesubtitle{Robotica b\'ipeda y temas afines desarrollados en la UN}
+  HOLA\cite{Castillo2007}\\
+  Un libro\cite{Braham2014}
+\end{frame}
+}
 El departamento de Ingenier\'ia Mec\'anica y Mecatr\'onica hacia 2003, bajo los grupos de investigaci\'on de Biomec\'anica y Robots M\'oviles, construye tres modelos de caminadores, en donde las patrones de marcha son generados por el an\'alisis y simulaci\'on de caminadores pasivos y posteriormente las trayectorias de las articulaciones son reproducidas por los caminadores activos construidos. Adicionalmente se propone una metodolog\'ia de dise\~no\cite{Heredia2007}.\par
 El modelo de tres eslabones y cuatro masas puntales cl\'asico estudiado antes por\cite{McGeer1990a}, se obtienen distintas trayectorias de los \'angulos de las articulaciones para diferentes velocidades de marcha que son directamente relacionadas con las pendientes de inclinaci\'on del piso\cite{M2005}, es importante mencionar que se incluye un an\'alisis adimensional de parámetros y un an\'alisis de las propiedades ca\'oticas del caminador bípedo analizado\cite{M2005a}. Los datos obtenidos en la fase anterior, son convertidos a los requeridos por la construcci\'on f\'isica implementada.\par
 A continuaci\'on se muestran los tres robot UNROCA generados en el departamento Figura.\ref{fig:unroca}, los dos primeros intentos mostraban la reproducci\'on de las trayectorias generadas en la primera fase, pero usaban soportes estructurales para alcanzar la estabilidad. En el tercer intento el robot aseguro su estabilidad con el uso de una masa oscilante a la altura de la cadera, se incorporan granes pies para la estabilidad est\'atica. Bajo el r\'egimen de marcha la estabilidad es asegurada en acci\'on del contrapeso oscilante y el criterio de ZMP de la trayectoria previamente calculada. La trayectoria es seguida usando controles PD y utilizando servomotores. Por cada par de servos es utilizado un microcontrolador m\'as un microcontrolador central\cite{M2005}.
@@ -130,10 +187,10 @@ A continuaci\'on se muestran los tres robot UNROCA generados en el departamento 
   \label{fig:unroca}
 \end{figure}
 
-\subsection{Algunas trabajos de investigaci\'on en la actualidad }
+\subsection[Investigaci\'on actual]{Algunas trabajos de investigaci\'on en la actualidad }
 \label{sec:algtra}
 
-\subsubsection{Generaci\'on de trayectorias y control}
+\subsubsection[Gen. Tray. y Control]{Generaci\'on de trayectorias y control}
 \label{sec:gentray}
 Simulaci\'on de un robot b\'ipedo empleando una m\'etodo evolutivo. 10 DOF y 7 eslabones, el m\'etodo PSO (Particle swarm optimization) asegura la estabilidad usando como restricci\'on el centro de masa CoM del pol\'igono de soporte\cite{Kherici2014}.\par
 Se compara varios m\'etodos de optimizaci\'on multiobjetivo NSGAII, Sigma method, MOGA con el m\'etodo MOPSO. El m\'etodo es utilizado para sintonizar un controlador "robust sliding tracking". En el proceso se reduce una b\'usqueda heur\'istica de parámetros por ensayo-error, a una b\'usqueda \'optima seg\'un criterios de dise\'~no. Un operador de turbulencia es utilizado para evadir \'optimos locales\cite{Mahmoodabadi2014}.\par
@@ -143,7 +200,7 @@ Se plantea un control compensado para evitar que perturbaciones externas, saquen
 Usando el robot ePaddle, dise\~nado para actuar en medios terrestres, acu\'aticos y terrenos anfibios. Se estudia la marcha en modo carrera caminata. Simulaciones subiendo escaleras y siguiendo trayectorias circulares, muestran la estabilidad y eficiencia encontrada\cite{Sun2013}.\par
 Generaci\'on en tiempo real de trayectorias para un robot de siete eslabones planar\cite{Farzaneh2014}.\par
 
-\subsubsection{Biomec\'anica, Caminata,  Modelado y S\'intesis de mecanismos}
+\subsubsection[Bioinspiardos y mecanismos]{Biomec\'anica, Caminata,  Modelado y S\'intesis de mecanismos}
 \label{sec:ascapa}
 Un arreglo de sensores de fuerza flexible (FFSA) es construido para caracterizar el contacto del pie con terrenos irregulares, para determinar el área efectiva de contacto (ECA). Esta área es importante para mantener el balance dinámico y por lo tanto es utilizado en un esquema adicional de control para caminar sobre terrenos irregulares\cite{Wu2013}.\par
 Una rodilla basada en mecanismos de cuatro barras es investigada en el desempe\~no de robots bípedos. Es comparada con la articulaci\'on tradicional rotacional de los robots. Concluyendo que aunque para bajas velocidades la articulaci\'on rotacional es mejor, en altas velocidades el mecanismo de cuatro barras muestra un mejor desempe\~no. El mecanismo de cuatro barras es optimizado siguiendo los ciclos de marcha óptimos\cite{Aoustin2013}.\par
@@ -154,17 +211,34 @@ Basados en el modelo de la din\'amica de la caminata pasiva, específicamente la
 Se realiza el dise\~no de la lagartija Jesucristo, basado en un mecanismos Watt-I y los grupos de Assur. Se utiliza un algoritmo de control CPG(Central Pattern Generator) del sistema neural, para el balance y el ajusta de la marcha \cite{Xu2013}.\par
 Análisis del modelo dinámico, estabilidad y consumo de energ\'ia eficiente de un robot con seis extremidades\cite{Roy2013}.\par
 
-\section{Definici\'on del problema}
+\section[Def. Problema]{Definici\'on del problema}
 \label{sec:problema}
-\subsection{Identificaci\'on}
+
+\mode<presentation>{
+\begin{frame}
+  \frametitle{Qu\'e se quiere resolver?}
+  \framesubtitle{Generaci\'on de rob\'otica b\'ipeda y soluci\'on a sus problemas}
+  HOLA\cite{Castillo2007}\\
+  Un libro\cite{Braham2014}
+\end{frame}
+}
+\subsection[Identificaci\'on]{Identificaci\'on}
 Se observa un estancamiento en la aplicaci\'on de los conocimientos de la Universidad en el \'area de la rob\'otica b\'ipeda que sean integrados de forma funcional en este campo. Diferentes materias de pregrado y posgrado que reflejan dicho conocimiento como: Rob\'otica, Din\'amica de robots, Biom\'ecanica, T\'ecnicas de control, Identificaci\'on de sistemas, Optimizaci\'on, Control de robots, Control Robusto, Sistemas embebidos, Computaci\'on flexible, Computaci\'on gr\'afica y varias m\'as, deben ser integradas para abordar la soluci\'on de diversos problemas presentes en la caminata rob\'otica, como se reporta en todas las referencias citadas de este documento.\par
 Una de las posibles causas por las que se haya detenido el avance de este campo es tal vez que el conocimiento requerido para ser integraci\'on proviene de distintas disciplinas.\par
 
-\subsection{Formulaci\'on del problema}
+\subsection[Formulaci\'on]{Formulaci\'on del problema}
 El problema central a trabajar es: poder proponer, analizar e implementar en una plataforma b\'ipeda real y/o simulada, estrategias de control de caminata, control de direcci\'on, balance ante perturbaciones, generaci\'on y planeaci\'on de trayectorias, control de trote, control de saltos, implementaci\'on de agentes inteligentes, as\'i como dise\~nos que sean eficientes en el consumo de energ\'ia y que funcionen con los actuadores disponibles. Todos los problemas mencionados son de inter\'es mundial en cientos de laboratorio en el planeta.
 
-\section{Metodolog\'ia}
+\section[Metodolog\'ia]{Metodolog\'ia}
 \label{sec:metodo}
+
+\mode<presentation>{
+\begin{frame}
+  \frametitle{Qu\'e se busca con esta investigaci\'on?}
+  HOLA\cite{Castillo2007}\\
+  Un libro\cite{Braham2014}
+\end{frame}
+}
 El siguiente proceso se implementar\'a como mecanismo de control y realimentación de la evoluci\'on de la investigaci\'on y el adecuado avance hacia sus objetivos, se repetir\'a a lo largo del desarrollo de la tesis, el cual se iterar\'a durante al menos cinco veces, (ver Fig.\ref{fig:method}, en donde se enumeran cada uno de los pasos).
 \begin{figure}[!htb]
   \centering
@@ -190,8 +264,13 @@ El siguiente proceso se implementar\'a como mecanismo de control y realimentaci�
 \end{enumerate}
 El tiempo que se tome en cada uno de los pasos anteriores ser\'a seg\'un se necesite, aunque inicialmente se dar\'a un tiempo limite seg\'un el cronograma del proyecto.\par
 
-\section{Cronograma}
+\section[Cronograma]{Cronograma}
 \label{sec:cronograma}
+\mode<presentation>{
+  \begin{frame}
+    \frametitle{Cronograma de la Metodolog\'ia}
+  \end{frame}
+}
 En la secci\'on anterior, cada paso tiene un nombre resaltado en negrita, a estos 14 nombres se le denominar\'an Actividades en la tabla a mostrada a continuaci\'on (\tablename  \ref{tab:crono} y \ref{tab:crono2}.). La tabla del cronograma muestra también como se piensa ejecutar la metodolog\'ia propuesta anterior.\par
 \begin{table}[!htb]
   \centering
@@ -247,7 +326,7 @@ En la secci\'on anterior, cada paso tiene un nombre resaltado en negrita, a esto
   \label{tab:crono2}
 \end{table}
 
-\section{Sectores de impacto}
+\section[Impacto]{Sectores de impacto}
 \label{sec:impacto}
 Aplicaci\'on de los conocimientos que se obtengan servir\'an en: 
 \begin{itemize}
@@ -267,8 +346,10 @@ Aplicaci\'on de los conocimientos que se obtengan servir\'an en:
 }
 \vspace{2cm}
 
+\mode<article>{
 \section*{Firmas:}
 \label{firmas}
+}
 \vspace{4cm}
 \parbox[b][3cm][c]{8cm}{
 \centering
