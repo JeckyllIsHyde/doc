@@ -28,8 +28,8 @@ $(BEAMERTARGET).aux: refsprop.bib $(BEAMERTARGET).tex
 	pdflatex $(BEAMERTARGET).tex
 clear:
 	@echo "  ******************** Removing tmp-file *******************************  "
-	rm -f $(TARGET).aux $(TARGET).log $(TARGET).bbl $(TARGET).blg $(TARGET).out
-	rm -f $(BEAMERTARGET).aux $(BEAMERTARGET).log $(BEAMERTARGET).bbl $(BEAMERTARGET).blg $(BEAMERTARGET).out $(BEAMERTARGET).nav $(BEAMERTARGET).snm $(BEAMERTARGET).toc
+	rm -f *.aux $(TARGET).log $(TARGET).bbl $(TARGET).blg $(TARGET).out
+	rm -f *.tex.aux $(BEAMERTARGET).log $(BEAMERTARGET).bbl $(BEAMERTARGET).blg $(BEAMERTARGET).out $(BEAMERTARGET).nav $(BEAMERTARGET).snm $(BEAMERTARGET).toc
 clear.bin:
 	@echo "  ******************** Removing pdf-files ******************************  "
 	rm -f $(TARGET).pdf $(BEAMERTARGET).pdf
