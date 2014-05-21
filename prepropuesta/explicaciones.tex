@@ -1,0 +1,92 @@
+\mode*
+\mode<presentation>{
+  \begin{frame}
+    \begin{center}
+      \LARGE \textbf{\textcolor{blueun}{GRACIAS POR SU ATENCI\'ON!!!}}
+    \end{center}
+  \end{frame}
+% Marco de Experimentaci\'on:
+% Es un aparato de conocimiento din\'amico con ejemplos construidos de plataformas b\'ipedas rob\'oticas que siguen los siguientes pasos
+% 1) Selecci\'on de plataforma: Que se quiere investigar o proponer? Que se quiere resolver? Que se quiere mejorar?
+% 2) Dise\~no mecanico: Planos, ensambles, elementos estandar, tipo de fabricaci\'on y presupuesto aproximado.
+% 3) Dise\~no electronico: Esquem\'aticos, PCBs(DIP,SMT), selecci\'on de microprecesadores, microcontroladores, sensores, actuadores y presupuesto aproximado.
+% 4) Sistema distribuido: Implementaci\'on red de sensores-actuadores, linux embebido, puesta en marcha y configuraci\'on del sistema distruibuido.
+% 5) Capa de aplicaciones: Selecci\'on de librer\'ias, implementaci\'on en un lenguaje de alto nivel de las estrategias de control y cognicion.
+  \begin{frame}[plain,t,label=def_framework]
+    \hspace*{-0.8cm}\parbox[t]{\textwidth}{
+      \only<1->{\vspace*{-0.4cm}\hspace*{-1.5cm}
+        \colorbox{blueun}{
+          \parbox[t][1.5cm][c]{\paperwidth}{
+            \textcolor{white}{\Large\quad{MARCO DE EXPERIMENTACI\'ON}}
+          }
+        }
+      }\vspace{0.05cm}\\
+      \only<2-3>{\alert<2>{Framework o marco de experimentaci\'on se define en esta propuesta como:}}\\
+      \only<3->{\alert<3>{Un aparato de conocimiento din\'amico con ejemplos construidos de plataformas b\'ipedas rob\'oticas que siguen los siguientes pasos.}}
+      \only<3->{\small
+        \begin{columns}[t] %¡Columnas como en TeX normal!
+          \begin{column}{7cm}
+            \begin{enumerate}
+            \item<4-|alert@5> \hyperlink{def_framework<5>}{\textbf{Selecci\'on de plataforma\only<5>{:}} \only<5>{\scriptsize Qu\'e se quiere investigar o proponer? Qu\'e se quiere resolver? Qu\'e se quere mejorar?}}
+            \item<4-|alert@6> \hyperlink{def_framework<6>}{\textbf{Dise\~no mec\'anico\only<6>{:}} \only<6>{\scriptsize Planos, ensamples, elementos estandar, tipo de fabricaci\'on y presupuesto aproximado.}}
+            \item<4-|alert@7> \hyperlink{def_framework<7>}{\textbf{Dise\~no electr\'onico\only<7>{:}} \only<7>{\scriptsize Esquem\'aticos, ensambles, elementos estandar, tipo de fabricaci\'on y presupuesto aproximado.}}
+            \item<4-|alert@8> \hyperlink{def_framework<8>}{\textbf{Sistema embebido y distribuido\only<8>{:}} \only<8>{\scriptsize Implementaci\'on de red, GNU-Linux embebido, puesta en marcha y configuraci\'on.}}
+            \item<4-|alert@9> \hyperlink{def_framework<9>}{\textbf{Aplicaciones\only<9>{:}} \only<9>{\scriptsize Selecci\'on de librerias, lenguaje de alto nivel, implementaci\'on estrategias de control y congnici\'on.}}
+            \end{enumerate}
+          \end{column}
+          \begin{column}{3cm}
+            \\% espacio para ajustar las graficas
+            \includegraphics<5>[height=4cm]{../images/DENISE.png}
+            \includegraphics<6>[height=4cm]{../images/DLR-BIPED.png}
+            \includegraphics<7>[height=4cm]{../images/ASIMO.png}
+            \includegraphics<8>[height=4cm]{../images/RABBIT.png}
+            \includegraphics<9>[height=4cm]{../images/TODDLE-MIT.png}
+          \end{column}
+        \end{columns}
+      }\vspace{0.5cm}
+      \hyperlink<4-10>{def_objetivos<2>}{\beamerreturnbutton{Volver al Objetivo General}}
+    }
+  \end{frame}
+% Problemas de la robotica b\'ipeda:
+% Los problemas que se intentar\'a resolver son relacionados con el uso eficiente de la energ\'ia, la din\'amica pasiva de caminadores y forman parte activa de la investigaci\'on.
+% 1) Estructuras mec\'anicas: Dise\~no de rodillas, tobillos, talon-planta-antepie, exploraci\'on de estructuras paralelas, SLIP, Curved-beams hopping robots. An\'alisis y s\'intesis para el torso.
+% 2) Capa sensora y de actuaci\'on: Reducir peso y complejidad del cableado, asegurar ancho de banda, asegurar latencias y escabilidad de la red.
+% 3) Control: Asegurar estabilidad y convergencia a los ciclos limite adem\'as auto-aprendizaje, robustez ante perturbaciones, generaci\'on On-Line, mediante Central patern generator, Redes neuronales y Logica difusa, aprendizaje de m\'aquina, LQR-Trees y Lyapunov.
+% 4) Planeaci\'on y generaci\'on de trayectorias: Optimizando la energ\'ia seg\'un el sistema mecatr\'onico proponer las trayectorias, evasi\'on de obst\'aculos. Algoritmos evolutiovos como GAs y PSOs.
+% 5) Capa de cognitiva: Agentes inteligentes, estrategias conjuntas y colaborativas.
+  \begin{frame}[plain,t,label=def_problema]
+    \hspace*{-0.8cm}\parbox[t]{\textwidth}{
+      \only<1->{\vspace*{-0.4cm}\hspace*{-1.5cm}
+        \colorbox{blueun}{
+          \parbox[t][1.5cm][c]{\paperwidth}{
+            \textcolor{white}{\Large\quad{PROBLEMAS DE LA ROBOTICA B\'IPEDA}}
+          }
+        }
+      }
+      \only<2-3>{\alert<2>{Los problemas que se intentar\'a resolver, comprobar o investigar son relacionados con el uso eficiente de la energ\'ia, la din\'amica pasiva de caminadores, los m\'etodos bio-inspirados y el aprendizaje de m\'aquina, adem\'as formar\'an parte activa de esta investigaci\'on.}}\\
+      \only<3->{\alert<3>{Se clasifican seg\'un la capa del framework de investigaci\'on:}}
+      \only<3->{\small
+        \begin{columns}[t] %¡Columnas como en TeX normal!
+          \begin{column}{3cm}
+            \\% espacio para ajustar las graficas
+            \includegraphics<5>[height=4cm]{../images/DENISE.png}
+            \includegraphics<6>[height=4cm]{../images/DLR-BIPED.png}
+            \includegraphics<7>[height=4cm]{../images/ASIMO.png}
+            \includegraphics<8>[height=4cm]{../images/RABBIT.png}
+            \includegraphics<9>[height=4cm]{../images/TODDLE-MIT.png}
+          \end{column}
+          \begin{column}{7cm}
+            \begin{enumerate}
+            \item<4-|alert@5> \hyperlink{def_problema<5>}{\textbf{Estructuras mec\'anicas\only<5>{:}} \only<5>{\scriptsize Dise\~no de rodillas, tobillos, talon-planta-antepie, exploraci\'on de estructuras paralelas, SLIP, Curved-beams hopping robots. An\'alisis y s\'intesis para el torso.}}
+            \item<4-|alert@6> \hyperlink{def_problema<6>}{\textbf{Capa sensora y de actuaci\'on\only<6>{:}} \only<6>{\scriptsize Reducir peso y complejidad del cableado, asegurar ancho de banda, asegurar latencias y escabilidad de la red.}}
+            \item<4-|alert@7> \hyperlink{def_problema<7>}{\textbf{Control\only<7>{:}} \only<7>{\scriptsize Asegurar estabilidad y convergencia a los ciclos limite adem\'as auto-aprendizaje, robustez ante perturbaciones, generaci\'on On-Line, mediante Central patern generator, Redes neuronales y Logica difusa, aprendizaje de m\'aquina, LQR-Trees y Lyapunov.}}
+            \item<4-|alert@8> \hyperlink{def_problema<8>}{\textbf{Trayectorias\only<8>{:}} \only<8>{\scriptsize Optimizando la energ\'ia seg\'un el sistema mecatr\'onico proponer las trayectorias, evasi\'on de obst\'aculos. Algoritmos evolutiovos como GAs y PSOs.}}
+            \item<4-|alert@9> \hyperlink{def_problema<9>}{\textbf{Capa de cognici\'on\only<9>{:}} \only<9>{\scriptsize Agentes inteligentes, estrategias conjuntas y colaborativas.}}
+            \end{enumerate}
+          \end{column}
+        \end{columns}
+      }\vspace{0.5cm}
+      \hyperlink<4-10>{def_objetivos<3>}{\beamerreturnbutton{Volver al Objetivo General}}
+    }
+  \end{frame}
+}
