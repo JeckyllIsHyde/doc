@@ -24,12 +24,67 @@ Dependiendo como se aborde el problema de la din\'amica, inverso o directo, es p
 \subsection[Estado del arte UN]{Estado del arte en al Universidad Nacional de Colombia}
 \label{sec:estadoUN}
 \mode<presentation>{
-\begin{frame}
-  \frametitle{Cual es la actualidad y antecedentes en la UN?}
-  \framesubtitle{Robotica b\'ipeda y temas afines desarrollados en la UN}
-  HOLA\cite{Castillo2007}\\
-  Un libro\cite{Braham2014}
-\end{frame}
+  \begin{frame}
+    \frametitle{Cual es la actualidad y antecedentes en la UN?}
+    \framesubtitle{Robotica b\'ipeda y temas afines desarrollados en la UN}
+    \begin{columns}[T]
+      \begin{column}{6cm}
+        Descripci\'on serie UNROCA:
+        \begin{enumerate}\scriptsize
+        \item<2-> Modelo PWD con rodillas
+        \item<3-> Ciclos L\'imite
+        \item<4-> Bifurcaciones y caos
+        \item<5-> Metodolog\'ia de dise\~no
+        \item<6-> UNROCA-I
+        \item<7-> UNROCA-II
+        \item<8-> UNROCA-III
+        \end{enumerate}
+      \end{column}
+      \begin{column}{4cm}
+        \vspace{-0.5cm}
+        \only<1>{
+          \begin{center}
+            \includegraphics[height=7cm]{../images/UNROCA.png}
+          \end{center}
+        }
+        \only<2>{
+          \begin{center}
+            \includegraphics[height=7cm]{../images/UNROCA_0.png}
+          \end{center}
+        }
+        \only<3>{
+          \begin{center}
+            \includegraphics[height=7cm]{../images/UNROCA_1.png}
+          \end{center}
+        }
+        \only<4>{
+          \begin{center}
+            \includegraphics[height=7cm]{../images/UNROCA_2.png}
+          \end{center}
+        }
+        \only<5>{
+          \begin{center}
+            \includegraphics[height=7cm]{../images/UNROCA_3.png}
+          \end{center}
+        }
+        \only<6>{
+          \begin{center}
+            \includegraphics[height=7cm]{../images/UNROCA_4.png}
+          \end{center}
+        }
+        \only<7>{
+          \begin{center}
+            \includegraphics[height=7cm]{../images/UNROCA_5.png}
+          \end{center}
+        }
+        \only<8>{
+          \begin{center}
+            \includegraphics[height=7cm]{../images/UNROCA_6.png}
+          \end{center}
+        }
+      \end{column}
+    \end{columns}
+  \end{frame}
 }
 El departamento de Ingenier\'ia Mec\'anica y Mecatr\'onica hacia 2003, bajo los grupos de investigaci\'on de Biomec\'anica y Robots M\'oviles, construye tres modelos de caminadores, en donde las patrones de marcha son generados por el an\'alisis y simulaci\'on de caminadores pasivos y posteriormente las trayectorias de las articulaciones son reproducidas por los caminadores activos construidos. Adicionalmente se propone una metodolog\'ia de dise\~no\cite{Heredia2007}.\par
 El modelo de tres eslabones y cuatro masas puntales cl\'asico estudiado antes por\cite{McGeer1990a}, se obtienen distintas trayectorias de los \'angulos de las articulaciones para diferentes velocidades de marcha que son directamente relacionadas con las pendientes de inclinaci\'on del piso\cite{M2005}, es importante mencionar que se incluye un an\'alisis adimensional de parámetros y un an\'alisis de las propiedades ca\'oticas del caminador bípedo analizado\cite{M2005a}. Los datos obtenidos en la fase anterior, son convertidos a los requeridos por la construcci\'on f\'isica implementada.\par
