@@ -44,6 +44,49 @@
 \usepackage{multimedia}
 \usepackage{animate}
 
+%%%% BEGINT TIME LINE +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\usepackage{ifthen}
+\usepackage[firstyear=1999,lastyear=2012]{moderntimeline}
+
+\makeatletter
+% change these colors according to your needs
+\colorlet{color0}{blue}
+\colorlet{color1}{olive}
+
+\newcommand*{\hintfont}{}
+\newcommand*{\hintstyle}[1]{{\hintfont\textcolor{color0}{#1}}}
+\newcommand*{\listitemsymbol}{a~}
+\newcommand*{\cventry}[7][.25em]{%
+  \cvitem[#1]{#2}{%
+    {\bfseries\raggedright #3}%
+    \ifthenelse{\equal{#4}{}}{}{, \raggedright{\slshape#4}}%
+    \ifthenelse{\equal{#5}{}}{}{,  \raggedright#5}%
+    \ifthenelse{\equal{#6}{}}{}{, \raggedright#6}%
+    .\strut%
+    \ifx&#7&%
+      \else{\newline{}\begin{minipage}[t]{\linewidth}\small\raggedright#7\end{minipage}}\fi}}
+\newcommand*{\cvitem}[3][.25em]{%
+  \begin{tabular}{@{}p{\hintscolumnwidth}@{\hspace{\separatorcolumnwidth}}p{\maincolumnwidth}@{}}%
+      \raggedleft\hintstyle{#2} & {#3}%
+  \end{tabular}%
+  \par\addvspace{#1}}
+\tlmaxdates{2001}{2012}
+\newlength{\quotewidth}
+\newlength{\hintscolumnwidth}
+\setlength{\hintscolumnwidth}{0.175\textwidth}
+\newlength{\separatorcolumnwidth}
+\setlength{\separatorcolumnwidth}{0.025\textwidth}
+\newlength{\maincolumnwidth}
+\newlength{\doubleitemmaincolumnwidth}
+\newlength{\listitemsymbolwidth}
+\settowidth{\listitemsymbolwidth}{\listitemsymbol}
+\newlength{\listitemmaincolumnwidth}
+\newlength{\listdoubleitemmaincolumnwidth}
+
+\setlength{\maincolumnwidth}{\dimexpr0.9\linewidth-\separatorcolumnwidth-\hintscolumnwidth\relax}
+\makeatother
+%%%% END TIME LINE +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 \usetheme[secheader]{PaloAlto}%PaloAlto,Marburg,Hannover
 \usecolortheme[RGB={12,75,96}]{structure}%beetle,albatross,structure
 \logo{\includegraphics[height=1.45cm]{../images/unescudo.png}}
@@ -67,22 +110,22 @@
 {\large\textbf{Director de investigaci\'on:} PhD. Ing. Ricardo Ram\'irez Heredia}\par\vspace{0.7cm}
 {\large\textbf{L\'inea de investigaci\'on:} Rob\'otica}
 
-\mode<all>
-\input{justificacion.tex}
-\mode<all>
-\input{objetivos.tex}
+%\mode<all>
+%\input{justificacion.tex}
+%\mode<all>
+%\input{objetivos.tex}
 \mode<all>
 \input{estadodelarte.tex}
 \mode<all>
-\input{problema.tex}
-\mode<all>
-\input{metodologia.tex}
-\mode<all>
-\input{cronograma.tex}
-\mode<all>
-\input{impacto.tex}
-\mode<all>
-\input{explicaciones.tex}
+%\input{problema.tex}
+%\mode<all>
+%\input{metodologia.tex}
+%\mode<all>
+%\input{cronograma.tex}
+%\mode<all>
+%\input{impacto.tex}
+%\mode<all>
+%\input{explicaciones.tex}
 \mode*
 
 \mode<article|presentation>{
