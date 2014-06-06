@@ -1,0 +1,141 @@
+\documentclass[10pt,letterpaper,oneside,onecolumn]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{graphicx}
+
+\usepackage{beamerarticle}
+\usepackage{pgfpages}
+\setjobnamebeamerversion{prepropuesta.beamer}
+
+\usepackage{todonotes}
+
+\hoffset-25mm
+\voffset-25mm
+\marginparwidth=30mm
+\marginparsep=10mm
+\headheight=16pt
+\oddsidemargin=25mm
+\evensidemargin=25mm
+\textwidth=140mm
+\topmargin=20mm
+\textheight=220mm
+
+\title{\textbf{Libreto de la presentaci\'on de la propuesta}}
+\author{Jaime Andr\'es Castillo Le\'on}
+
+\setlength{\parindent}{0pt}
+\newcommand{\talk}{\quad[\hspace{2.1ex}---\hspace{2.1ex}]}
+\newcommand{\nnext}{\quad[\quad$\unrhd$\quad]}
+\newcommand{\nprev}{\quad[\quad$\unlhd$\quad]}
+\newcommand{\anext}{\quad[\quad$\rhd$\quad]}
+\newcommand{\aprev}{\quad[\quad$\lhd$\quad]}
+\newcommand{\ngoto}{\quad[\quad$\boxtimes$\quad]}
+\newcommand{\bato}{\quad[\quad$\boxdot$\quad]}
+
+\begin{document}
+\mode<article>{
+  \maketitle
+  %% PRESENTACION
+
+  \begin{center}\small
+    \rule{0.95\textwidth}{0.1mm} 
+    \section*{Notaci\'on}
+    \label{sec:notacion}
+
+    \begin{multicols}{2}
+      \begin{flushleft}
+        \talk: Hable despue\'es del gui\'on \\
+        \nnext: Siguiente diapositiva\\
+        \nprev: Anterior diapositiva\\
+        \anext: Auto siguiente diapositiva\\
+        \aprev: Auto anterior diapositiva\\
+        \ngoto: Vaya al link \\
+        \bato: Volver por el link
+      \end{flushleft}
+    \end{multicols}
+    \rule{0.95\textwidth}{0.1mm} 
+  \end{center}
+
+  \section{Presentaci\'on}
+  \label{sec:presentacion}
+
+  --- Buenas tardes, mi nombre es Jaime Andr\'es Castillo Le\'on.\todo{Acuerdese de hablar duro}\\
+  --- Vengo a presentar la prepuesta titulada:
+  \begin{center}
+    \textbf{Locomoci\'on de caminadores b\'ipedos:\\Rob\'otica subactuada, control, planeaci\'on, dise\~no y aplicaciones}
+  \end{center}
+  para ser dirigida por el Profesor Ricardo Ram\'irez en la l\'inea de investigaci\'on de rob\'otica del doctorado.\\
+  --- En los siguientes minutos voy hablar de los temas descritos en la barra izquierda de la presentaci\'on.\anext\marginpar{\includeslide[width=3.0cm]{presentacion}}\\
+  %% JUSTIFICACION
+
+  \section{Justificaci\'on}
+  \label{sec:justificacion}
+
+  --- Comenzar\'e por la justificaci\'on del proyecto, respondiendo al \emph{Por qu\'e de esta investigaci\'on}.\anext\marginpar{\includeslide[width=3.0cm]{justificacion}}\\
+  1. --- Existe un gran inter\'es en diversos laboratorios en el mundo por este tema,\anext\\
+\rightline{\includeslide[width=3.0cm]{laboratorios}}\\
+  2. --- los cuales que han construido una gran diversidad de plataformas con el fin de la investigaci\'on del tema. Las tendencias a bajar los costos de los prototipos son cada vez mayores.\anext\marginpar{\includeslide[width=3.0cm]{plataformas}}\\
+  3. --- Voy a recalcar que las im\'agenes mostradas en esta exposici\'on son ejemplos de trabajos recientes en la rob\'otica b\'ipeda\anext\\
+\rightline{\includeslide[width=3.0cm]{def_multi<1>}}\\
+  --- El trabajo requerido es multidisciplinario, involucrando diversas \'areas como:\\
+  --- los Sistemas embebidos\ngoto\bato,\marginpar{\includeslide[width=3.0cm]{exp_embebidos<1>}}\\
+  --- la Biomec\'anica\ngoto\bato,\\\rightline{\includeslide[width=3.0cm]{exp_biomecanica<1>}}\\
+  --- los Mecanismos\ngoto\bato,\marginpar{\includeslide[width=3.0cm]{exp_mecanismos<1>}}\\
+  --- la Optimizaci\'on y la Computaci\'on Flexible\ngoto\bato\\\rightline{\includeslide[width=3.0cm]{exp_computacion_flexible<1>}}\\
+  --- y el Control.\ngoto\bato\anext\marginpar{\includeslide[width=3.0cm]{exp_control<1>}}\\
+  4. --- Mencionar\'e algunos aspectos que me motivan a la realizaci\'on de esta investigaci\'on:\anext\\
+  --- Primero: Un ejemplo de dise\~no desarrollado anteriormente por m\'i, en donde se foment\'o: el bajo costo\anext, los ejemplos did\'acticos\anext, la modularidad de las estructuras\anext, el prototipado r\'apido\nnext y se integr\'o a una metodolog\'ia de dise\~no, todo esto como herramienta de estudio para la rob\'otica.\anext\\
+  Segundo: --- El tema de la rob\'otica b\'ipeda integra temas que me trasnochan de forma natural, me apasionan y me motivan.\anext\\
+  Tercero: --- Enumerar\'e algunos resultados, soluciones o productos que motivan mi investigaci\'on a futuro: la Teleoperaci\'on\anext, el transporte\anext, el dise\~no pr\'otesis y asistencia m\'ovil\anext, la educaci\'on\anext y el entretenimiento y la inteligencia artificial.\anext\\
+  Cuarto: --- Respecto a al viabilidad!!!\anext\\
+  --- por recursos!!!: La Univesidad cuenta con CNC, Impresora3D, Software y Plataformas rob\'oticas funcionales en sus laboratorios.\anext\\
+  --- Profesores, materias e investigaci\'on, pertinientes a esta investigaci\'on.\anext\\
+  --- Financiacion: A parte de la beca, Concursos internos y externos para la financiaci\'on del framework.\anext\\
+  --- Socializacion!!!: Mediante congresos y realciones con grupos de investigacion nacionales e internacionales como el congreso mundial Dynamic Walkings celebrado cada a\~no \'o el DLR.\anext\\
+  --- Experiencia del director con investigaci\'on previa en el tema.\anext\\
+  --- Y mi experiencia en los temas de las varias diciplinas involucradas en la investigaci\'on.\nnext\\
+  Quinto: --- Finalmente, para mi motivaci\'on  y como parte de la justificaci\'on de la propuesta, existe una posible pasant\'ia\\
+  --- El profesor Maximo Roa, muestra la posibilidad de pasantia, ya que el b\'ipedo del DLR es un proyecto joven (de 2010), y nos ha sugerido algunas l\'ineas de investigaci\'on para generar intereses m\'utuos en los a\~nos siguientes.\\
+  %% OBJETIVOS
+
+  \section{Objetivos}
+  \label{sec:objetivos}
+
+  --- \emph{Qu\'e se busca con esta investigaci\'on?}\anext\\
+  --- El Objetivo General:\\
+  --- Desarrollar un \emph{marco de experimentaci\'on} o \emph{framework} mediante el cual se pueda implementar hip\'otesis de soluci\'on de los problemas de locomoci\'on subactuada y de caminadores.\anext\\
+  --- Objetivos especificos:\anext\\
+  --- Son cuatro capas para la realizacion del framework\anext\\
+  --- y un objetivo adicional de c\'alculos.\anext\\
+  %% ESTADO DEL ARTE
+
+  \section{Estado del arte}
+  \label{sec:arte}
+
+  --- Para los antecedentes\anext, muestro la siguiente l\'inea de tiempo que intenta plasmar el \'arbol geneal\'ogico que se construy\'o a partir de la revisi\'on bibliogr\'afica hecho para esta propuesta y las sugerencias de algunas ramas sugeridas por el ingeniero Maximo Roa.\\
+  --- Al final nos interesan las \'ultimas tendencias y trabajos de los laboratorios en cuestion en los ultimos 8 a\~nos.\anext\\
+  --- La universidad de Waseda\anext, HONDA\anext, el robot NAO\anext, el MIT\anext, el ETH\anext, Carnigie Mellon, Cornell University\anext, Delft\anext, el RunBot en la U de Gottingen\anext, el CNRS y su testbed\anext, el DLR y sus \'ultimas investigacion e intereses\anext.\\
+  --- La Univesidad Nacional y la serie UNROCA\anext, presentes en el modelo de caminadores pasivos con rodillas\anext, su an\'alisis de ciclos l\'imites\anext, bifurcaciones del sistema\anext, una metodolog\'ia de dise\~no\anext y la evoluci\'on de tres caminadores como resultado\anext.\\
+  --- Finalmente se recopilan los estudios del estado del arte mostrado en la l\'inea de tiempo y se reorganizan seg\'un disciplina, como se muestra en la diapositiva, para posteriormente definir las posibles l\'ineas de investigaci\'on y organizaci\'on de las ideas.\anext\\
+  %% PROBLEMAS
+
+  \section{Problemas}
+  \label{problemas}
+
+  --- El problema!!!\anext\\
+  --- \emph{Qu\'e paso?} Se resalta actualmente una discontinuidad en la investigaci\'on de la robotica b\'ipeda\anext\\
+  --- Y la existencia del manejo de temas, representados en materias, pero dispersos de nuestro inter\'es\anext\\
+  --- \emph{Qu\'e se quiere resolver?} Se plantea integrar estos conocimientos,\anext\\
+  --- y reanudar la l\'inea de investigaci\'on, fortaleciendola, con productos, tesis en pregrado y maestr\'ia, materias y art\'iculos que aporten en en el tema, ademas de abrir nuevos temas para doctorado.\anext\\
+  %% METODOLOGIA
+
+  \section{Metodolog\'ia}
+  \label{sec:metodologia}
+
+  --- \emph{C\'omo se va a resolver?}\anext\\
+  --- Para ello se propone el Framework de Rob\'otica B\'ipeda, enunciado en el objetivo general. En donde se integran las disciplinas\anext\quad y se implementan mediante capas\anext\quad para gener\'an la construcci\'on final de una plataforma b\'ipeda deseada seg\'un haya sido la pregunta a investigar a la entrada del framework\anext.\anext\\
+  --- La siguiente metodolog\'ia se plantea los mecanismos para el seguimiento control y avance del desarrollo del framework de rob\'otica b\'ipeda.\anext\\
+}
+\end{document}
