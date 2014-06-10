@@ -12,87 +12,46 @@
 \definecolor{gray}{cmyk}{0.0,0.0,0.0,0.60}
  
 \mode<article>{
-\hoffset-25mm
-\voffset-25mm
-%\marginparwidth=0mm
-%\marginparsep=0mm
-\headheight=16pt
-\oddsidemargin=25mm
-\evensidemargin=25mm
-\textwidth=165mm
-\topmargin=20mm
-\textheight=220mm
+  \hoffset-25mm
+  \voffset-25mm
+  % \marginparwidth=0mm
+  % \marginparsep=0mm
+  \headheight=16pt
+  \oddsidemargin=25mm
+  \evensidemargin=25mm
+  \textwidth=165mm
+  \topmargin=20mm
+  \textheight=220mm
 
-\pagestyle{fancy}
-\fancyhf{}
-\fancyhead[RO]{\small{\textcolor{gray}{\textsc{Propuesta de investgaci\'on: Locomoci\'on b\'ipeda ...}}}}
-\fancyhead[LO]{\includegraphics[scale=0.05]{../images/unlogo.png}}
-\fancyhead[LE]{\includegraphics[scale=0.05]{../images/unlogo.png}\quad\small{\textcolor{gray}{\textsc{Doctorado en ingenieria: Mecanica y Mecatronica}}}}
-\fancyfoot[CO,CE]{\thepage}
-\fancyfoot[LO,RE]{\scriptsize{\textcolor{gray}{\emph{Version 0.4}}}}
+  \pagestyle{fancy}
+  \fancyhf{}
+  \fancyhead[RO]{\small{\textcolor{gray}{\textsc{Propuesta de investgaci\'on: Locomoci\'on b\'ipeda ...}}}}
+  \fancyhead[LO]{\includegraphics[scale=0.05]{../images/unlogo.png}}
+  \fancyhead[LE]{\includegraphics[scale=0.05]{../images/unlogo.png}\quad\small{\textcolor{gray}{\textsc{Doctorado en ingenieria: Mecanica y Mecatronica}}}}
+  \fancyfoot[CO,CE]{\thepage}
+  \fancyfoot[LO,RE]{\scriptsize{\textcolor{gray}{\emph{Version 0.4}}}}
 }
 
 \mode<article>{
-\title{\includegraphics[scale=0.15]{../images/unescudobn.png}\\\vspace{-0.2cm}
-  \textsc{\underline{\small{Universidad Nacional de Colombia}}\\\tiny{Sede Bogot\'a}\\\small{Facultad de Ingenier\'ia\\\vspace{-0.2cm}Unidad de Posgrado}}\\\vspace{0.5cm}
-       \LARGE \textbf{Locomoci\'on de caminadores b\'ipedos: Rob\'otica subactuada, control, planeaci\'on, dise\~no y aplicaciones}}
-\author{J.A. Castillo Le\'on \thanks{jacastillol@unal.edu.co}}
+  \title{\includegraphics[scale=0.15]{../images/unescudobn.png}\\\vspace{-0.2cm}
+    \textsc{\underline{\small{Universidad Nacional de Colombia}}\\\tiny{Sede Bogot\'a}\\\small{Facultad de Ingenier\'ia\\\vspace{-0.2cm}Unidad de Posgrado}}\\\vspace{0.5cm}
+    \LARGE \textbf{Locomoci\'on de caminadores b\'ipedos: Rob\'otica subactuada, control, planeaci\'on, dise\~no y aplicaciones}}
+  \author{J.A. Castillo Le\'on \thanks{jacastillol@unal.edu.co}}
 }
 \mode<presentation>{
-\usepackage{xcolor}
-\definecolor{blueun}{rgb}{0.047,0.294,0.376}
-\usepackage{multimedia}
-\usepackage{animate}
+  \usepackage{xcolor}
+  \definecolor{blueun}{rgb}{0.047,0.294,0.376}
+  \usepackage{multimedia}
+  \usepackage{animate}
 
-%%%% BEGINT TIME LINE +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-\usepackage{ifthen}
-\usepackage[firstyear=1999,lastyear=2012]{moderntimeline}
+  \usepackage{lmodern}
 
-\makeatletter
-% change these colors according to your needs
-\colorlet{color0}{blue}
-\colorlet{color1}{olive}
-
-\newcommand*{\hintfont}{}
-\newcommand*{\hintstyle}[1]{{\hintfont\textcolor{color0}{#1}}}
-\newcommand*{\listitemsymbol}{a~}
-\newcommand*{\cventry}[7][.25em]{%
-  \cvitem[#1]{#2}{%
-    {\bfseries\raggedright #3}%
-    \ifthenelse{\equal{#4}{}}{}{, \raggedright{\slshape#4}}%
-    \ifthenelse{\equal{#5}{}}{}{,  \raggedright#5}%
-    \ifthenelse{\equal{#6}{}}{}{, \raggedright#6}%
-    .\strut%
-    \ifx&#7&%
-      \else{\newline{}\begin{minipage}[t]{\linewidth}\small\raggedright#7\end{minipage}}\fi}}
-\newcommand*{\cvitem}[3][.25em]{%
-  \begin{tabular}{@{}p{\hintscolumnwidth}@{\hspace{\separatorcolumnwidth}}p{\maincolumnwidth}@{}}%
-      \raggedleft\hintstyle{#2} & {#3}%
-  \end{tabular}%
-  \par\addvspace{#1}}
-\tlmaxdates{2001}{2012}
-\newlength{\quotewidth}
-\newlength{\hintscolumnwidth}
-\setlength{\hintscolumnwidth}{0.175\textwidth}
-\newlength{\separatorcolumnwidth}
-\setlength{\separatorcolumnwidth}{0.025\textwidth}
-\newlength{\maincolumnwidth}
-\newlength{\doubleitemmaincolumnwidth}
-\newlength{\listitemsymbolwidth}
-\settowidth{\listitemsymbolwidth}{\listitemsymbol}
-\newlength{\listitemmaincolumnwidth}
-\newlength{\listdoubleitemmaincolumnwidth}
-
-\setlength{\maincolumnwidth}{\dimexpr0.9\linewidth-\separatorcolumnwidth-\hintscolumnwidth\relax}
-\makeatother
-%%%% END TIME LINE +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-\usetheme[secheader]{PaloAlto}%PaloAlto,Marburg,Hannover
-\usecolortheme[RGB={12,75,96}]{structure}%beetle,albatross,structure
-\logo{\includegraphics[height=1.45cm]{../images/unescudo.png}}
-\title[Locomoci\'on b\'ipeda ...]{\textbf{Locomoci\'on de caminadores b\'ipedos: Rob\'otica subactuada, control, planeaci\'on, dise\~no y aplicaciones}}
-\author[J.A. Castillo Le\'on]{\textbf{Proponente:} Jaime Andr\'es Castillo Le\'on \and \\\textbf{Director:} PhD. Ing. Ricardo Ram\'irez Heredia\inst{1}}
-\institute[UN]{\inst{1}Departamento de Ingenier\'ia Mec\'anica y Mecatr\'onica \\Universidad Nacional de Colombia}
+  \usetheme[secheader]{PaloAlto}%PaloAlto,Marburg,Hannover
+  \usecolortheme[RGB={12,75,96}]{structure}%beetle,albatross,structure
+  \logo{\includegraphics[height=1.40cm]{../images/unescudo.png}}
+  \title[Locomoci\'on b\'ipeda ...]{\textbf{Locomoci\'on de caminadores b\'ipedos: Rob\'otica subactuada, control, planeaci\'on, dise\~no y aplicaciones}}
+  \author[J.A. Castillo Le\'on]{\textbf{Proponente:} Jaime Andr\'es Castillo Le\'on \and \texorpdfstring{\\\textbf{Director:} PhD. Ing. Ricardo Ram\'irez Heredia\inst{1}}{}}
+  \institute[UN]{\inst{1}Departamento de Ingenier\'ia Mec\'anica y Mecatr\'onica \\Universidad Nacional de Colombia}
 }
 \date{}
 
@@ -102,11 +61,11 @@
 
 \maketitle
 \mode<presentation>{
-\begin{frame}[label=presentacion]
-  \transduration{3}
-  \titlepage
-  \frametitle{Propuesta de Investigaci\'on}
-\end{frame}
+  \begin{frame}[label=presentacion]
+    \transduration{30}
+    \titlepage
+    \frametitle{Propuesta de Investigaci\'on}
+  \end{frame}
 }
 {\large\textbf{Director de investigaci\'on:} PhD. Ing. Ricardo Ram\'irez Heredia}\par\vspace{0.7cm}
 {\large\textbf{L\'inea de investigaci\'on:} Rob\'otica}
@@ -123,35 +82,35 @@
 \input{metodologia.tex}
 \mode<all>
 \input{cronograma.tex}
-\mode<all>
-\input{impacto.tex}
+% \mode<all>
+% \input{impacto.tex}
 \mode<all>
 \input{explicaciones.tex}
 \mode*
 
-\mode<article|presentation>{
-\bibliographystyle{plain}
-\bibliography{refsprop}
-%\nocite{*}
-}
-\vspace{2cm}
+% \mode<article|presentation>{
+% \bibliographystyle{plain}
+% \bibliography{refsprop}
+% % \nocite{*}
+% }
+%   \vspace{2cm}
 
-\mode<article>{
-\section*{Firmas:}
-\label{firmas}
-}
-\vspace{4cm}
-\parbox[b][3cm][c]{8cm}{
-\centering
-\rule{7cm}{1pt}\par
-\textbf{Proponente:}\par
-Jaime Andr\'es Castillo Le\'on
-}\par\vspace{3cm}
-\parbox[b][3cm][c]{8cm}{
-\centering
-\rule{7cm}{1pt}\par
-\textbf{Director de investigaci\'on:}\par
-PhD. Ing. Ricardo Ram\'irez Heredia
-}
+%   \mode<article>{
+%   \section*{Firmas:}
+%   \label{firmas}
+% }
+%   \vspace{4cm}
+%   \parbox[b][3cm][c]{8cm}{
+%   \centering
+%   \rule{7cm}{1pt}\par
+%   \textbf{Proponente:}\par
+%   Jaime Andr\'es Castillo Le\'on
+% }\par\vspace{3cm}
+%   \parbox[b][3cm][c]{8cm}{
+%   \centering
+%   \rule{7cm}{1pt}\par
+%   \textbf{Director de investigaci\'on:}\par
+%   PhD. Ing. Ricardo Ram\'irez Heredia
+% }
 
 \end{document}

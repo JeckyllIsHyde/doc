@@ -7,29 +7,62 @@
 
 \mode<presentation>{
   \begin{frame}[label=justificacion]
-    \transduration{2}
+    \transduration{4}
     \frametitle{Por qu\'e esta investigaci\'on?}
     \begin{center}
       \LARGE \textbf{\textcolor{blueun}{Justificaci\'on}}
     \end{center}      
   \end{frame}
   \begin{frame}[label=laboratorios]
-    \transduration{2}
+    \transduration<1->{2}
     \frametitle{Por qu\'e esta investigaci\'on?}
     \framesubtitle{Universidades, Institutos, Centros y Laboratorios trabajando en Rob\'otica B\'ipeda}
-    \begin{center}
-      \includegraphics[height=7cm]{../images/BipedInstitutesAndUniversities.png}
-    \end{center}
+    %\fbox{
+      \parbox[c][0.9\textheight][c]{0.95\textwidth}{
+        \only<1>{
+          \begin{center}
+            \textbf{\textcolor{blueun}{ALGUNAS UNIVERSIDADES}}
+            \includegraphics[width=0.95\textwidth]{../images/BipedInstitutesAndUniversities_0.png}
+          \end{center}
+        }
+        \only<2>{
+          \begin{center}
+            \textbf{\textcolor{blueun}{ALGUNOS INSTITUTOS}}
+            \includegraphics[width=0.95\textwidth]{../images/BipedInstitutesAndUniversities_1.png}
+          \end{center}
+        }
+      }
+    %}
   \end{frame}
   \begin{frame}[label=plataformas]
-    \transduration{2}
+    \transduration<1->{2}
     \frametitle{Por qu\'e esta investigaci\'on?}
     \framesubtitle{Algunas plataformas b\'ipedas}
-    \begin{center}
-      \includegraphics[height=6.5cm]{../images/BipedPlatforms.png}
-    \end{center}
+    %\fbox{
+      \parbox[c][0.9\textheight][c]{0.95\textwidth}{
+        \only<1>{
+          \begin{center}
+            \textbf{\textcolor{blueun}{Algunas plataformas en costos y tiempos}}
+            \includegraphics[width=0.95\textwidth]{../images/BipedPlatformsTime-Cost_small0.png}
+          \end{center}
+        }
+        \only<2>{
+          \begin{center}
+            \textbf{\textcolor{blueun}{Bajos costos y tiempos de desarrollo}}
+            \includegraphics[width=0.95\textwidth]{../images/BipedPlatformsTime-Cost_small1.png}
+          \end{center}
+        }
+        \only<3>{
+          \begin{center}
+            \textbf{\textcolor{blueun}{Trabajos de investigaci\'on en universidades}}
+            \includegraphics[width=0.95\textwidth]{../images/BipedPlatformsTime-Cost_small2.png}
+          \end{center}
+        }
+      }
+    %}
   \end{frame}
   \begin{frame}[label=def_multi]
+    \transduration<1->{2}
     \frametitle{Por qu\'e esta investigaci\'on?}
     \framesubtitle{Trabajo multidisciplinario}
     \begin{center}
@@ -87,7 +120,7 @@
               \begin{beamercolorbox}[sep=0.5em,wd=3cm,rounded=true,center,shadow=true]{postit}
                 \textbf{Control y Sis. Din\'amicos}
                 \only<1-5>{\\\includegraphics[height=1.5cm]{../images/ThemeControl.png}}
-                \only<6-6>{\\\includegraphics[height=1.5cm]{../images/ShortControl.png}}
+                \only<6-6>{\\\includegraphics[height=1.45cm]{../images/ShortControl.png}}
               \end{beamercolorbox}}
           \end{column}
         \end{columns}
@@ -99,203 +132,197 @@
           \textbf{\Large\textcolor{white}{ROB\'OTICA B\'IPEDA}}
         \end{beamercolorbox}
       }
-      % \only<2>{\textbf{\textcolor{blueun}{Sistemas Embebidos}}\\
-      % \includegraphics[height=6.5cm]{../images/Embedded.png}}
-      % \only<3>{\textbf{\textcolor{blueun}{Biomec\'anica}}\\
-      % \includegraphics[height=5.8cm]{../images/Biomechanics.png}}
-      % \only<4>{\textbf{\textcolor{blueun}{Modelado de sistemas mec\'anicos y s\'intesis de mecanismos}}\\
-      % \includegraphics[height=6.0cm]{../images/Mechanisms.png}}
-      % \only<5>{\textbf{\textcolor{blueun}{Optimizaci\'on, computaci\'on flexible e IA}}\\
-      % \includegraphics[height=6.0cm]{../images/SoftComputing.png}}
-      % \only<6>{\textbf{\textcolor{blueun}{Control}}\\
-      % \includegraphics[height=6.5cm]{../images/Control.png}}
     \end{center}
   \end{frame}
-  \begin{frame}
-    \transduration<1-19>{1}
-    \transduration<20>{5}
+  \begin{frame}[label=motivacion]
+    \transduration<1->{1}
+    % \transduration<20>{5}
     \frametitle{Por qu\'e esta investigaci\'on?}
     \framesubtitle{Algunos aspecto para la justificaci\'on}
-    \quad\hspace{-0.8cm}\makebox{
-      \begin{columns}[T]
-        \small
-        \begin{column}{6cm}
-          \begin{enumerate}
-          \item Como ayuda de la proliferaci\'on
-            \only<2-6>{
-              \begin{itemize}\scriptsize
-              \item<2-> Bajo costo
-              \item<3-> Didacticos
-              \item<4-> Modularidad
-              \item<5-> Prototipado rapido
-              \item<6-> Metodologia de dise\~no
-              \end{itemize}
-            }
-          \item<7-> Motivaci\'on personal
-          \item<8-> Posibles productos y soluciones
-            \only<9-13>{
-              \begin{itemize}\scriptsize
-              \item<9-> Teleoperaci\'on
-              \item<10-> Manufactura, transporte y ensambles
-              \item<11-> Movilidad en cuadrapl\'ejicos, pr\'otesis y caminata pasiva
-              \item<12-> Educaci\'on, cursos y materias
-              \item<13-> Entretenimiento e IA
-              \end{itemize}
-            }
-          \item<14-> Viabilidad
-            \only<15-20>{
-              \begin{itemize}\scriptsize
-              \item<15-> Recursos f\'isicos
-              \item<16-> Profesores, grupos de investigaci\'on y materias
-              \item<17-> Concursos para recursos economicos y de financiaci\'on
-              \item<18-> Relaciones con grupos internacionales de investigaci\'on
-              \item<19-> Experiencia del director de investigaci\'on en el tema
-              \item<20-> Experiencia del investigador en el tema del proyecto
-              \end{itemize}
-            }
-          \item<21-> Posible pasant\'ia
+    \quad\hspace{-0.8cm}\vspace{-0.5cm}
+    \begin{columns}[T,totalwidth=0.97\textwidth]
+      \small
+      \begin{column}{0.55\textwidth}\setbeamercovered{transparent}
+        \begin{enumerate}
+        \item<1-|alert@1|uncover@1-6> Como ayuda de la proliferaci\'on
+          \only<2-6>{
+            \textit{\textbf{Ejemplo proceso de dise\~no:}}\setbeamercovered{transparent}
             \begin{itemize}\scriptsize
-            \item<21-> DLR
-            \item<22-> KUKA ROBOTCIS
-            \item<23-> M\'aximo Roa
-            \item<24-> Proyecto reciente
-            \item<25-> L\'ineas sugeridas de investigaci\'on
+            \item<2-|alert@2|uncover@2> Bajo costo
+            \item<3-|alert@3|uncover@3> Didacticos
+            \item<4-|alert@4|uncover@4> Modularidad
+            \item<5-|alert@5|uncover@5> Prototipado rapido
+            \item<6-|alert@6|uncover@6> Metodologia de dise\~no
             \end{itemize}
-          \end{enumerate}
-        \end{column}
-        \begin{column}{4cm}
-          % \fbox{
-          \parbox[c][7cm][c]{4cm}{
-            \only<1-4>{
+          }
+        \item<7-|alert@7|uncover@7> Motivaci\'on personal
+        \item<8-|alert@8|uncover@8-13> Posibles productos y soluciones
+          \only<9-13>{
+            \begin{itemize}\scriptsize
+            \setbeamercovered{transparent}
+            \item<9-|alert@9|uncover@9> Teleoperaci\'on
+            \item<10-|alert@10|uncover@10> Manufactura, transporte y ensambles
+            \item<11-|alert@11|uncover@11> Movilidad en cuadrapl\'ejicos, pr\'otesis y caminata pasiva
+            \item<12-|alert@12|uncover@12> Educaci\'on, cursos y materias
+            \item<13-|alert@13|uncover@13> Entretenimiento e IA
+            \end{itemize}
+          }
+        \item<14-|alert@14|uncover@14-20> Viabilidad
+          \only<15-20>{
+            \begin{itemize}\scriptsize\setbeamercovered{transparent}
+            \item<15-|alert@15|uncover@15> Recursos f\'isicos
+            \item<16-|alert@16|uncover@16> Profesores, grupos de investigaci\'on y materias
+            \item<17-|alert@17|uncover@17> Concursos para recursos economicos y de financiaci\'on
+            \item<18-|alert@18|uncover@18> Relaciones con grupos internacionales de investigaci\'on
+            \item<19-|alert@19|uncover@19> Experiencia del director de investigaci\'on en el tema
+            \item<20-|alert@20|uncover@20> Experiencia del investigador en el tema del proyecto
+            \end{itemize}
+          }
+        \item<21-|alert@21|uncover@21-26> Posible pasant\'ia
+          \begin{itemize}\scriptsize
+          \item<22-|alert@22|uncover@22> KUKA ROBOTICS
+          \item<23-|alert@23|uncover@23> DLR-biped
+          \item<24-|alert@24|uncover@24> M\'aximo Roa
+          \item<25-|alert@25|uncover@25> Proyecto reciente
+          \item<26-|alert@26|uncover@26> L\'ineas sugeridas de investigaci\'on
+          \end{itemize}
+        \end{enumerate}
+      \end{column}
+      \begin{column}{0.4\textwidth}
+        \parbox[c][7cm][c]{4.0cm}{
+          \only<1-4>{
+            \begin{center}
               \includegraphics[height=7cm]{../images/RobotMR1_0.png}
-            }
-            \only<5>{
-              % \includegraphics[height=7cm]{../images/RobotMR1_0.png}
+            \end{center}
+          }
+          \only<5>{
+            % \includegraphics[height=7cm]{../images/RobotMR1_0.png}
+            \begin{center}
               \animategraphics[height=7cm,autoresume,autoplay,loop]{2}{../images/RobotMR1_}{0}{12}
-            }
-            \only<6>{
-              % \includegraphics[height=7cm]{../images/RobotMR1_0.png}
-              \movie[width=3cm,height=7cm,externalviewer]{\includegraphics[height=7cm]{../images/RobotMR1_12.png}}{../videos/RobotMR1.flv} 
-            }
-            \only<7>{
-              \scriptsize
-              \begin{center}
-                \includegraphics[height=7.0cm]{../images/SomeThingsByMeSumary.png}
-              \end{center}
-            }
-            \only<9>{
-              \scriptsize
-              Teleoperaci\'on
-              \begin{center}
-                \includegraphics[width=4.0cm]{../images/Teleoperacion.png}
-              \end{center}
-            }
-            \only<10>{
-              \scriptsize
-              Transporte
-              \begin{center}
-                \includegraphics[width=4.0cm]{../images/Transporte.png}
-              \end{center}
-            }
-            \only<11>{
-              \scriptsize
-              Biomec\'anica
-              \begin{center}
-                \includegraphics[width=4.0cm]{../images/ProsthesisAndPhysiotherapy.png}
-              \end{center}
-            }
-            \only<12>{
-              \scriptsize
-              Educaci\'on
-              \begin{center}
-                \includegraphics[width=4.0cm]{../images/Educacion.png}
-              \end{center}
-            }
-            \only<13>{
-              \scriptsize
-              Entretenimiento
-              \begin{center}
-                \includegraphics[width=4.0cm]{../images/Entretenimiento.png}
-              \end{center}
-            }
-            \only<15>{
-              \scriptsize
-              \begin{itemize}
+            \end{center}
+          }
+          \only<6>{
+            \begin{center}
+              \includegraphics[height=7cm]{../images/RobotMR1_12.png}
+            \end{center}
+            % \movie[width=3cm,height=7cm,externalviewer]{\includegraphics[height=7cm]{../images/RobotMR1_12.png}}{../videos/RobotMR1.flv} 
+          }
+          \only<7>{
+            \begin{center}
+              \animategraphics[height=7cm,autoresume,autoplay,loop]{2}{../images/SomeThingsByMeSumary_}{0}{4}
+              % \includegraphics[height=7.0cm]{../images/SomeThingsByMeSumary_0.png}
+            \end{center}
+          }
+          \only<9>{
+            \begin{center}
+              \textbf{\textcolor{blueun}{Teleoperaci\'on}}\\[0.3cm]
+              \includegraphics[width=4.0cm]{../images/Teleoperacion.png}
+            \end{center}
+          }
+          \only<10>{
+            \begin{center}
+              \textbf{\textcolor{blueun}{Transporte}}\\[0.3cm]
+              \includegraphics[width=4.0cm]{../images/Transporte.png}
+            \end{center}
+          }
+          \only<11>{
+            \begin{center}
+              \textbf{\textcolor{blueun}{Biomec\'anica}}\\[0.3cm]
+              \includegraphics[width=4.0cm]{../images/ProsthesisAndPhysiotherapy.png}
+            \end{center}
+          }
+          \only<12>{
+            \begin{center}
+              \textbf{\textcolor{blueun}{Educaci\'on}}\\[0.3cm]
+              \includegraphics[width=4.0cm]{../images/Educacion.png}
+            \end{center}
+          }
+          \only<13>{
+            \begin{center}
+              \textbf{\textcolor{blueun}{Entretenimiento}}\\[0.3cm]
+              \includegraphics[width=4.0cm]{../images/Entretenimiento.png}
+            \end{center}
+          }
+          \only<15>{
+            \begin{center}
+              \textbf{\textcolor{blueun}{Recursos Disponibles}}
+              \begin{itemize}\scriptsize
               \item CNC
               \item Impresoras 3D
               \item Software CAD-CAM-CAE
               \item Laboratorios con plataformas
               \end{itemize}
-            }
-            \only<16>{
-              \scriptsize
-              \begin{itemize}
-              \item Din\'amica de robots (R. Ram\'irez)
-              \item Biomec\'anica (D. Garzon)
-              \item Sistemas embebidos (C. Camargo)
-              \item Control de robots (J. Sofrony)
-              \item Aprendizaje de m\'aquina (F. Gonz\'alez)
-              \item Optimizaci\'on (A. Tovar)
-              \item Computaci\'on flexible (L.F Ni\~no)
-              \item Inteligencia Artificial (J. G\'omez)
+            \end{center}
+          }
+          \only<16>{
+            \begin{center}
+              \textbf{\textcolor{blueun}{Lista de profesores}}
+              \begin{enumerate}\tiny
+              \item Din\'amica de robots\\{\tiny(R. Ram\'irez)}
+              \item Biomec\'anica\\{\tiny(D. Garzon)}
+              \item Sistemas embebidos\\{\tiny(C. Camargo)}
+              \item Control de robots\\{\tiny(J. Sofrony)}
+              \item Computaci\'on flexible\\{\tiny(V.H Grisales)}
+              \item Aprendizaje de m\'aquina\\{\tiny(F. Gonz\'alez)}
+              \item Optimizaci\'on\\{\tiny(A. Guzman)}
+              \item Computaci\'on flexible\\{\tiny(L.F Ni\~no)}
+              \item Inteligencia Artificial\\{\tiny(J. G\'omez)}
+              \end{enumerate}
+            \end{center}
+          }
+          \only<17>{
+            \begin{center}
+              \textbf{\textcolor{blueun}{Convocatorias}}
+              \begin{itemize}\scriptsize
+              \item DIB
+              \item VRi
+              \item Colciencias
+              \item Col-CAPES
+              \item Col-DAAD
+              \item Otras
               \end{itemize}
-            }
-            \only<18>{
+            \end{center}
+          }
+          \only<18>{
+            \begin{center}
+              \textbf{\textcolor{blueun}{Posibles Relaciones}}
               \scriptsize
               \begin{itemize}
               \item Justin DLR (M. Roa)
               \item Robonaut 2 GM-NASA (L. Barajas)
               \item Walking Dynamics Conferences
+              \item Clawar Conferences
               \end{itemize}
-            }
-            \only<19>{
-              \scriptsize
-              \begin{center}
-                \includegraphics[height=7.0cm]{../images/UNROCA.png}
-              \end{center}
-            }
-            \only<20>{
-              \scriptsize
-              \begin{center}%P1(120,360),P2(1110,530)
-                % \includegraphics[height=7cm]{../images/SomeThingsByMe_0.png}
-                \animategraphics[height=7cm,autoresume,autoplay,loop]{1}{../images/SomeThingsByMe_}{1}{5}
-              \end{center}
-            }
-            \only<21->{
-              \scriptsize
-              \begin{center}%P1(120,360),P2(1110,530)
-                \includegraphics[width=4cm]{../images/DLRTendencias.png}
-              \end{center}
-            }
+            \end{center}
           }
-          % }
-        \end{column}
-      \end{columns}
-    }
-    \only<18>{\vspace{-2.0cm}
+          \only<19>{
+            \begin{center}
+              \animategraphics[height=7cm,autoresume,autoplay,loop]{2}{../images/SomeThingsByRR_}{0}{2}
+              % \includegraphics[height=7.0cm]{../images/SomeThingsByRR_0.png}
+            \end{center}
+          }
+          \only<20>{
+            \scriptsize
+            \begin{center}%P1(120,360),P2(1110,530)
+              % \includegraphics[height=7cm]{../images/SomeThingsByMe_0.png}
+              \animategraphics[height=7cm,autoresume,autoplay,loop]{2}{../images/SomeThingsByMe_}{1}{5}
+            \end{center}
+          }
+          \only<21->{
+            \scriptsize
+            \begin{center}%P1(120,360),P2(1110,530)
+              \includegraphics[width=4cm]{../images/DLR-Roa-Tendencias.png}
+            \end{center}
+          }
+        }
+      \end{column}
+    \end{columns}
+    \only<18>{\vspace{-3.5cm}
       \begin{center}
-        \includegraphics[width=10.0cm]{../images/DynamicWalkingConferences.png}
+        \includegraphics[width=0.95\textwidth]{../images/DynamicWalkingConferences.png}
       \end{center}
     }
   \end{frame}
-  % \begin{frame}
-  %   \frametitle{Por qu\'e esta investigaci\'on?}
-  %   \begin{itemize}
-  %   \item Curso Posgrado de Camidadores y L\'inea de investigaci\'on: Modelado, Control y Planeaci\'on.
-  %   \item Vukobratovic, McGeer, Goswami, Kuo, Tedrake, Collins, Ruina, Wisse, Chevallereau, Westervelt, Spong, Gregg, Ijspeert
-  %   \item Arquitecturas paralela en la rob\'otica b\'ipeda, dise\~no de rodilla, tobillo, talon-planta-toe.
-  %   \item Generaci\'on de locomocion cuadrapejica y rehabilitaci\'on.
-  %   \item Aprendizaje por refuerzo.
-  %   \item Estabilidad usando Lyapunov y \'arboles de LQR.
-  %   \item Central pattern generators.
-  %   \item Rimless-Wheel, Inertial-Wheel, Compass-Gait. 
-  %   \item MIKE, MAX, DENISE, Toddler-MIT.
-  %   \item RABBIT, ERNIE.
-  %   \item Zero-Moment-Point.
-  %   \item Passive-Dynamics y Control de trayectorias.
-  %   \item Capture-points.
-  %   \end{itemize}
-  % \end{frame}
 }
 Buscando una proliferaci\'on robusta de la rob\'otica en el pa\'is a nivel tecnol\'ogico y del conocimiento de esta \'area, se da acontinuaci\'on la justificaci\'on de este proyecto de investigaci\'on, propuesta que se ve acotada a ser trabajada en el mundo de la r\'obotica de caminadores.  Las tendencias a nivel mundial que se desarrollan en este tema actu\'almente, crecen cada d\'ia a pasos agigantados provocados por cientos de grupos de investigaci\'on pertenecientes a Universidades, Institutos, Centros y Laboratorios en todo el mundo.\par
 Aunque la Universidad Nacional de Colombia ya comenz\'o sus investigaciones en el \'area con interesantes resultados\cite{M2005,M2005a,Roa2006,Heredia2007}, en donde se han construido lazos por medio de investigadores, profesores y estudiantes de la Universidad con otros grupos de vital importancia a nivel mundial en el \'area, como es el caso de \cite{Englsberger2011,Ott2011,M2013}. Desde hace unos siete a\~nos no se han desarrollado proyectos importantes en el \'area de caminadores.\par

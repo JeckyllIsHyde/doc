@@ -5,30 +5,53 @@
 En la secci\'on anterior, cada paso tiene un nombre resaltado en negrita, a estos 14 nombres se le denominar\'an Actividades en la tabla a mostrada a continuaci\'on (\tablename  \ref{tab:crono} y \ref{tab:crono2}.). La tabla del cronograma muestra también como se piensa ejecutar la metodolog\'ia propuesta anterior.\par
 
 \mode<presentation>{
+  \begin{frame}[label=cronograma]
+    \transduration{2}
+    \frametitle{Cuando se espera resolver?}
+    \begin{center}
+      \LARGE \textbf{\textcolor{blueun}{Cronograma}}
+    \end{center}      
+  \end{frame}
   \begin{frame}
+    \transduration<1>{2}
+    \transduration<2-3>{4}
+    \transduration<4>{2}
     \frametitle{Cronograma de la Metodolog\'ia}
     \begin{center}
-      \scriptsize \newcolumntype{G}{>{\columncolor[gray]{0.0}}c}
-      \newcommand{\Bk}{\multicolumn{1}{G}{ }}
-      \begin{tabular}{|p{1.8cm}||c|c|c|c|c|c|c|c|c|c|c|c|}\hline
-        Actividades&\multicolumn{12}{|c|}{Bimestre}\\\hline\hline
-        1er y  2do A\~no&1&2 &3  &4  &5  &6  &7  &8  &9  &10 &11 &12 \\\hline
-        Actividad 1. &\Bk&   &   &   &   &\Bk&   &   &   &\Bk&   &   \\\hline
-        Actividad 2. &\Bk&\Bk&   &   &\Bk&\Bk&   &\Bk&\Bk&\Bk&\Bk&\Bk\\\hline
-        Actividad 3. &   &\Bk&   &   &\Bk&\Bk&   &\Bk&\Bk&\Bk&\Bk&\Bk\\\hline
-        Actividad 4. &   &\Bk&   &   &   &\Bk&\Bk&\Bk&\Bk&\Bk&\Bk&\Bk\\\hline
-        Actividad 5. &\Bk&   &   &\Bk&   &\Bk&   &   &   &\Bk&   &   \\\hline
-        Actividad 6. &\Bk&   &   &\Bk&   &\Bk&   &   &   &\Bk&   &   \\\hline
-        Actividad 7. &   &   &\Bk&\Bk&\Bk&   &\Bk&\Bk&\Bk&   &\Bk&\Bk\\\hline
-        Actividad 8. &   &\Bk&   &\Bk&   &\Bk&   &   &   &\Bk&   &   \\\hline
-        Actividad 9. &   &   &   &\Bk&   &   &\Bk&\Bk&\Bk&   &\Bk&\Bk\\\hline
-        Actividad 10.&   &   &\Bk&\Bk&\Bk&   &\Bk&\Bk&\Bk&   &\Bk&\Bk\\\hline
-        Actividad 11.&   &   &\Bk&\Bk&\Bk&   &\Bk&\Bk&\Bk&   &\Bk&\Bk\\\hline
-        Actividad 12.&   &   &   &   &\Bk&   &   &\Bk&\Bk&   &\Bk&\Bk\\\hline
-        Actividad 13.&   &   &   &   &   &   &   &   &   &   &   &   \\\hline
-        Actividad 14.&   &   &   &   &   &   &   &   &   &   &   &   \\\hline
-        Escribir Doc &   &\Bk&   &\Bk&   &\Bk&   &\Bk&   &\Bk&   &\Bk\\\hline    
-      \end{tabular}
+      \only<1>{
+        \textbf{\textcolor{blueun}{Evoluci\'on del Framework}}
+
+        \includegraphics[height=2.0cm]{../images/EvolutionFramework_0.png}
+
+        \animategraphics[height=3.5cm,autoresume,autoplay]{3}{../images/Cronograma_}{0}{5}
+      }
+      \only<2>{
+        \textbf{\textcolor{blueun}{Evoluci\'on del Framework}}
+
+        \animategraphics[height=2.0cm,autoresume,autoplay]{1.5}{../images/EvolutionFramework_}{0}{4}
+        \includegraphics[height=0.6cm]{../images/TechReportLogo.png}
+
+        \animategraphics[height=3.5cm,autoresume,autoplay]{3}{../images/Cronograma_}{6}{17}
+      }
+      \only<3>{
+        \textbf{\textcolor{blueun}{Evoluci\'on del Framework}}
+
+        \animategraphics[height=2.0cm,autoresume,autoplay]{1.5}{../images/EvolutionFramework_}{6}{12}
+        \includegraphics[height=0.6cm]{../images/TechReportLogo.png}
+
+        \includegraphics[height=3.5cm]{../images/Cronograma_17.png}
+        \animategraphics[height=3.5cm,autoresume,autoplay]{3}{../images/Cronograma_}{18}{29}
+      }
+      \only<4>{
+        \textbf{\textcolor{blueun}{Evoluci\'on del Framework}}
+
+        \includegraphics[height=2.0cm]{../images/EvolutionFramework_10.png}
+        \includegraphics[height=2.0cm]{../images/EvolutionFramework_12.png}
+        \includegraphics[height=0.6cm]{../images/PhDLogo.png}
+
+        \includegraphics[height=3.5cm]{../images/Cronograma_17.png}
+        \includegraphics[height=3.5cm]{../images/Cronograma_29.png}
+      }
     \end{center}
   \end{frame}
 }
@@ -39,20 +62,20 @@ En la secci\'on anterior, cada paso tiene un nombre resaltado en negrita, a esto
   \begin{tabular}{|p{3.0cm}||c|c|c|c|c|c|c|c|c|c|c|c|}\hline
     Actividades&\multicolumn{12}{|c|}{Bimestre}\\\hline\hline
     1er y  2do A\~no&1&2 &3  &4  &5  &6  &7  &8  &9  &10 &11 &12 \\\hline
-    Actividad 1. &\Bk&   &   &   &   &\Bk&   &   &   &\Bk&   &   \\\hline
-    Actividad 2. &\Bk&\Bk&   &   &\Bk&\Bk&   &\Bk&\Bk&\Bk&\Bk&\Bk\\\hline
-    Actividad 3. &   &\Bk&   &   &\Bk&\Bk&   &\Bk&\Bk&\Bk&\Bk&\Bk\\\hline
-    Actividad 4. &   &\Bk&   &   &   &\Bk&\Bk&\Bk&\Bk&\Bk&\Bk&\Bk\\\hline
-    Actividad 5. &\Bk&   &   &\Bk&   &\Bk&   &   &   &\Bk&   &   \\\hline
-    Actividad 6. &\Bk&   &   &\Bk&   &\Bk&   &   &   &\Bk&   &   \\\hline
-    Actividad 7. &   &   &\Bk&\Bk&\Bk&   &\Bk&\Bk&\Bk&   &\Bk&\Bk\\\hline
-    Actividad 8. &   &\Bk&   &\Bk&   &\Bk&   &   &   &\Bk&   &   \\\hline
-    Actividad 9. &   &   &   &\Bk&   &   &\Bk&\Bk&\Bk&   &\Bk&\Bk\\\hline
-    Actividad 10.&   &   &\Bk&\Bk&\Bk&   &\Bk&\Bk&\Bk&   &\Bk&\Bk\\\hline
-    Actividad 11.&   &   &\Bk&\Bk&\Bk&   &\Bk&\Bk&\Bk&   &\Bk&\Bk\\\hline
-    Actividad 12.&   &   &   &   &\Bk&   &   &\Bk&\Bk&   &\Bk&\Bk\\\hline
-    Actividad 13.&   &   &   &   &   &   &   &   &   &   &   &   \\\hline
-    Actividad 14.&   &   &   &   &   &   &   &   &   &   &   &   \\\hline
+    \textbf{P} 1. &\Bk&   &   &   &   &\Bk&   &   &   &\Bk&   &   \\\hline
+    \textbf{P} 2. &\Bk&\Bk&   &   &\Bk&\Bk&   &\Bk&\Bk&\Bk&\Bk&\Bk\\\hline
+    \textbf{P} 3. &   &\Bk&   &   &\Bk&\Bk&   &\Bk&\Bk&\Bk&\Bk&\Bk\\\hline
+    \textbf{P} 4. &   &\Bk&   &   &   &\Bk&\Bk&\Bk&\Bk&\Bk&\Bk&\Bk\\\hline
+    \textbf{P} 5. &\Bk&   &   &\Bk&   &\Bk&   &   &   &\Bk&   &   \\\hline
+    \textbf{P} 6. &\Bk&   &   &\Bk&   &\Bk&   &   &   &\Bk&   &   \\\hline
+    \textbf{P} 7. &   &   &\Bk&\Bk&\Bk&   &\Bk&\Bk&\Bk&   &\Bk&\Bk\\\hline
+    \textbf{P} 8. &   &\Bk&   &\Bk&   &\Bk&   &   &   &\Bk&   &   \\\hline
+    \textbf{P} 9. &   &   &   &\Bk&   &   &\Bk&\Bk&\Bk&   &\Bk&\Bk\\\hline
+    \textbf{P} 10.&   &   &\Bk&\Bk&\Bk&   &\Bk&\Bk&\Bk&   &\Bk&\Bk\\\hline
+    \textbf{P} 11.&   &   &\Bk&\Bk&\Bk&   &\Bk&\Bk&\Bk&   &\Bk&\Bk\\\hline
+    \textbf{P} 12.&   &   &   &   &\Bk&   &   &\Bk&\Bk&   &\Bk&\Bk\\\hline
+    \textbf{P} 13.&   &   &   &   &   &   &   &   &   &   &   &   \\\hline
+    \textbf{P} 14.&   &   &   &   &   &   &   &   &   &   &   &   \\\hline
     Escribir Doc &   &\Bk&   &\Bk&   &\Bk&   &\Bk&   &\Bk&   &\Bk\\\hline    
   \end{tabular}
   \caption{Cronograma de investigaci\'on de los primeros dos a\~nos}
@@ -66,20 +89,20 @@ En la secci\'on anterior, cada paso tiene un nombre resaltado en negrita, a esto
     Actividades&\multicolumn{12}{|c|}{Bimestre}\\\hline\hline
     %3er y  4to A\~no &13 &14 &15 &16 &17 &18 &19 &20 &21 &22 &23 &24 \\\hline
     1er y  2do A\~no&1&2 &3  &4  &5  &6  &7  &8  &9  &10 &11 &12 \\\hline
-    Actividad 1. &\Bk&   &   &   &   &   &   &   &   &   &   &   \\\hline
-    Actividad 2. &\Bk&\Bk&\Bk&\Bk&\Bk&\Bk&\Bk&   &   &\Bk&\Bk&   \\\hline
-    Actividad 3. &\Bk&\Bk&\Bk&\Bk&\Bk&\Bk&\Bk&   &   &\Bk&\Bk&   \\\hline
-    Actividad 4. &\Bk&   &   &   &   &   &   &   &   &   &   &   \\\hline
-    Actividad 5. &   &   &   &   &   &   &   &   &   &   &   &   \\\hline
-    Actividad 6. &   &   &   &   &\Bk&   &   &   &   &   &   &   \\\hline
-    Actividad 7. &\Bk&   &   &\Bk&\Bk&   &   &   &   &   &   &   \\\hline
-    Actividad 8. &   &   &   &   &   &   &   &   &   &   &   &   \\\hline
-    Actividad 9. &\Bk&   &   &\Bk&\Bk&   &   &\Bk&\Bk&   &   &   \\\hline
-    Actividad 10.&   &   &   &   &   &   &\Bk&   &   &   &\Bk&   \\\hline
-    Actividad 11.&\Bk&   &   &   &   &   &\Bk&   &   &   &\Bk&   \\\hline
-    Actividad 12.&\Bk&\Bk&\Bk&\Bk&\Bk&\Bk&\Bk&\Bk&\Bk&\Bk&\Bk&\Bk\\\hline
-    Actividad 13.&   &   &   &\Bk&\Bk&   &   &\Bk&   &   &   &   \\\hline
-    Actividad 14.&   &   &   &   &\Bk&\Bk&\Bk&   &\Bk&\Bk&\Bk&\Bk\\\hline
+    \textbf{P} 1. &\Bk&   &   &   &   &   &   &   &   &   &   &   \\\hline
+    \textbf{P} 2. &\Bk&\Bk&\Bk&\Bk&\Bk&\Bk&\Bk&   &   &\Bk&\Bk&   \\\hline
+    \textbf{P} 3. &\Bk&\Bk&\Bk&\Bk&\Bk&\Bk&\Bk&   &   &\Bk&\Bk&   \\\hline
+    \textbf{P} 4. &\Bk&   &   &   &   &   &   &   &   &   &   &   \\\hline
+    \textbf{P} 5. &   &   &   &   &   &   &   &   &   &   &   &   \\\hline
+    \textbf{P} 6. &   &   &   &   &\Bk&   &   &   &   &   &   &   \\\hline
+    \textbf{P} 7. &\Bk&   &   &\Bk&\Bk&   &   &   &   &   &   &   \\\hline
+    \textbf{P} 8. &   &   &   &   &   &   &   &   &   &   &   &   \\\hline
+    \textbf{P} 9. &\Bk&   &   &\Bk&\Bk&   &   &\Bk&\Bk&   &   &   \\\hline
+    \textbf{P} 10.&   &   &   &   &   &   &\Bk&   &   &   &\Bk&   \\\hline
+    \textbf{P} 11.&\Bk&   &   &   &   &   &\Bk&   &   &   &\Bk&   \\\hline
+    \textbf{P} 12.&\Bk&\Bk&\Bk&\Bk&\Bk&\Bk&\Bk&\Bk&\Bk&\Bk&\Bk&\Bk\\\hline
+    \textbf{P} 13.&   &   &   &\Bk&\Bk&   &   &\Bk&   &   &   &   \\\hline
+    \textbf{P} 14.&   &   &   &   &\Bk&\Bk&\Bk&   &\Bk&\Bk&\Bk&\Bk\\\hline
     Escribir Doc &   &\Bk&   &\Bk&   &\Bk&   &\Bk&   &\Bk&\Bk&\Bk\\\hline    
   \end{tabular}
   \caption{Cronograma de investigaci\'on de los dos \'ultimos a\~nos}
