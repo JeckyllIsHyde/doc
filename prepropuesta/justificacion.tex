@@ -61,7 +61,7 @@
       }
     %}
   \end{frame}
-  \begin{frame}[label=def_multi]
+  \begin{frame}<1,2>[label=multidisciplinas]
     \transduration<1->{2}
     \frametitle{Por qu\'e esta investigaci\'on?}
     \framesubtitle{Trabajo multidisciplinario}
@@ -71,8 +71,8 @@
         \only<7>{\vspace{-0.3cm}}
         \begin{columns}[c]
           \begin{column}{3cm}
-            \only<1>{\setbeamercolor{postit}{fg=white,bg=red!50!black}}
-            \only<2-7>{\setbeamercolor{postit}{fg=white,bg=red}}
+            \only<1,3-7>{\setbeamercolor{postit}{fg=white,bg=red!50!black}}
+            \only<2>{\setbeamercolor{postit}{fg=white,bg=red}}
             \hyperlink{exp_embebidos}{
               \begin{beamercolorbox}[sep=0.5em,wd=3cm,rounded=true,center,shadow=true]{postit}
                 \only<1>{\includegraphics[height=1.5cm]{../images/ThemeEmbedded.png}\\}
@@ -81,8 +81,8 @@
               \end{beamercolorbox}}
           \end{column}
           \begin{column}{3cm}
-            \only<1-2>{\setbeamercolor{postit}{fg=white,bg=yellow!70!black}}
-            \only<3-7>{\setbeamercolor{postit}{fg=white,bg=yellow}}
+            \only<1-2,4-7>{\setbeamercolor{postit}{fg=white,bg=yellow!70!black}}
+            \only<3>{\setbeamercolor{postit}{fg=white,bg=yellow}}
             \hyperlink{exp_biomecanica}{
               \begin{beamercolorbox}[sep=0.5em,wd=3cm,rounded=true,center,shadow=true]{postit}
                 \only<1-2>{\includegraphics[height=1.5cm]{../images/ThemeBiomechanics.png}\\}
@@ -91,8 +91,8 @@
               \end{beamercolorbox}}
           \end{column}
           \begin{column}{3cm}
-            \only<1-3>{\setbeamercolor{postit}{fg=white,bg=blue!50!black}}
-            \only<4-7>{\setbeamercolor{postit}{fg=white,bg=blue}}
+            \only<1-3,5-7>{\setbeamercolor{postit}{fg=white,bg=blue!50!black}}
+            \only<4>{\setbeamercolor{postit}{fg=white,bg=blue}}
             \hyperlink{exp_mecanismos}{
               \begin{beamercolorbox}[sep=0.5em,wd=3cm,rounded=true,center,shadow=true]{postit}
                 \only<1-3>{\includegraphics[height=1.5cm]{../images/ThemeMechanisms.png}\\}
@@ -104,8 +104,8 @@
         \vspace{1.0cm}
         \begin{columns}[c]
           \begin{column}{3cm}
-            \only<1-4>{\setbeamercolor{postit}{fg=white,bg=black}}
-            \only<5-7>{\setbeamercolor{postit}{fg=white,bg=white!50!black}}
+            \only<1-4,6-7>{\setbeamercolor{postit}{fg=white,bg=black}}
+            \only<5>{\setbeamercolor{postit}{fg=white,bg=white!50!black}}
             \hyperlink{exp_computacion_flexible}{
               \begin{beamercolorbox}[sep=0.5em,wd=3cm,rounded=true,center,shadow=true]{postit}
                 \textbf{C. Flexible y Optimizaci\'on}
@@ -114,8 +114,8 @@
               \end{beamercolorbox}}
           \end{column}
           \begin{column}{3cm}
-            \only<1-5>{\setbeamercolor{postit}{fg=white,bg=green!50!black}}
-            \only<6-7>{\setbeamercolor{postit}{fg=white,bg=green}}
+            \only<1-5,7>{\setbeamercolor{postit}{fg=white,bg=green!50!black}}
+            \only<6>{\setbeamercolor{postit}{fg=white,bg=green}}
             \hyperlink{exp_control}{
               \begin{beamercolorbox}[sep=0.5em,wd=3cm,rounded=true,center,shadow=true]{postit}
                 \textbf{Control y Sis. Din\'amicos}
@@ -134,9 +134,98 @@
       }
     \end{center}
   \end{frame}
+  % Explicaciones de diferentes ramas en convergencia a la rob\'otica b\'ipeda
+  % SISTEMAS EMBEBIDOS
+  \begin{frame}[plain,t,label=exp_embebidos]
+    \transduration{3}
+    \hspace*{-0.8cm}\parbox[t]{\textwidth}{
+      \only<1>{\vspace*{-0.4cm}\hspace*{-1.5cm}
+        \colorbox{blueun}{
+          \parbox[t][1.5cm][c]{\paperwidth}{
+            \textcolor{white}{\Large\quad{SISTEMAS EMBEBIDOS}}
+          }
+        }
+      }\vspace{0.05cm}\\
+      % \includegraphics[height=7.0cm]{../images/Embedded.png}}
+      \includegraphics[height=7.0cm]{../images/ShortEmbedded.png}}
+    \hyperlink{multidisciplinas<2>}{\beamerreturnbutton{Volver}}
+  \end{frame}
+  \againframe<3>{multidisciplinas}
+  % BIOMEC\'ANICA
+  \begin{frame}[plain,t,label=exp_biomecanica]
+    \transduration{3}
+    \hspace*{-0.8cm}\parbox[t]{\textwidth}{
+      \only<1>{\vspace*{-0.4cm}\hspace*{-1.5cm}
+        \colorbox{blueun}{
+          \parbox[t][1.5cm][c]{\paperwidth}{
+            \textcolor{white}{\Large\quad{BIOMEC\'ANICA}}
+          }
+        }
+      }\vspace{0.05cm}\\
+      % A\hspace{-1.5cm}\includegraphics[height=7.0cm]{../images/Biomechanics.png}}
+      A\hspace{-0.7cm}\includegraphics[height=7.0cm]{../images/ShortBiomechanics.png}}
+    \hyperlink{multidisciplinas<3>}{\beamerreturnbutton{Volver}}
+  \end{frame}
+  \againframe<4>{multidisciplinas}
+  % MODELADO Y S\'ISNTESIS DE MECANISMOS
+  \begin{frame}[plain,t,label=exp_mecanismos]
+    \transduration{3}
+    \hspace*{-0.8cm}\parbox[t]{\textwidth}{
+      \only<1>{\vspace*{-0.4cm}\hspace*{-1.5cm}
+        \colorbox{blueun}{
+          \parbox[t][1.5cm][c]{\paperwidth}{
+            \textcolor{white}{\Large\quad{Modelado de sistemas mec\'anicos y s\'intesis de mecanismos}}
+          }
+        }
+      }\vspace{0.05cm}\\
+      % \includegraphics[height=7.0cm]{../images/Mechanisms.png}}
+      \includegraphics[height=7.0cm]{../images/ShortMechanisms.png}}
+    \hyperlink{multidisciplinas<4>}{\beamerreturnbutton{Volver}}
+  \end{frame}
+  \againframe<4>{multidisciplinas}
+  % COMPUTACI\'ON FLEXIBLE
+  % \only<5>{\textbf{\textcolor{blueun}{Optimizaci\'on, computaci\'on flexible e IA}}\\
+  % \includegraphics[height=6.0cm]{../images/SoftComputing.png}}
+  \begin{frame}[plain,t,label=exp_computacion_flexible]
+    \transduration{3}
+    \hspace*{-0.8cm}\parbox[t]{\textwidth}{
+      \only<1>{\vspace*{-0.4cm}\hspace*{-1.5cm}
+        \colorbox{blueun}{
+          \parbox[t][1.5cm][c]{\paperwidth}{
+            \textcolor{white}{\Large\quad{Optimizaci\'on, computaci\'on flexible e IA}}
+          }
+        }
+      }\vspace{0.05cm}\\
+      % A\hspace{-1.0cm}\includegraphics[height=7.0cm]{../images/SoftComputing.png}}
+      A\hspace{-1.0cm}\includegraphics[height=7.0cm]{../images/ShortSoftComputing.png}}
+    \hyperlink{multidisciplinas<5>}{\beamerreturnbutton{Volver}}
+  \end{frame}
+  \againframe<5>{multidisciplinas}
+  % CONTROL Y SISTEMAS DIN\'AMICOS
+  % \only<6>{\textbf{\textcolor{blueun}{Control}}\\
+  % \includegraphics[height=6.5cm]{../images/Control.png}}
+  \begin{frame}[plain,t,label=exp_control]
+    \transduration{3}
+    \hspace*{-0.8cm}\parbox[t]{\textwidth}{
+      \only<1>{\vspace*{-0.4cm}\hspace*{-1.5cm}
+        \colorbox{blueun}{
+          \parbox[t][1.5cm][c]{\paperwidth}{
+            \textcolor{white}{\Large\quad{Control y sistemas din\'amicos}}
+          }
+        }
+      }\vspace{0.05cm}\\
+      % \includegraphics[height=7.0cm]{../images/Control.png}}
+      \hspace{2.0cm}\includegraphics[height=7.0cm]{../images/ShortControl.png}}
+    \hyperlink{multidisciplinas<6>}{\beamerreturnbutton{Volver}}
+  \end{frame}
+  \againframe<6->{multidisciplinas}
+  % *********************************************************************************
   \begin{frame}[label=motivacion]
-    \transduration<1->{1}
-    % \transduration<20>{5}
+    \transduration<1-4,6,8-18,21->{1}
+    \transduration<5>{4}
+    \transduration<7>{2}
+    \transduration<19>{3}
+    \transduration<20>{4}
     \frametitle{Por qu\'e esta investigaci\'on?}
     \framesubtitle{Algunos aspecto para la justificaci\'on}
     \quad\hspace{-0.8cm}\vspace{-0.5cm}
@@ -198,7 +287,7 @@
           \only<5>{
             % \includegraphics[height=7cm]{../images/RobotMR1_0.png}
             \begin{center}
-              \animategraphics[height=7cm,autoresume,autoplay,loop]{2}{../images/RobotMR1_}{0}{12}
+              \animategraphics[height=7cm,autoresume,autoplay]{3}{../images/RobotMR1_}{0}{12}
             \end{center}
           }
           \only<6>{
@@ -209,7 +298,7 @@
           }
           \only<7>{
             \begin{center}
-              \animategraphics[height=7cm,autoresume,autoplay,loop]{2}{../images/SomeThingsByMeSumary_}{0}{4}
+              \animategraphics[height=7cm,autoresume,autoplay]{2}{../images/SomeThingsByMeSumary_}{0}{4}
               % \includegraphics[height=7.0cm]{../images/SomeThingsByMeSumary_0.png}
             \end{center}
           }
@@ -297,7 +386,7 @@
           }
           \only<19>{
             \begin{center}
-              \animategraphics[height=7cm,autoresume,autoplay,loop]{2}{../images/SomeThingsByRR_}{0}{2}
+              \animategraphics[height=7cm,autoresume,autoplay]{1}{../images/SomeThingsByRR_}{0}{2}
               % \includegraphics[height=7.0cm]{../images/SomeThingsByRR_0.png}
             \end{center}
           }
@@ -305,7 +394,7 @@
             \scriptsize
             \begin{center}%P1(120,360),P2(1110,530)
               % \includegraphics[height=7cm]{../images/SomeThingsByMe_0.png}
-              \animategraphics[height=7cm,autoresume,autoplay,loop]{2}{../images/SomeThingsByMe_}{1}{5}
+              \animategraphics[height=7cm,autoresume,autoplay]{1.5}{../images/SomeThingsByMe_}{1}{5}
             \end{center}
           }
           \only<21->{

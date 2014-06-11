@@ -3,7 +3,7 @@
 \label{sec:objs}
 
 \mode<presentation>{
-  \begin{frame}
+  \begin{frame}[label=objetivos]
     \transduration{1}
     \frametitle{Qu\'e se busca con esta investigaci\'on?}
     \begin{center}
@@ -14,14 +14,60 @@
 \subsection[General]{Objetivo general}
 \label{sec:objgen}
 \mode<presentation>{
-  \begin{frame}[label=def_objetivos]
+  \begin{frame}<1-2>[label=def_objetivos]
     \transduration<1->{5}
     \frametitle{Qu\'e se busca con esta investigaci\'on?}
     \textbf{\textcolor{blueun}{OG:}} Desarrollar un \alert<2>{marco de experiementaci\'on}\only<2-2>{\footnote{Marco o framework de investigaci\'on}}, mediante el cual se pueda implementar las hip\'otesis de soluci\'on de \alert<3>{los problemas de locomoci\'on}\only<3-3>{\footnote{Problemas actuales de robotica b\'ipeda}} de la rob\'otica subactuada y de caminadores.\\
     \hyperlink<2>{def_framework}{\beamergotobutton{Definici\'on de Framework}}
     \hyperlink<3>{def_problema}{\beamergotobutton{Problemas de locomoci\'on}}
   \end{frame}
-  \begin{frame}
+  % Marco de Experimentaci\'on:
+  % Es un aparato de conocimiento din\'amico con ejemplos construidos de plataformas b\'ipedas rob\'oticas que siguen los siguientes pasos
+  % 1) Selecci\'on de plataforma: Que se quiere investigar o proponer? Que se quiere resolver? Que se quiere mejorar?
+  % 2) Dise\~no mecanico: Planos, ensambles, elementos estandar, tipo de fabricaci\'on y presupuesto aproximado.
+  % 3) Dise\~no electronico: Esquem\'aticos, PCBs(DIP,SMT), selecci\'on de microprecesadores, microcontroladores, sensores, actuadores y presupuesto aproximado.
+  % 4) Sistema distribuido: Implementaci\'on red de sensores-actuadores, linux embebido, puesta en marcha y configuraci\'on del sistema distruibuido.
+  % 5) Capa de aplicaciones: Selecci\'on de librer\'ias, implementaci\'on en un lenguaje de alto nivel de las estrategias de control y cognicion.
+  \begin{frame}[plain,t,label=def_framework]
+    \transduration<1>{1}
+    \transduration<2>{2}
+    \transduration<3->{3}
+    \hspace*{-0.8cm}\parbox[t]{\textwidth}{
+      \only<1->{\vspace*{-0.4cm}\hspace*{-1.5cm}
+        \colorbox{blueun}{
+          \parbox[t][1.5cm][c]{\paperwidth}{
+            \textcolor{white}{\Large\quad{MARCO DE EXPERIMENTACI\'ON}}
+          }
+        }
+      }\vspace{0.05cm}\\
+      \only<2>{\alert<2>{Framework o marco de experimentaci\'on se define en esta propuesta como:}}\\
+      \only<3->{\alert<3>{Un aparato de conocimiento din\'amico con ejemplos construidos de plataformas b\'ipedas rob\'oticas que siguen los siguientes pasos.}}
+      \only<3->{\small
+        \begin{columns}[t] %¡Columnas como en TeX normal!
+          \begin{column}{7cm}
+            \begin{enumerate}
+            \item<4-|alert@5> \hyperlink{def_framework<5>}{\textbf{Selecci\'on de plataforma\only<5>{:}} \only<5>{\scriptsize Qu\'e se quiere investigar o proponer? Qu\'e se quiere resolver? Qu\'e se quere mejorar?}}
+            \item<4-|alert@6> \hyperlink{def_framework<6>}{\textbf{Dise\~no mec\'anico\only<6>{:}} \only<6>{\scriptsize Planos, ensamples, elementos estandar, tipo de fabricaci\'on y presupuesto aproximado.}}
+            \item<4-|alert@7> \hyperlink{def_framework<7>}{\textbf{Dise\~no electr\'onico\only<7>{:}} \only<7>{\scriptsize Esquem\'aticos, ensambles, elementos estandar, tipo de fabricaci\'on y presupuesto aproximado.}}
+            \item<4-|alert@8> \hyperlink{def_framework<8>}{\textbf{Sistema embebido y distribuido\only<8>{:}} \only<8>{\scriptsize Implementaci\'on de red, GNU-Linux embebido, puesta en marcha y configuraci\'on.}}
+            \item<4-|alert@9> \hyperlink{def_framework<9>}{\textbf{Aplicaciones\only<9>{:}} \only<9>{\scriptsize Selecci\'on de librerias, lenguaje de alto nivel, implementaci\'on estrategias de control y congnici\'on.}}
+            \end{enumerate}
+          \end{column}
+          \begin{column}{3cm}
+            \\% espacio para ajustar las graficas
+            \includegraphics<5>[height=4cm]{../images/DENISE.png}
+            \includegraphics<6>[height=4cm]{../images/DLR-BIPED.png}
+            \includegraphics<7>[height=4cm]{../images/ASIMO.png}
+            \includegraphics<8>[height=4cm]{../images/RABBIT.png}
+            \includegraphics<9>[height=4cm]{../images/TODDLE-MIT.png}
+          \end{column}
+        \end{columns}
+      }\vspace{0.5cm}
+      \hyperlink<4-10>{def_objetivos<2>}{\beamerreturnbutton{Volver al Objetivo General}}
+    }
+  \end{frame}
+  \againframe<3>{def_objetivos}
+  \begin{frame}[label=objgen]
     \transduration<1->{5}
     \frametitle{Qu\'e se quiere lograr con esta investigaci\'on?}
     \framesubtitle{Framework de investigaci\'on y desarrollo de rob\'otica b\'ipeda}
