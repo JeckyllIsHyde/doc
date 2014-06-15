@@ -2,4 +2,46 @@
 \usepackage{beamerarticle}
 \setjobnamebeamerversion{prepropuesta.beamer.tex}
 
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{enumerate}
+\usepackage{color}
+\usepackage{colortbl}
+\definecolor{gray}{cmyk}{0.0,0.0,0.0,0.60}
+
+\usepackage{tagging}
+
+\mode<article>{
+  \hoffset-25mm
+  \voffset-25mm
+  % \marginparwidth=0mm
+  % \marginparsep=0mm
+  \headheight=16pt
+  \oddsidemargin=25mm
+  \evensidemargin=25mm
+  \textwidth=165mm
+  \topmargin=20mm
+  \textheight=220mm
+
+  \pagestyle{fancy}
+  \fancyhf{}
+  \fancyhead[RO]{\small{\textcolor{gray}{\textsc{Propuesta de investgaci\'on: Locomoci\'on b\'ipeda ...}}}}
+  \fancyhead[LO]{\includegraphics[scale=0.05]{../images/unlogo.png}}
+  \fancyhead[LE]{\includegraphics[scale=0.05]{../images/unlogo.png}\quad\small{\textcolor{gray}{\textsc{Doctorado en ingenieria: Mecanica y Mecatronica}}}}
+  \fancyfoot[CO,CE]{\thepage}
+  \fancyfoot[LO,RE]{\scriptsize{\textcolor{gray}{\emph{Version 0.4}}}}
+}
+
+\mode<article>{
+  \title{\includegraphics[scale=0.15]{../images/unescudobn.png}\\\vspace{-0.2cm}
+    \textsc{\underline{\small{Universidad Nacional de Colombia}}\\\tiny{Sede Bogot\'a}\\\small{Facultad de Ingenier\'ia\\\vspace{-0.2cm}Unidad de Posgrado}}\\\vspace{0.5cm}
+    \LARGE \textbf{Locomoci\'on de caminadores b\'ipedos: Rob\'otica subactuada, control, planeaci\'on, dise\~no y aplicaciones}}
+  \author{J.A. Castillo Le\'on \thanks{jacastillol@unal.edu.co}}
+}
+
+\usetag{article-prepropuesta}
+
 \input{prepropuesta.tex}

@@ -1,7 +1,10 @@
 \mode*
-\section[Objetivos]{Objetivo general y objetivos espec\'ificos}
+\mode<article|presentation>{%
+  \iftagged{handout-tufte}%
+  {\section[Objetivos]{\textbf{\textcolor{blueun}{Objetivo general y objetivos espec\'ificos}}}}
+  {\section[Objetivos]{Objetivo general y objetivos espec\'ificos}}
+}
 \label{sec:objs}
-
 \mode<presentation>{
   \begin{frame}[label=objetivos]
     \transduration{1}
@@ -11,7 +14,11 @@
     \end{center}  
   \end{frame}
 }
-\subsection[General]{Objetivo general}
+\mode<article|presentation>{%
+  \iftagged{handout-tufte}%
+  {\subsection[General]{\textbf{Objetivo general}}}
+  {\subsection[General]{Objetivo general}}
+}%
 \label{sec:objgen}
 \mode<presentation>{
   \begin{frame}<1-2>[label=def_objetivos]
@@ -47,7 +54,7 @@
           \begin{column}{7cm}
             \begin{enumerate}
             \item<4-|alert@5> \hyperlink{def_framework<5>}{\textbf{Selecci\'on de plataforma\only<5>{:}} \only<5>{\scriptsize Qu\'e se quiere investigar o proponer? Qu\'e se quiere resolver? Qu\'e se quere mejorar?}}
-            \item<4-|alert@6> \hyperlink{def_framework<6>}{\textbf{Dise\~no mec\'anico\only<6>{:}} \only<6>{\scriptsize Planos, ensamples, elementos estandar, tipo de fabricaci\'on y presupuesto aproximado.}}
+            \item<4-|alert@6> \hyperlink{def_framework<6>}{\textbf{Dise\~no mec\'anico\only<6>{:}} \only<6>{\scriptsize Planos, ensambles, elementos estandar, tipo de fabricaci\'on y presupuesto aproximado.}}
             \item<4-|alert@7> \hyperlink{def_framework<7>}{\textbf{Dise\~no electr\'onico\only<7>{:}} \only<7>{\scriptsize Esquem\'aticos, ensambles, elementos estandar, tipo de fabricaci\'on y presupuesto aproximado.}}
             \item<4-|alert@8> \hyperlink{def_framework<8>}{\textbf{Sistema embebido y distribuido\only<8>{:}} \only<8>{\scriptsize Implementaci\'on de red, GNU-Linux embebido, puesta en marcha y configuraci\'on.}}
             \item<4-|alert@9> \hyperlink{def_framework<9>}{\textbf{Aplicaciones\only<9>{:}} \only<9>{\scriptsize Selecci\'on de librerias, lenguaje de alto nivel, implementaci\'on estrategias de control y congnici\'on.}}
@@ -55,11 +62,11 @@
           \end{column}
           \begin{column}{3cm}
             \\% espacio para ajustar las graficas
-            \includegraphics<5>[height=4cm]{../images/DENISE.png}
-            \includegraphics<6>[height=4cm]{../images/DLR-BIPED.png}
-            \includegraphics<7>[height=4cm]{../images/ASIMO.png}
-            \includegraphics<8>[height=4cm]{../images/RABBIT.png}
-            \includegraphics<9>[height=4cm]{../images/TODDLE-MIT.png}
+            \includegraphics<5>[height=4.0cm,width=3.0cm]{../images/TiposDePlataformas.png}
+            \includegraphics<6>[height=4.0cm]{../images/DisenoMecanico.png}
+            \includegraphics<7>[height=4.0cm]{../images/ASIMO.png}
+            \includegraphics<8>[height=4.0cm]{../images/RABBIT.png}
+            \includegraphics<9>[height=4.0cm]{../images/TODDLE-MIT.png}
           \end{column}
         \end{columns}
       }\vspace{0.5cm}
@@ -76,16 +83,53 @@
     \end{center}
   \end{frame}
 }
-El principal objetivo de esta investigaci\'on se describe de forma global y gr\'afica en la Figura \ref{fig:objGen}, y es enunciado a continuaci\'on:\par
-\textbf{OG:} Dise\~nar y construir un \emph{marco de experimentaci\'on}\footnote{compuesto por el dise\~no de una red de sensores-actuadores distribuida y un conjunto de dise\~no de eslanbones y articulaciones modulares para ser frabricados mediante prototipado r\'apido} mediante el cual se pueda implementar\footnote{estudiar, proponer y/o comprobar} las hip\'otesis que solucionen los problemas de locomoci\'on de la rob\'otica subactuada y de caminadores\footnote{que permita la b\'usqueda de estructuras mecatr\'onicas eficientes energ\'eticamente, capaces de lograr la locomoci\'on requerida por las necesidades fundamentales de los robots caminadores}.\par
-\begin{figure}[!htb]
-  \centering
-  \includegraphics[scale=0.5]{../images/objGen.png}
-  \caption{Objetivo General}
-  \label{fig:objGen}
-\end{figure}
+\tagged{handout-tufte}{
+  \begin{marginfigure}[-8.5cm]
+    \centering
+    \includegraphics{../images/objGen.png}
+    \caption{Objetivo General}
+    \label{fig:objGen}
+  \end{marginfigure}
+}
+\untagged{handout-tufte}{El principal objetivo de esta investigaci\'on se describe de forma global y gr\'afica en la Figura \ref{fig:objGen}, y es enunciado a continuaci\'on:\par}
+\textbf{OG:} Dise\~nar y construir un \emph{\textbf{marco de experimentaci\'on}}\iftagged{handout-tufte}{%
+  \sidenote[][-2.2cm]{\textbf{Marco de Experimentaci\'on:}
+    {\scriptsize Es un aparato de conocimiento din\'amico con ejemplos construidos de plataformas b\'ipedas rob\'oticas que siguen los siguientes pasos:}
+    \begin{enumerate}\tiny
+    \item Selecci\'on de plataforma
+    \item Dise\~no mecanico
+    \item Dise\~no electronico 
+    \item Sistema distribuido
+    \item Capa de aplicaciones
+    \end{enumerate}
+  }
+}{\footnote{compuesto por el dise\~no de una red de sensores-actuadores distribuida y un conjunto de dise\~no de eslanbones y articulaciones modulares para ser frabricados mediante prototipado r\'apido}} mediante el cual se pueda implementar\footnote{estudiar, proponer y/o comprobar} las hip\'otesis que solucionen los \emph{\textbf{problemas de locomoci\'on}}\iftagged{handout-tufte}{%
+  \sidenote{\textbf{Problemas de la robotica b\'ipeda:}
+    {\scriptsize Estan relacionados con el uso eficiente de la energ\'ia, la din\'amica pasiva de caminadores, presentes en:}
+    \begin{enumerate}\tiny
+    \item Estructuras mec\'anicas 
+    \item Capa sensora y de actuaci\'on
+    \item Control 
+    \item Plan. y gen. de trayectorias 
+    \item Capa de cognitiva
+    \end{enumerate}
+  }
+}{\footnote{que permita la b\'usqueda de estructuras mecatr\'onicas eficientes energ\'eticamente, capaces de lograr la locomoci\'on requerida por las necesidades fundamentales de los robots caminadores}} de la rob\'otica subactuada y de caminadores\iftagged{handout-tufte}{ (Ver Figura. \ref{fig:objGen})}{}.\par
+\untagged{handout-tufte}{
+  \begin{figure}[!htb]
+    \centering
+    \includegraphics[scale=0.5]{../images/objGen.png}
+    \caption{Objetivo General}
+    \label{fig:objGen}
+  \end{figure}
+}
 
-\subsection[Especificos]{Objetivos espec\'ificos}
+\mode<article|presentation>{%
+  \iftagged{handout-tufte}%
+  {\subsection[Especificos]{\textbf{Objetivos espec\'ificos}}}
+  {\subsection[Especificos]{Objetivos especificos}}
+}%
+%\subsection[Especificos]{\iftagged{handout-tufte}{\textbf{Objetivos espec\'ificos}}{Objetivos espec\'ificos}}
 \label{sec:objesp}
 \mode<presentation>{
   \begin{frame}[label=def_objesp]
@@ -101,19 +145,32 @@ El principal objetivo de esta investigaci\'on se describe de forma global y gr\'
     \hyperlink{exp_capas}{\beamergotobutton{Explicaci\'on de Capas}}
   \end{frame}
 }
-\begin{enumerate}[\textbf{OE:} 1.]
-\item Modelar, simular, analizar y sintetizar mecanismos subactuados que optimicen la energ\'ia para la locomoci\'on de caminar, saltar o correr.\par 
-\item Dise\~nar y construir una plataforma rob\'otica modular modular y para prototipado (ver Figura \ref{fig:objCapas} Capa Física), capaz de configurar cadenas cinem\'aticas  controladas y/o monitoreadas bajo el sistema distribuido.\par
-\item Implementar un sistema distribuido de sensores y actuadores que funcione en tiempo-real  (ver Figura \ref{fig:objCapas} Capa de sensorial y de Actuaci\'on), bajo el principio de manejo por disparo-de-eventos y/o manejo por disparo-por-tiempos\cite{Kimm2012}.\par
+\begin{enumerate}[\textbf{OE:} 1.]\tagged{handout-tufte}{\small}
+\item Modelar, simular, analizar y sintetizar mecanismos subactuados que optimicen la energ\'ia para la locomoci\'on de caminar, saltar o correr.\untagged{handout-tufte}{\par}
+\item Dise\~nar y construir una plataforma rob\'otica modular modular y para prototipado (ver Figura \ref{fig:objCapas} Capa Física), capaz de configurar cadenas cinem\'aticas  controladas y/o monitoreadas bajo el sistema distribuido\untagged{handout-tufte}{.\par}
+\item Implementar un sistema distribuido de sensores y actuadores que funcione en tiempo-real  (ver Figura \ref{fig:objCapas} Capa de sensorial y de Actuaci\'on), bajo el principio de manejo por disparo-de-eventos y/o manejo por disparo-por-tiempos\untagged{handout-tufte}{\cite{Kimm2012}}.\par
 \item Dise\~nar, simular e implementar diferentes controles de locomoci\'on (ver Figura \ref{fig:objCapas} Capa de control de locomoci\'on) inspirados en las nuevas tendencias de investigaci\'on de caminadores sobre plataformas rob\'oticas modulares construidas.\par
 \item Dise\~nar, simular e implementar estrategias y actividades colaborativas usando una red de caminadores  (ver Figura \ref{fig:objCapas} Capa Cognitiva.).\par
 \end{enumerate}
-\begin{figure}[!htb]
-  \centering
-  \includegraphics[scale=0.45]{../images/objCapaFisica.png}
-  \includegraphics[scale=0.45]{../images/objCapaRAS.png}\\
-  \includegraphics[scale=0.45]{../images/objCapaControl.png}
-  \includegraphics[scale=0.45]{../images/objCapaCognitiva.png}
-  \caption{Objetivos Específicos}
-  \label{fig:objCapas}
-\end{figure}
+\iftagged{handout-tufte}{
+  \begin{marginfigure}[-9.0cm]
+    \centering
+    %\parbox{11.6cm}{
+      \includegraphics[width=5.0cm]{../images/objCapaFisica.png}\\
+      \includegraphics[width=5.0cm]{../images/objCapaRAS.png}\\
+      \includegraphics[width=5.0cm]{../images/objCapaControl.png}\\
+      \includegraphics[width=5.0cm]{../images/objCapaCognitiva.png}
+    %}\\
+    \caption{Objetivos Específicos}
+    \label{fig:objCapas}
+  \end{marginfigure}
+}{\begin{figure}[!htb]
+    \centering
+    \includegraphics[scale=0.45]{../images/objCapaFisica.png}
+    \includegraphics[scale=0.45]{../images/objCapaRAS.png}\\
+    \includegraphics[scale=0.45]{../images/objCapaControl.png}
+    \includegraphics[scale=0.45]{../images/objCapaCognitiva.png}
+    \caption{Objetivos Específicos}
+    \label{fig:objCapas}
+  \end{figure}
+}

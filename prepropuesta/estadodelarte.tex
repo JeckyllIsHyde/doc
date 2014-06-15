@@ -1,7 +1,43 @@
 \mode*
-\section[Estado del arte]{Estado del arte}
+% \tagged{handout-tufte}{\vspace{-0.5cm}}
+% \section[Estado del arte]{\iftagged{handout-tufte}{\textbf{\textcolor{blueun}{Estado del arte}}}{Estado del arte}}
+\mode<article|presentation>{%
+  \iftagged{handout-tufte}%
+  {\section[Estado del arte]{\textbf{\textcolor{blueun}{Estado del arte}}}}%
+  {\section[Estado del arte]{Estado del arte}}
+}%
 \label{sec:arte}
-
+\mode<article>{%
+  \tagged{handout-tufte}{
+    % \subsection[Investigaci\'on actual]{\textbf{Algunas trabajos de investigaci\'on en la actualidad}}
+    % \label{sec:algtra}
+    A continuaci\'on el resumen de tendencias basada en la linea de tiempo del la Figura.\ref{fig:timelineH}. Adem\'as de lo anterior se muestra el estado actual del la Universidad Nacional en el tema (ver Figura.\ref{fig:timelineH}).
+    \vspace{-0.3cm}
+    \subsection[Resumen]{\textbf{Resumen de tendencias}}
+    \label{sec:resten}
+    \vspace{-1.0cm}
+    \begin{figure}%[!htb]
+      \centering
+      \includegraphics{../images/Resumen.png}
+      \caption{Resumen de las tendencias de investigaci\'on}
+      \label{fig:resTendencias}
+    \end{figure}
+    \begin{marginfigure}[-10.0cm]%[!h]
+      \centering
+      \includegraphics{../images/TimeLine05.png}
+      \caption{L\'inea de tiempo: Tendencias de distingas universidaes destacadas en Caminadores}
+      \label{fig:timelineH}
+    \end{marginfigure}
+    \begin{marginfigure}[-2.0cm]
+      \centering
+      % \includegraphics[height=4.5cm]{../images/UNROCA_3.png}
+      \includegraphics[height=4.5cm]{../images/UNROCA_5.png}
+      \includegraphics[height=4.5cm]{../images/UNROCA_6.png}
+      \caption{Proyecto UNROCA de la UN}
+      \label{fig:rocaUN}
+    \end{marginfigure}
+  }
+}
 \mode<presentation>{
   \begin{frame}[label=arte]
     \transduration{2}
@@ -19,7 +55,7 @@
     \framesubtitle{Para entrar en contexto}
     \includegraphics[height=7.5cm,width=10.0cm]{../images/TimeLine05.png}
   \end{frame}
-  \begin{frame}[label=tenencias]
+  \begin{frame}[label=tendencias]
     \transduration<1->{3}
     \frametitle{Trabajos relevantes de los \'ultimos 8 a\~nos}
     \framesubtitle{Tendencias mundiales en investigaci\'on}
@@ -232,19 +268,36 @@
     \end{columns}
   \end{frame}
 }
-Revisando la amplia literatura encontrada sobre \emph{la locomoci\'on}, la mayor inquietud citada viene de la Rob\'otica\cite{Xiang2010,Mattar2013} y la Biomec\'anica\cite{Xiang2010,Mattar2013}, \'areas que muestran su interés en replicar las estructuras y/o las funcionalidades de movilidad de diferentes seres vivos\cite{Xu2013,Chiang2013} o como muchos autores\cite{Xu2013} y congresos\cite{RB2009} hacen referencia a \emph{biom\'imesis}. Estas necesidades van desde solo comprobar las leyes f\'isicas sobre un sistema mecatr\'onico\cite{Barker2010,Lens2011} hasta dise\~nar m\'aquinas robotizadas que sirvan al hombre en ambientes de riesgo donde \'este no deber\'ia encontrarse\cite{Seifried2014,Wu2013a}, o desde solo entender la marcha humana para proponer una terap\'ia sobre alg\'un m\'usculo lesionado\cite{Kang2013} hasta el remplazo de una extremidad que mejore la calidad de vida de una persona v\'ictima de alg\'un accidente\cite{Roa2006,Wu2013a}.\par
-Dentro de la locomoci\'on b\'ipeda se diferencia dos formas generales del modo de andar: una bajo el r\'egimen de caminata y otra bajo el r\'egimen de correr, trotar o galopar\cite{Geyer2006}. La manera de distinguir estos modos viene dada por las distintas fase que definen un ciclo de andar, la diferencia entre caminar y trotar, ser\'a que durante la caminata habr\'an fases con doble contacto con el piso, mientras que en el r\'egimen de trotar o correr no existirá fases con doble contacto\cite{Geyer2006}, adem\'as en el regim\'en de correr existe una fase en la que no ocurre ningún contacto, fase que se encuentra con el nombre de vuelo.\par
-Una de las posibles clasificaciones que se pude hacer en caminadores es seg\'un su tipo de balance durante la caminata, este balance puede ser est\'atico o din\'amico\cite{Braunl2008}. Las mayores inquietudes y retos al d\'ia de hoy se encuentran en el balance din\'amico, pues este tipo de balance se acerca m\'as a una caminata \'optima y natural, como la que han logrado los seres humanos durante toda su evoluci\'on.\par
-Otra clasificaci\'on podr\'ia ser los modelos físico, que se han utilizado para describir la caminata\cite{Xiang2010}: 1) modelos de p\'endulo invertido, 2) din\'amica pasiva de la caminata y 3) ZMP punto de momento cero. Una caracter\'istica de los tres modelos f\'isico citados anteriormente, es que sus movimientos son generados en tiempo real\cite{Xiang2010}. En el caso de la din\'amica pasiva de la caminata, recientes tendencias en b\'usqueda de dise\~nos naturales tanto en las estructuras mec\'anicas como en los esquemas de control buscan mejorar los problemas energ\'eticos que resultaron de los mejores avances que se han obtenido en el tema gracias al concepto del ZMP\cite{Xiang2010}.\par
-Aunque la caminata pasiva lleva en estudio m\'as de 25 a\~nos, tuvo un momento de oscuridad cuando el ZMP, el cual lleva m\'as de 40 a\~nos, logr\'o resultados tecnol\'ogicos en los a\~nos ochenta\cite{Vukobratovic2004}. Desde hace 25 a\~nos se retomo nuevamente el estudio de la caminata pasiva ya no solo como ejemplo acad\'emico\cite{McGeer1990a}, dando nuevos caminos en el control y acerc\'andose a la soluci\'on desde el punto de vista de la optimizaci\'on de la energ\'ia\cite{Goswami1996}, proponiendo as\'i a la caminata activa la generaci\'on \'optima de trayectorias\cite{Gregg2010}.\par
-Los modelo mec\'anicos bio-inspirados se encuentran de dos clases\cite{Xiang2010}. El primero que toma el sistema \'oseo para luego proponer unos actuadores distintos a los músculos\cite{Wang2012} y el segundo que analiza adem\'as del sistema \'oseo, el sistema muscular para tomar los m\'usculos del cuerpo humano como los actuadores del sistema\cite{Kang2013,Roa2006}. Los modelos matem\'aticos de estos modelos bio-inspirados est\'an basados en la din\'amica multicuerpo\cite{Xiang2010}, donde cabe resaltar que los modelos m\'usculo-esquel\'eticos incrementan la carga computacional por el gran n\'umero de grados de libertad\cite{Xiang2010}, mientras que los modelos basados \'unicamente en el sistema oseo son f\'aciles de simplificar y en la mayor\'ia de los casos tan solo se tiene en cuenta las longitudes de las extremidades analizadas reduciendo también un importante n\'umero de grados de libertad\cite{McGeer1990a}. Cabe resaltar de diferentes herramientas y formalismos son empleadas en la literatura para la generaci\'on de modelos, en donde se encuentran: Newton-Euler, Euler-Lagrange, Hamilton, Kane, \'algebras especiales para entender el espacio tridimensional como los Screws y los cuaterniones o el método de Denavit-Hartenverg y finalmente la conservaci\'on del momento angular para representar las colisiones de los sistemas.\par
-Dentro del problema de la din\'amica multicuerpo, se enfrentan dos pilares, 1) la din\'amica inversa, donde las trayectorias se conocen en un comienzo o se pueden tomar arbitrarias para luego encontrar las cargas requeridas por los actuadores y 2) la din\'amica directa en donde se conocen las cargas en los actuadores, y resolviendo un sistema de ecuaciones diferenciales con condiciones iniciales de segundo orden se puede encontrar la evoluci\'on temporal de las articulaciones en el espacio.\par
-Una vez se logra un modelo f\'isico del caminador, surgen los problemas de generaci\'on de las trayectorias. La generaci\'on de trayectorias es un problema abierto que se aborda con muchas t\'ecnicas y seg\'un los objetivos de la investigaci\'on\cite{Kherici2014,Mahmoodabadi2014}. Una clasificaci\'on dada por\cite{Xiang2010}, divide la generaci\'on de trayectorias en m\'etodos basados en optimizaci\'on y m\'etodos basados en control. Ambos son lo suficientemente costos para ser implementados en tiempo real sin exagerar los recursos de c\'omputo\cite{Mahmoodabadi2014}. Adem\'as de esto es com\'un emplear los m\'etodos de optimizaci\'on y control en conjunto para encontrar la soluci\'on.\par
-Las dificultades presentes en la generaci\'on de trayectorias tienen 1) la complejidad computacional de la programaci\'on no-lineal adem\'as de una optimizaci\'on multiobjetivo, en la que se pueden encontrar restricciones de diferentes clases\cite{Mahmoodabadi2014}, 2) los modelos h\'ibridos presentes en los modelos de mec\'anica multicuerpo introducen discontinuidades en las funciones objetivo, lo que propone que los m\'etodos de b\'usqueda basados gradiente sean descartados\cite{Xiang2010}, tambi\'en se proponer mediciones del rendimiento de la marcha que eviten dichas discontinuidades para usar los m\'etodos de b\'usqueda basados en gradiente\cite{Xiang2010}.\par
-Dependiendo como se aborde el problema de la din\'amica, inverso o directo, es posible que la generaci\'on de las trayectorias implique, la soluci\'on de las ecuaciones diferenciales, este es el caso de la d\'inamica directa en el que se proponen las cargas sobre el sistema pero se desconocen las trayectorias, es ac\'a cuando la variable de dise\~no en este caso las cargas, se deben buscar la mejor evoluci\'on de cargas en el tiempo, que satisfaga las condiciones de dise\~no.\par
-
-\subsection[Estado del arte UN]{Estado del arte en al Universidad Nacional de Colombia}
-\label{sec:estadoUN}
+\untagged{handout-tufte}{
+  Revisando la amplia literatura encontrada sobre \emph{la locomoci\'on}, la mayor inquietud citada viene de la Rob\'otica\cite{Xiang2010,Mattar2013} y la Biomec\'anica\cite{Xiang2010,Mattar2013}, \'areas que muestran su interés en replicar las estructuras y/o las funcionalidades de movilidad de diferentes seres vivos\cite{Xu2013,Chiang2013} o como muchos autores\cite{Xu2013} y congresos\cite{RB2009} hacen referencia a \emph{biom\'imesis}. Estas necesidades van desde solo comprobar las leyes f\'isicas sobre un sistema mecatr\'onico\cite{Barker2010,Lens2011} hasta dise\~nar m\'aquinas robotizadas que sirvan al hombre en ambientes de riesgo donde \'este no deber\'ia encontrarse\cite{Seifried2014,Wu2013a}, o desde solo entender la marcha humana para proponer una terap\'ia sobre alg\'un m\'usculo lesionado\cite{Kang2013} hasta el remplazo de una extremidad que mejore la calidad de vida de una persona v\'ictima de alg\'un accidente\cite{Roa2006,Wu2013a}.\par
+  Dentro de la locomoci\'on b\'ipeda se diferencia dos formas generales del modo de andar: una bajo el r\'egimen de caminata y otra bajo el r\'egimen de correr, trotar o galopar\cite{Geyer2006}. La manera de distinguir estos modos viene dada por las distintas fase que definen un ciclo de andar, la diferencia entre caminar y trotar, ser\'a que durante la caminata habr\'an fases con doble contacto con el piso, mientras que en el r\'egimen de trotar o correr no existirá fases con doble contacto\cite{Geyer2006}, adem\'as en el regim\'en de correr existe una fase en la que no ocurre ningún contacto, fase que se encuentra con el nombre de vuelo.\par
+  Una de las posibles clasificaciones que se pude hacer en caminadores es seg\'un su tipo de balance durante la caminata, este balance puede ser est\'atico o din\'amico\cite{Braunl2008}. Las mayores inquietudes y retos al d\'ia de hoy se encuentran en el balance din\'amico, pues este tipo de balance se acerca m\'as a una caminata \'optima y natural, como la que han logrado los seres humanos durante toda su evoluci\'on.\par
+  Otra clasificaci\'on podr\'ia ser los modelos físico, que se han utilizado para describir la caminata\cite{Xiang2010}: 1) modelos de p\'endulo invertido, 2) din\'amica pasiva de la caminata y 3) ZMP punto de momento cero. Una caracter\'istica de los tres modelos f\'isico citados anteriormente, es que sus movimientos son generados en tiempo real\cite{Xiang2010}. En el caso de la din\'amica pasiva de la caminata, recientes tendencias en b\'usqueda de dise\~nos naturales tanto en las estructuras mec\'anicas como en los esquemas de control buscan mejorar los problemas energ\'eticos que resultaron de los mejores avances que se han obtenido en el tema gracias al concepto del ZMP\cite{Xiang2010}.\par
+  Aunque la caminata pasiva lleva en estudio m\'as de 25 a\~nos, tuvo un momento de oscuridad cuando el ZMP, el cual lleva m\'as de 40 a\~nos, logr\'o resultados tecnol\'ogicos en los a\~nos ochenta\cite{Vukobratovic2004}. Desde hace 25 a\~nos se retomo nuevamente el estudio de la caminata pasiva ya no solo como ejemplo acad\'emico\cite{McGeer1990a}, dando nuevos caminos en el control y acerc\'andose a la soluci\'on desde el punto de vista de la optimizaci\'on de la energ\'ia\cite{Goswami1996}, proponiendo as\'i a la caminata activa la generaci\'on \'optima de trayectorias\cite{Gregg2010}.\par
+  Los modelo mec\'anicos bio-inspirados se encuentran de dos clases\cite{Xiang2010}. El primero que toma el sistema \'oseo para luego proponer unos actuadores distintos a los músculos\cite{Wang2012} y el segundo que analiza adem\'as del sistema \'oseo, el sistema muscular para tomar los m\'usculos del cuerpo humano como los actuadores del sistema\cite{Kang2013,Roa2006}. Los modelos matem\'aticos de estos modelos bio-inspirados est\'an basados en la din\'amica multicuerpo\cite{Xiang2010}, donde cabe resaltar que los modelos m\'usculo-esquel\'eticos incrementan la carga computacional por el gran n\'umero de grados de libertad\cite{Xiang2010}, mientras que los modelos basados \'unicamente en el sistema oseo son f\'aciles de simplificar y en la mayor\'ia de los casos tan solo se tiene en cuenta las longitudes de las extremidades analizadas reduciendo también un importante n\'umero de grados de libertad\cite{McGeer1990a}. Cabe resaltar de diferentes herramientas y formalismos son empleadas en la literatura para la generaci\'on de modelos, en donde se encuentran: Newton-Euler, Euler-Lagrange, Hamilton, Kane, \'algebras especiales para entender el espacio tridimensional como los Screws y los cuaterniones o el método de Denavit-Hartenverg y finalmente la conservaci\'on del momento angular para representar las colisiones de los sistemas.\par
+  Dentro del problema de la din\'amica multicuerpo, se enfrentan dos pilares, 1) la din\'amica inversa, donde las trayectorias se conocen en un comienzo o se pueden tomar arbitrarias para luego encontrar las cargas requeridas por los actuadores y 2) la din\'amica directa en donde se conocen las cargas en los actuadores, y resolviendo un sistema de ecuaciones diferenciales con condiciones iniciales de segundo orden se puede encontrar la evoluci\'on temporal de las articulaciones en el espacio.\par
+  Una vez se logra un modelo f\'isico del caminador, surgen los problemas de generaci\'on de las trayectorias. La generaci\'on de trayectorias es un problema abierto que se aborda con muchas t\'ecnicas y seg\'un los objetivos de la investigaci\'on\cite{Kherici2014,Mahmoodabadi2014}. Una clasificaci\'on dada por\cite{Xiang2010}, divide la generaci\'on de trayectorias en m\'etodos basados en optimizaci\'on y m\'etodos basados en control. Ambos son lo suficientemente costos para ser implementados en tiempo real sin exagerar los recursos de c\'omputo\cite{Mahmoodabadi2014}. Adem\'as de esto es com\'un emplear los m\'etodos de optimizaci\'on y control en conjunto para encontrar la soluci\'on.\par
+  Las dificultades presentes en la generaci\'on de trayectorias tienen 1) la complejidad computacional de la programaci\'on no-lineal adem\'as de una optimizaci\'on multiobjetivo, en la que se pueden encontrar restricciones de diferentes clases\cite{Mahmoodabadi2014}, 2) los modelos h\'ibridos presentes en los modelos de mec\'anica multicuerpo introducen discontinuidades en las funciones objetivo, lo que propone que los m\'etodos de b\'usqueda basados gradiente sean descartados\cite{Xiang2010}, tambi\'en se proponer mediciones del rendimiento de la marcha que eviten dichas discontinuidades para usar los m\'etodos de b\'usqueda basados en gradiente\cite{Xiang2010}.\par
+  Dependiendo como se aborde el problema de la din\'amica, inverso o directo, es posible que la generaci\'on de las trayectorias implique, la soluci\'on de las ecuaciones diferenciales, este es el caso de la d\'inamica directa en el que se proponen las cargas sobre el sistema pero se desconocen las trayectorias, es ac\'a cuando la variable de dise\~no en este caso las cargas, se deben buscar la mejor evoluci\'on de cargas en el tiempo, que satisfaga las condiciones de dise\~no.\par
+}
+\untagged{handout-tufte}{\subsection[Estado del arte UN]{Estado del arte en la Universidad Nacional de Colombia}
+\label{sec:estadoUN}}
+\tagged{handout-tufte}{
+  % \label{sec:resten}
+  % \begin{figure}%[!htb]
+  %   \centering
+  %   \includegraphics{../images/Resumen.png}
+  %   \caption{L\'inea de tiempo}
+  %   \label{fig:timelineH}
+  % \end{figure}
+  % \begin{marginfigure}[0.0cm]
+  %   \centering
+  %   \includegraphics[height=5cm]{../images/UNROCA_5.png}
+  %   \includegraphics[height=5cm]{../images/UNROCA_6.png}
+  %   \caption{Proyecto UNROCA de la UN}
+  %   \label{fig:rocaUN}
+  % \end{marginfigure}
+}
 \mode<presentation>{
   \begin{frame}[label=tendenciasUN]
     \transduration<1->{2}
@@ -414,6 +467,7 @@ Dependiendo como se aborde el problema de la din\'amica, inverso o directo, es p
     \end{center}
   \end{frame}
 }
+\untagged{handout-tufte}{
 El departamento de Ingenier\'ia Mec\'anica y Mecatr\'onica hacia 2003, bajo los grupos de investigaci\'on de Biomec\'anica y Robots M\'oviles, construye tres modelos de caminadores, en donde las patrones de marcha son generados por el an\'alisis y simulaci\'on de caminadores pasivos y posteriormente las trayectorias de las articulaciones son reproducidas por los caminadores activos construidos. Adicionalmente se propone una metodolog\'ia de dise\~no\cite{Heredia2007}.\par
 El modelo de tres eslabones y cuatro masas puntales cl\'asico estudiado antes por\cite{McGeer1990a}, se obtienen distintas trayectorias de los \'angulos de las articulaciones para diferentes velocidades de marcha que son directamente relacionadas con las pendientes de inclinaci\'on del piso\cite{M2005}, es importante mencionar que se incluye un an\'alisis adimensional de parámetros y un an\'alisis de las propiedades ca\'oticas del caminador bípedo analizado\cite{M2005a}. Los datos obtenidos en la fase anterior, son convertidos a los requeridos por la construcci\'on f\'isica implementada.\par
 A continuaci\'on se muestran los tres robot UNROCA generados en el departamento Figura.\ref{fig:unroca}, los dos primeros intentos mostraban la reproducci\'on de las trayectorias generadas en la primera fase, pero usaban soportes estructurales para alcanzar la estabilidad. En el tercer intento el robot aseguro su estabilidad con el uso de una masa oscilante a la altura de la cadera, se incorporan granes pies para la estabilidad est\'atica. Bajo el r\'egimen de marcha la estabilidad es asegurada en acci\'on del contrapeso oscilante y el criterio de ZMP de la trayectoria previamente calculada. La trayectoria es seguida usando controles PD y utilizando servomotores. Por cada par de servos es utilizado un microcontrolador m\'as un microcontrolador central\cite{M2005}.
@@ -423,8 +477,25 @@ A continuaci\'on se muestran los tres robot UNROCA generados en el departamento 
   \caption{Robots serie UNROCA. [Tomado de \cite{M2005}]}
   \label{fig:unroca}
 \end{figure}
-
+}
 \mode<article>{
+\untagged{handout-tufte}%{\subsection[Resumen]{\textbf{Resumen de tendencias}}
+  % \label{sec:resten}
+  % \begin{figure}%[!htb]
+  %   \centering
+  %   \includegraphics{../images/Resumen.png}
+  %   \caption{L\'inea de tiempo}
+  %   \label{fig:timelineH}
+  % \end{figure}
+  % \begin{marginfigure}[0.0cm]
+  %   \centering
+  %   \includegraphics[height=5cm]{../images/UNROCA_5.png}
+  %   \includegraphics[height=5cm]{../images/UNROCA_6.png}
+  %   \caption{Proyecto UNROCA de la UN}
+  %   \label{fig:rocaUN}
+  % \end{marginfigure}
+  % }
+{
   \subsection[Investigaci\'on actual]{Algunas trabajos de investigaci\'on en la actualidad }
   \label{sec:algtra}
 
@@ -448,4 +519,5 @@ A continuaci\'on se muestran los tres robot UNROCA generados en el departamento 
   Basados en el modelo de la din\'amica de la caminata pasiva, específicamente la marcha del compás, la cual exhibe propiedades de caos. Se linealiza el modelo alrededor de un ciclo limite híbrido. Usando los mapas de Poincar\'e, es dise\~na un control por realimentaci\'on de estados, para convertir el sistema pasivo en activo\cite{Gritli2013}.\par
   Se realiza el dise\~no de la lagartija Jesucristo, basado en un mecanismos Watt-I y los grupos de Assur. Se utiliza un algoritmo de control CPG(Central Pattern Generator) del sistema neural, para el balance y el ajusta de la marcha \cite{Xu2013}.\par
   Análisis del modelo dinámico, estabilidad y consumo de energ\'ia eficiente de un robot con seis extremidades\cite{Roy2013}.\par
+}
 }

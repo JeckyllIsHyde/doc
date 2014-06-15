@@ -1,0 +1,95 @@
+%\documentclass{article}
+\documentclass[twoside,symmetric]{tufte-handout}
+%\documentclass[twoside]{tufte-handout}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[noxcolor]{beamerarticle}
+\usepackage{pgfpages}
+\setjobnamebeamerversion{prepropuesta.beamer}
+
+\usepackage{color}
+\usepackage{colortbl}
+\definecolor{gray}{cmyk}{0.0,0.0,0.0,0.60}
+\definecolor{blueun}{rgb}{0.047,0.294,0.376}
+
+\makeatletter  
+\renewcommand{\title}[2][]{%  
+  \gdef\@title{#2}%  
+  \begingroup%  
+    % TODO store contents of \thanks command  
+    \renewcommand{\thanks}[1]{}% swallow \thanks contents  
+    \protected@xdef\thanklesstitle{#2}%  
+  \endgroup%  
+  \ifthenelse{\isempty{#1}}%  
+    {\renewcommand{\plaintitle}{\thanklesstitle}}% use thankless title  
+    {\renewcommand{\plaintitle}{#1}}% use provided plain-text title  
+  \@ifpackageloaded{hyperref}{\hypersetup{pdftitle={\plaintitle}}}{}% set the PDF metadata title  
+}  
+\makeatother  
+
+\makeatletter  
+\renewcommand*{\author}[2][]{%  
+  \gdef\@author{#2}%  
+  \begingroup%  
+    % TODO store contents of \thanks command  
+    \renewcommand{\thanks}[1]{}% swallow \thanks contents  
+    \protected@xdef\thanklessauthor{#2}%  
+  \endgroup%  
+  \ifthenelse{\isempty{#1}}  
+    {\renewcommand{\plainauthor}{\thanklessauthor}}% use thankless author  
+    {\renewcommand{\plainauthor}{#1}}% use provided plain-text author  
+  \@ifpackageloaded{hyperref}{\hypersetup{pdfauthor={\plainauthor}}}{}% set the PDF   metadata author  
+}  
+\makeatother  
+
+\usepackage{todonotes}
+
+%\date{28 March 2010} % without \date command, current date is supplied
+
+%\geometry{showframe} % display margins for debugging page layout
+
+\mode<article>{
+  \title[Locomoci\'on de Caminadores]{\qquad%
+    \parbox[c]{\textwidth}{\parbox{1.5cm}{\includegraphics{../images/unescudo.png}}\qquad%
+      \parbox[c][2cm][c]{5cm}{%
+        \begin{center} \textsc{
+            \underline{\small{Universidad Nacional de Colombia}}\\
+            \tiny{Sede Bogot\'a}\\
+            \small{Facultad de Ingenier\'ia\\
+              \vspace{-0.2cm}Unidad de Posgrado} }
+        \end{center} 
+      }
+    }\\%
+    \textcolor{blueun}{{\huge Locomoci\'on de caminadores b\'ipedos:}\\{\large Rob\'otica subactuada, control, planeaci\'on, dise\~no y aplicaciones}}}
+  \author[J. A. Castillo]{\hspace{2.0ex}\textbf{\large Investigador:} J.A. Castillo Le\'on \thanks{jacastillol@unal.edu.co}}
+}
+
+%\usepackage{graphicx} % allow embedded images
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+%\graphicspath{{../images/}} % set of paths to search for images
+%\usepackage{amsmath} % extended mathematics
+\usepackage{booktabs} % book-quality tables
+\usepackage{units} % non-stacked fractions and better unit spacing
+%\usepackage{multicol} % multiple column layout facilities
+\usepackage{lipsum} % filler text
+\usepackage{fancyvrb} % extended verbatim environments
+\fvset{fontsize=\normalsize}% default font size for fancy-verbatim environments
+\usepackage{tagging}
+
+% % Standardize command font styles and environments
+% \newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+% \newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+% \newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+% \newcommand{\docenv}[1]{\textsf{#1}}% environment name
+% \newcommand{\docpkg}[1]{\texttt{#1}}% package name
+% \newcommand{\doccls}[1]{\texttt{#1}}% document class name
+% \newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+% \newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+
+\usetag{handout-tufte}
+
+\input{prepropuesta.tex}

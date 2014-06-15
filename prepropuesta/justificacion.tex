@@ -2,9 +2,13 @@
 % Plataformas e instituciones:
 % USA-MIT-Tedrake-TODDLER
 % RABBIT-EMARO-Universidad de Nantes-
-\section[Justificaci\'on]{Justificaci\'on}
+%\section[Justificaci\'on]{\iftagged{handout-tufte}{\textbf{\textcolor{blueun}{Justificaci\'on}}}{Justificaci\'on}}
+\mode<article|presentation>{%
+  \iftagged{handout-tufte}%
+  {\section[Justificaci\'on]{\textbf{\textcolor{blueun}{Justificaci\'on}}}}%
+  {\section[Justificaci\'on]{Justificaci\'on}}%
+}%\mode<presentation>{\section[Justificaci\'on]{Justificaci\'on}}
 \label{sec:justify}
-
 \mode<presentation>{
   \begin{frame}[label=justificacion]
     \transduration{4}
@@ -150,7 +154,7 @@
       \includegraphics[height=7.0cm]{../images/ShortEmbedded.png}}
     \hyperlink{multidisciplinas<2>}{\beamerreturnbutton{Volver}}
   \end{frame}
-  \againframe<3>{multidisciplinas}
+  \againframe<2-3>{multidisciplinas}
   % BIOMEC\'ANICA
   \begin{frame}[plain,t,label=exp_biomecanica]
     \transduration{3}
@@ -166,7 +170,7 @@
       A\hspace{-0.7cm}\includegraphics[height=7.0cm]{../images/ShortBiomechanics.png}}
     \hyperlink{multidisciplinas<3>}{\beamerreturnbutton{Volver}}
   \end{frame}
-  \againframe<4>{multidisciplinas}
+  \againframe<3-4>{multidisciplinas}
   % MODELADO Y S\'ISNTESIS DE MECANISMOS
   \begin{frame}[plain,t,label=exp_mecanismos]
     \transduration{3}
@@ -182,7 +186,7 @@
       \includegraphics[height=7.0cm]{../images/ShortMechanisms.png}}
     \hyperlink{multidisciplinas<4>}{\beamerreturnbutton{Volver}}
   \end{frame}
-  \againframe<4>{multidisciplinas}
+  \againframe<4-5>{multidisciplinas}
   % COMPUTACI\'ON FLEXIBLE
   % \only<5>{\textbf{\textcolor{blueun}{Optimizaci\'on, computaci\'on flexible e IA}}\\
   % \includegraphics[height=6.0cm]{../images/SoftComputing.png}}
@@ -200,7 +204,7 @@
       A\hspace{-1.0cm}\includegraphics[height=7.0cm]{../images/ShortSoftComputing.png}}
     \hyperlink{multidisciplinas<5>}{\beamerreturnbutton{Volver}}
   \end{frame}
-  \againframe<5>{multidisciplinas}
+  \againframe<5-6>{multidisciplinas}
   % CONTROL Y SISTEMAS DIN\'AMICOS
   % \only<6>{\textbf{\textcolor{blueun}{Control}}\\
   % \includegraphics[height=6.5cm]{../images/Control.png}}
@@ -220,6 +224,9 @@
   \end{frame}
   \againframe<6->{multidisciplinas}
   % *********************************************************************************
+  \subsection[Motivaci\'on]{Motivaci\'on}
+  \label{sec:motiv}
+
   \begin{frame}[label=motivacion]
     \transduration<1-4,6,8-18,21->{1}
     \transduration<5>{4}
@@ -413,22 +420,107 @@
     }
   \end{frame}
 }
-Buscando una proliferaci\'on robusta de la rob\'otica en el pa\'is a nivel tecnol\'ogico y del conocimiento de esta \'area, se da acontinuaci\'on la justificaci\'on de este proyecto de investigaci\'on, propuesta que se ve acotada a ser trabajada en el mundo de la r\'obotica de caminadores.  Las tendencias a nivel mundial que se desarrollan en este tema actu\'almente, crecen cada d\'ia a pasos agigantados provocados por cientos de grupos de investigaci\'on pertenecientes a Universidades, Institutos, Centros y Laboratorios en todo el mundo.\par
-Aunque la Universidad Nacional de Colombia ya comenz\'o sus investigaciones en el \'area con interesantes resultados\cite{M2005,M2005a,Roa2006,Heredia2007}, en donde se han construido lazos por medio de investigadores, profesores y estudiantes de la Universidad con otros grupos de vital importancia a nivel mundial en el \'area, como es el caso de \cite{Englsberger2011,Ott2011,M2013}. Desde hace unos siete a\~nos no se han desarrollado proyectos importantes en el \'area de caminadores.\par
-El campo de la rob\'otica b\'ipeda ha superado algunos problemas y han surgido unos nuevos, en donde las soluciones encontradas han sido generadas integrando m\'ultiples fuentes de conocimiento, en \'areas como: los sistemas embebidos\cite{Barker2010,Pan2010,Kimm2012,Wang2011,Amir2013}, la biomec\'anica\cite{Mahmoodi2013,Lim2014,Wu2013,Aoustin2013,Chiang2013,Xiang2010,Hobon2014}, el modelado de sistemas mec\'anicos\cite{Chiang2013}, la s\'intesis de mecanismos\cite{Li2008,Aoustin2013,Wu2013a,Xu2013,Hobon2014}, la optimizaci\'on\cite{Xiang2010,Lim2014,Kherici2014,Mahmoodabadi2014}, la computaci\'on flexible\cite{Wang2013,Kherici2014,Mahmoodabadi2014}, la inteligencia artificial\cite{Treesatayapun2014,Yuan2014,Wu2014,Wang2013} y el control\cite{Dou2013,Treesatayapun2014,Yuan2014,Wu2014}.\par
+Buscando una proliferaci\'on robusta de la rob\'otica en el pa\'is a nivel tecnol\'ogico y del conocimiento de esta \'area, se da acontinuaci\'on la justificaci\'on de este proyecto de investigaci\'on\iftagged{handout-tufte}{ (ver Figura.\ref{fig:uniAndLabs})}{, propuesta que se ve acotada a ser trabajada en el mundo de la r\'obotica de caminadores}.  Las tendencias a nivel mundial que se desarrollan en este tema actu\'almente, \iftagged{handout-tufte}{ver Figura.\ref{fig:costoVsTiempo} muestran su viablidad en costos y tiempos.\par
+  \begin{marginfigure}[-4cm]%
+    \centering
+    \includegraphics{../images/BipedInstitutesAndUniversities_2.png}
+    \caption{Universidades y laboratorios}
+    \label{fig:uniAndLabs}
+  \end{marginfigure}
+  \begin{figure}[!htb]
+    \centering
+    \emph{\textcolor{blueun}{\textbf{Desarrollo en b\'ipedos con PhD Universitarios de poco tiempo}}}
+    \includegraphics[width=8cm]{../images/BipedPlatformsTime-Cost_small2.png}    
+    \caption{Desarrollo de plataformas en costo y tiempo}
+    \label{fig:costoVsTiempo}
+  \end{figure}
+}{crecen cada d\'ia a pasos agigantados provocados por cientos de grupos de investigaci\'on pertenecientes a Universidades, Institutos, Centros y Laboratorios en todo el mundo.\par}
+\untagged{handout-tufte}{Aunque la Universidad Nacional de Colombia ya comenz\'o sus investigaciones en el \'area con interesantes resultados\cite{M2005,M2005a,Roa2006,Heredia2007}, en donde se han construido lazos por medio de investigadores, profesores y estudiantes de la Universidad con otros grupos de vital importancia a nivel mundial en el \'area, como es el caso de \cite{Englsberger2011,Ott2011,M2013}. Desde hace unos siete a\~nos no se han desarrollado proyectos importantes en el \'area de caminadores.\par}
+El campo de la rob\'otica b\'ipeda ha superado\untagged{handout-tufte}{ algunos} problemas \untagged{handout-tufte}{y han surgido unos nuevos, en donde las soluciones encontradas han sido generadas} integrando m\'ultiples fuentes de conocimiento, en \'areas como: los sistemas embebidos\iftagged{handout-tufte}{}{\cite{Barker2010,Pan2010,Kimm2012,Wang2011,Amir2013}}, la biomec\'anica\iftagged{handout-tufte}{}{\cite{Mahmoodi2013,Lim2014,Wu2013,Aoustin2013,Chiang2013,Xiang2010,Hobon2014}}, el modelado de sistemas mec\'anicos\iftagged{handout-tufte}{}{\cite{Chiang2013}}, la s\'intesis de mecanismos\iftagged{handout-tufte}{}{\cite{Li2008,Aoustin2013,Wu2013a,Xu2013,Hobon2014}}, la optimizaci\'on\iftagged{handout-tufte}{}{\cite{Xiang2010,Lim2014,Kherici2014,Mahmoodabadi2014}}, la computaci\'on flexible\iftagged{handout-tufte}{}{\cite{Wang2013,Kherici2014,Mahmoodabadi2014}}, la inteligencia artificial\iftagged{handout-tufte}{}{\cite{Treesatayapun2014,Yuan2014,Wu2014,Wang2013}} y el control\iftagged{handout-tufte}{}{\cite{Dou2013,Treesatayapun2014,Yuan2014,Wu2014}}.\par
+\tagged{handout-tufte}{%
+  \begin{marginfigure}[-3.0cm]
+    \centering
+    % \includeslide[width=10cm]{multidisciplinas<6>}
+    % \includegraphics{../images/Multidisciplinas.png}
+    \includegraphics{../images/Multidisciplinas01.png}
+    \caption{Multidisciplinas involucradas en la soluci\'on de problemas de la r\'obotica b\'ipeda}
+    \label{fig:multi}
+  \end{marginfigure}
+  \begin{figure*}
+    \centering
+    \includeslide[width=3.2cm]{exp_embebidos}
+    \includeslide[width=3.2cm]{exp_biomecanica}
+    \includeslide[width=3.2cm]{exp_mecanismos}
+    \includeslide[width=3.2cm]{exp_computacion_flexible}
+    \includeslide[width=3.2cm]{exp_control}
+    \caption{Algunas figuras de los \'ultimos trabajos en rob\'otica b\'ipeda por \'area}
+    \label{fig:multi_detalle}
+  \end{figure*}
+}
+\mode<article>{
+  \tagged{handout-tufte}{%
+    \subsection[motivaci\'on]{\iftagged{handout-tufte}{\protect\textbf{Motivaci\'on}}{Motivaci\'on}}
+    \label{sec:motivH}
+  }
+}
 A continuaci\'on se organizan algunos aspectos que forman parte de la justificaci\'on:
 \begin{itemize}
-\item Se requiere de dise\~nos de caminadores de bajo costo, funcionales, did\'acticos, modulares y de prototipado r\'apido especiales para la ense\~nanza de la rob\'otica, el control y los sistemas distribuidos, y la comprobaci\'on de teor\'ias de control de varias capas de locomoci\'on.
-\item Inter\'es personal por el tema, ya que despierta toda mi curiosidad y me apasiona, es un \'area en la que aplica la Mecatr\'onica en todo su poder. Involucrando la electr\'onica, la mec\'anica, la teor\'ia de la computaci\'on, la programaci\'on y su experimento debe resultar en algo \'util y real.
-\item \emph{Aplicabilidad:} La aplicaci\'on de los conocimientos que se obtengan servir\'an la soluci\'on de problemas y productos en \'areas como: la industria de los manipuladores en el \'area de la teleoperaci\'on\cite{Treesatayapun2014,M2013}, la manufactura en el transporte de materiales y ensambles\cite{Roy2013}, la fabricaci\'on de pr\'otesis\cite{Roa2006}, la fisioterapia\cite{Kang2013}, la educaci\'on como herramienta did\'actica y motivacionial\cite{Ishida2004}, el entretenimiento, el area de la teor\'ia de juegos y agentes inteligenes como es el caso del futbol de robots ademas de afianzar la l\'inea de investigaci\'on en al Universidad ante nuevos retos\cite{Ishida2004}.
-\item \emph{Viabilidad:} El proyecto y la Universidad cuenta con: 
+\item \iftagged{handout-tufte}{Dise\'no de bajo costo y modulares anteriores}{Se requiere de dise\~nos de caminadores de bajo costo, funcionales, did\'acticos, modulares y de prototipado r\'apido especiales para la ense\~nanza de la rob\'otica, el control y los sistemas distribuidos, y la comprobaci\'on de teor\'ias de control de varias capas de locomoci\'on}\tagged{handout-tufte}{ (ver Figura.\ref{fig:MR1})}.
+\tagged{handout-tufte}{%
+  \begin{marginfigure}[1.0cm]
+    \parbox{3.0cm}{\includegraphics{../images/RobotMR1_12.png}}
+    \caption{Ejemplo de dise\~no}
+    \label{fig:MR1}
+  \end{marginfigure}
+}
+\item Inter\'es personal por el tema\untagged{handout-tufte}{, ya que despierta toda mi curiosidad y me apasiona, es un \'area en la que aplica la Mecatr\'onica en todo su poder. Involucrando la electr\'onica, la mec\'anica, la teor\'ia de la computaci\'on, la programaci\'on y su experimento debe resultar en algo \'util y real}.
+\item \emph{Aplicabilidad:} La aplicaci\'on de los conocimientos que se obtengan servir\'an la soluci\'on de problemas y productos en \'areas\iftagged{handout-tufte}{.}{ como: la industria de los manipuladores en el \'area de la teleoperaci\'on\cite{Treesatayapun2014,M2013}, la manufactura en el transporte de materiales y ensambles\cite{Roy2013}, la fabricaci\'on de pr\'otesis\cite{Roa2006}, la fisioterapia\cite{Kang2013}, la educaci\'on como herramienta did\'actica y motivacionial\cite{Ishida2004}, el entretenimiento, el area de la teor\'ia de juegos y agentes inteligenes como es el caso del futbol de robots ademas de afianzar la l\'inea de investigaci\'on en al Universidad ante nuevos retos\cite{Ishida2004}.}
+% \tagged{handout-tufte}{% (ver Figura.\ref{fig:aplica}):
+%   \begin{marginfigure}%[!htb]
+%     \centering
+%     \parbox{5cm}{
+%       %\includegraphics[width=3.0cm]{../images/Teleoperacion.png}
+%       \includegraphics[width=2.0cm]{../images/Transporte.png}
+%       \includegraphics[width=2.0cm]{../images/ProsthesisAndPhysiotherapy.png}
+%       %\includegraphics[width=3.0cm]{../images/Educacion.png}
+%       %\includegraphics[width=3.0cm]{../images/Entretenimiento.png}
+%     }
+%     \caption{Aplicaciones: Desarrollo de plataformas b\'ipedas paralelas, asistencia para quadraplejia, protesis y caminata pasiva}
+%     \label{fig:aplica}
+%   \end{marginfigure}
+% }
+\item \emph{Viabilidad:} \untagged{handout-tufte}{El proyecto y la Universidad cuenta con: }
   \begin{enumerate}[1)]
-  \item Recursos f\'isicos como centros de mecanizado, impresoras 3D, salas CAD con herramientas computacionales como: Matlab, Ansys, SolidWorks, ademas de laboratorias con distintas plataformas rob\'oticas funcionales.
-  \item Profesores, grupos de investigaci\'on y materias bien formadas en temas pertinentes para esta investigaci\'on como Din\'amica de Robots, Biomec\'anica, Sistemas Embebidos, Control Avanzado, Computaci\'on Flexible, Aprendizaje de m\'aquina, Inteligencia Artificial, Optimizaci\'on, Manufactura Computalizada, Redes de comunicaci\'on y otras m\'as.
-  \item  Mecanismos y concursos tanto internos como externos a la Universidad para obtener recursos econ\'omicos para fabricaci\'on de prototipos y adquisici\'on de: sensores, actuadores, herramientas, materiales e insumos.
-  \item Posibles lazos con importantes grupos de investigaci\'on e investigadores como lo son Justin DLR(por medio de PhD Maximo Roa) y Robonaut 2 GM-NASA(por medio de PhD. Leandro Barajas).
-  \item Experiencia del director de investigaci\'on de esta propuesta con aproximadamente 20 a\~nos de experiencia, con trabajos en el tema como \'articulos\cite{Heredia2007}, cap\'itulos de libros\cite{M2005,M2005a}, direcciones de tesis de pregrado y posgrado, y materias de pregrado como de posgrado en la Universidad.
-  \item Experiencia y perfil del investigador en el tema de este proyecto, con 8 a\~nos de experiencia en temas de rob\'otica serial y paralela, con trabajos como: direcci\'on de tesis de pregrado\cite{Cortes2009,Valencia2009,Barragan2009,Silva2009}, art\'iculos\cite{Castillo2007}, librer\'ias\cite{Castillo2008}, desarrollo de software de simulaci\'on\cite{Castillo2010} y la materia de pregrado de Rob\'otica en la Universidad Nacional de Colombia durante tres a\~nos y medio consecutivos. Adem\'as de experiencia en temas de automatizaci\'on, control e instrumentaci\'on en la industria y la academia.
+  \item Recursos f\'isicos como \iftagged{handout-tufte}{CNC's}{centros de mecanizado}, impresoras 3D, \iftagged{handout-tufte}{herramientas computacionales}{salas CAD con herramientas computacionales como: Matlab, Ansys, SolidWorks}, ademas de laboratorios con distintas plataformas rob\'oticas funcionales.
+  \item Profesores, grupos de investigaci\'on y materias bien formadas en temas pertinentes para esta investigaci\'on\iftagged{handout-tufte}{}{ como Din\'amica de Robots, Biomec\'anica, Sistemas Embebidos, Control Avanzado, Computaci\'on Flexible, Aprendizaje de m\'aquina, Inteligencia Artificial, Optimizaci\'on, Manufactura Computalizada, Redes de comunicaci\'on y otras m\'as}.
+  \item \iftagged{handout-tufte}{Convocatorias: para recursos econ\'omicos por medio de DIB, VRi, Colciencias, CAPES, DAAD}{Mecanismos y concursos tanto internos como externos a la Universidad para obtener recursos econ\'omicos para fabricaci\'on de prototipos y adquisici\'on de: sensores, actuadores, herramientas, materiales e insumos}.
+  \item \iftagged{handout-tufte}{Socializaci\'on: conferencia Dynamic Walking, conferencia Clawar, centro de investigaci\'on DLR}{Posibles lazos con importantes grupos de investigaci\'on e investigadores como lo son Justin DLR(por medio de PhD Maximo Roa) y Robonaut 2 GM-NASA(por medio de PhD. Leandro Barajas).}
+  \item Experiencia del director de investigaci\'on \iftagged{handout-tufte}{(ver Figure.\ref{fig:RRThings}).
+      \begin{marginfigure}[-1.0cm]
+        \centering
+        \parbox{4.5cm}{%
+          \includegraphics[width=1.5cm]{../images/SomeThingsByRR_0.png}
+          \includegraphics[width=1.5cm]{../images/SomeThingsByRR_1.png}
+          \includegraphics[width=1.5cm]{../images/SomeThingsByRR_2.png}
+        }
+        \caption{Algunos trabajos del director}
+        \label{fig:RRThings}
+      \end{marginfigure}
+    }{de esta propuesta con aproximadamente 20 a\~nos de experiencia, con trabajos en el tema como \'articulos\cite{Heredia2007}, cap\'itulos de libros\cite{M2005,M2005a}, direcciones de tesis de pregrado y posgrado, y materias de pregrado como de posgrado en la Universidad.}
+  \item Experiencia y perfil del investigador en el tema de este proyecto\iftagged{handout-tufte}{ (ver Figure.\ref{fig:MeThings}).
+      \begin{figure}%[!b]
+        \centering
+        \parbox{10cm}{%
+          \includegraphics[width=2.0cm]{../images/SomeThingsByMeSumary_0.png}
+          \includegraphics[width=2.0cm]{../images/SomeThingsByMeSumary_1.png}
+          \includegraphics[width=2.0cm]{../images/SomeThingsByMeSumary_2.png}
+          \includegraphics[width=2.0cm]{../images/SomeThingsByMeSumary_3.png}
+          \includegraphics[width=2.0cm]{../images/SomeThingsByMeSumary_4.png}
+        }
+        \caption{Algunos trabajos del investigador}
+        \label{fig:MeThings}
+      \end{figure}
+    }{, con 8 a\~nos de experiencia en temas de rob\'otica serial y paralela, con trabajos como: direcci\'on de tesis de pregrado\cite{Cortes2009,Valencia2009,Barragan2009,Silva2009}, art\'iculos\cite{Castillo2007}, librer\'ias\cite{Castillo2008}, desarrollo de software de simulaci\'on\cite{Castillo2010} y la materia de pregrado de Rob\'otica en la Universidad Nacional de Colombia durante tres a\~nos y medio consecutivos. Adem\'as de experiencia en temas de automatizaci\'on, control e instrumentaci\'on en la industria y la academia.}%
+    \tagged{handout-tufte}{\item \textbf{Posibilidad de pasant\'ia} con el DLR por medio del ingeniero M\'aximo Roa}
   \end{enumerate}
 \end{itemize}
-

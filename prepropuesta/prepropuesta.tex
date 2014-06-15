@@ -1,43 +1,3 @@
-%\documentclass[12pt,twoside,onecolumn,letterpaper]{article}
-%\documentclass[12pt,twoside,onecolumn,letterpaper]{article}
-%\documentclass[10pt,oneside,onecolumn,letterpaper]{article}
-\usepackage[spanish]{babel}
-\usepackage[utf8]{inputenc}
-\usepackage{hyperref}
-\usepackage{graphicx}
-\usepackage{fancyhdr}
-\usepackage{enumerate}
-\usepackage{color}
-\usepackage{colortbl}
-\definecolor{gray}{cmyk}{0.0,0.0,0.0,0.60}
- 
-\mode<article>{
-  \hoffset-25mm
-  \voffset-25mm
-  % \marginparwidth=0mm
-  % \marginparsep=0mm
-  \headheight=16pt
-  \oddsidemargin=25mm
-  \evensidemargin=25mm
-  \textwidth=165mm
-  \topmargin=20mm
-  \textheight=220mm
-
-  \pagestyle{fancy}
-  \fancyhf{}
-  \fancyhead[RO]{\small{\textcolor{gray}{\textsc{Propuesta de investgaci\'on: Locomoci\'on b\'ipeda ...}}}}
-  \fancyhead[LO]{\includegraphics[scale=0.05]{../images/unlogo.png}}
-  \fancyhead[LE]{\includegraphics[scale=0.05]{../images/unlogo.png}\quad\small{\textcolor{gray}{\textsc{Doctorado en ingenieria: Mecanica y Mecatronica}}}}
-  \fancyfoot[CO,CE]{\thepage}
-  \fancyfoot[LO,RE]{\scriptsize{\textcolor{gray}{\emph{Version 0.4}}}}
-}
-
-\mode<article>{
-  \title{\includegraphics[scale=0.15]{../images/unescudobn.png}\\\vspace{-0.2cm}
-    \textsc{\underline{\small{Universidad Nacional de Colombia}}\\\tiny{Sede Bogot\'a}\\\small{Facultad de Ingenier\'ia\\\vspace{-0.2cm}Unidad de Posgrado}}\\\vspace{0.5cm}
-    \LARGE \textbf{Locomoci\'on de caminadores b\'ipedos: Rob\'otica subactuada, control, planeaci\'on, dise\~no y aplicaciones}}
-  \author{J.A. Castillo Le\'on \thanks{jacastillol@unal.edu.co}}
-}
 \mode<presentation>{
   \usepackage{xcolor}
   \definecolor{blueun}{rgb}{0.047,0.294,0.376}
@@ -55,35 +15,35 @@
 
   \includeonlyframes{%
     presentacion,% -> 
-    justificacion,% -> 
-    laboratorios,%
-    plataformas,%
-    multidisciplinas,%
-    motivacion,%
-    objetivos,% -> 
-    def_objetivos,%
-    objgen,%
-    def_objesp,%
-    arte,% -> 
-    timeline,%
-    tendencias,%
-    tendenciasUN,%
-    resumen,%
-    problema,% -> 
-    identificacion,%
-    formulacion,%
-    metodogia,% -> 
-    make_framework,%
-    algoritmo_metodologia,%
-    cronograma,% -> 
-    simulacion_cronograma,%
-    gracias,%
-    preguntas,%
-    exp_embebidos,%
-    exp_biomecanica,%
-    exp_mecanismos,%
-    exp_computacion_flexible,%
-    exp_control,%
+    % justificacion,% -> 
+    % laboratorios,%
+    % plataformas,%
+    % multidisciplinas,%
+    % motivacion,%
+    % objetivos,% -> 
+    % def_objetivos,%
+    % objgen,%
+    % def_objesp,%
+    % arte,% -> 
+    % timeline,%
+    % tendencias,%
+    % tendenciasUN,%
+    % resumen,%
+    % problema,% -> 
+    % identificacion,%
+    % formulacion,%
+    % metodogia,% -> 
+    % make_framework,%
+    % algoritmo_metodologia,%
+    % cronograma,% -> 
+    % simulacion_cronograma,%
+    % gracias,%
+    % preguntas,%
+    % exp_embebidos,%
+    % exp_biomecanica,%
+    % exp_mecanismos,%
+    % exp_computacion_flexible,%
+    % exp_control,%
     def_framework,%
     def_problema,%
     exp_capas,%
@@ -97,6 +57,7 @@
 \renewcommand{\tablename}{Tabla}
 
 \maketitle
+
 \mode<presentation>{
   \begin{frame}[label=presentacion]
     \transduration{30}
@@ -104,8 +65,16 @@
     \frametitle{Propuesta de Investigaci\'on}
   \end{frame}
 }
-{\large\textbf{Director de investigaci\'on:} PhD. Ing. Ricardo Ram\'irez Heredia}\par\vspace{0.7cm}
-{\large\textbf{L\'inea de investigaci\'on:} Rob\'otica}
+
+\iftagged{handout-tufte}{%
+  \vspace{0.1cm}
+  \emph{\large\textbf{Director de investigaci\'on:} PhD. Ing. Ricardo Ram\'irez Heredia}\par\vspace{0.1cm}
+  \emph{\large\textbf{L\'inea de investigaci\'on:} Rob\'otica}}%
+{% not handout-tufte
+  {\large\textbf{Director de investigaci\'on:} PhD. Ing. Ricardo Ram\'irez Heredia}\par\vspace{0.7cm}
+  {\large\textbf{L\'inea de investigaci\'on:} Rob\'otica}
+}
+
 
 % -> presentacion
 \mode<all> % JUSTIFICACION ******
@@ -158,29 +127,35 @@
 \input{explicaciones.tex}
 \mode*
 
-% \mode<article|presentation>{
-% \bibliographystyle{plain}
-% \bibliography{refsprop}
-% % \nocite{*}
-% }
-%   \vspace{2cm}
+\mode<article>{
+  % \iftagged{handout-tufte}{
+  %   \nobibliography
+  % }{
+    \bibliographystyle{plain}
+    \bibliography{refsprop}
+    % \nocite{*}
+  % }
+}
+\vspace{2cm}
 
-%   \mode<article>{
-%   \section*{Firmas:}
-%   \label{firmas}
-% }
-%   \vspace{4cm}
-%   \parbox[b][3cm][c]{8cm}{
-%   \centering
-%   \rule{7cm}{1pt}\par
-%   \textbf{Proponente:}\par
-%   Jaime Andr\'es Castillo Le\'on
-% }\par\vspace{3cm}
-%   \parbox[b][3cm][c]{8cm}{
-%   \centering
-%   \rule{7cm}{1pt}\par
-%   \textbf{Director de investigaci\'on:}\par
-%   PhD. Ing. Ricardo Ram\'irez Heredia
-% }
+\iftagged{handout-tufte}{}{
+  \mode<article>{
+    \section*{Firmas:}
+    \label{firmas}
+  }
+  \vspace{4cm}
+  \parbox[b][3cm][c]{8cm}{
+    \centering
+    \rule{7cm}{1pt}\par
+    \textbf{Proponente:}\par
+    Jaime Andr\'es Castillo Le\'on
+  }\par\vspace{3cm}
+  \parbox[b][3cm][c]{8cm}{
+    \centering
+    \rule{7cm}{1pt}\par
+    \textbf{Director de investigaci\'on:}\par
+    PhD. Ing. Ricardo Ram\'irez Heredia
+  }
+}
 
 \end{document}

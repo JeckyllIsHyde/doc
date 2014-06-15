@@ -1,7 +1,11 @@
 \mode*
-\section[Def. Problema]{Definici\'on del problema}
+%\section[Def. Problema]{\iftagged{handout-tufte}{\textcolor{blueun}{\textbf{Definici\'on del problema}}}{Definici\'on del problema}}
+\mode<article|presentation>{%
+  \iftagged{handout-tufte}%
+  {\section[Def. Problema]{\textbf{\textcolor{blueun}{Definici\'on del problema}}}}
+  {\section[Def. Problema]{Definici\'on del problema}}
+}%
 \label{sec:problema}
-
 \mode<presentation>{
   \begin{frame}[label=problema]
     \transduration{1}
@@ -12,7 +16,13 @@
     \end{center}      
   \end{frame}
 }
-\subsection[Identificaci\'on]{Identificaci\'on}
+%\subsection[Identificaci\'on]{\iftagged{handout-tufte}{\textbf{Identificaci\'on}}{Identificaci\'on}}
+\mode<article|presentation>{%
+  \iftagged{handout-tufte}%
+  {\subsection[Identificaci\'on]{\textbf{\textcolor{blueun}{Identificaci\'on}}}}
+  {\subsection[Identificaci\'on]{Identificaci\'on}}
+}
+\label{sec:identsec}
 \mode<presentation>{
   \begin{frame}[label=identificacion]
     \transduration<1->{1}
@@ -25,10 +35,19 @@
     \end{center}      
   \end{frame}
 }
-Se observa un estancamiento en la aplicaci\'on de los conocimientos de la Universidad en el \'area de la rob\'otica b\'ipeda que sean integrados de forma funcional en este campo. Diferentes materias de pregrado y posgrado que reflejan dicho conocimiento como: Rob\'otica, Din\'amica de robots, Biom\'ecanica, T\'ecnicas de control, Identificaci\'on de sistemas, Optimizaci\'on, Control de robots, Control Robusto, Sistemas embebidos, Computaci\'on flexible, Computaci\'on gr\'afica y varias m\'as, deben ser integradas para abordar la soluci\'on de diversos problemas presentes en la caminata rob\'otica, como se reporta en todas las referencias citadas de este documento.\par
-Una de las posibles causas por las que se haya detenido el avance de este campo es tal vez que el conocimiento requerido para ser integraci\'on proviene de distintas disciplinas.\par
-
-\subsection[Formulaci\'on]{Formulaci\'on del problema}
+\iftagged{handout-tufte}{
+  Existe una discontinuidad en la investigaci\'on de la rob\'otica b\'ipeda, ademas de que las distintas lineas de conocimiento se encuentran, pero estan dispersas.
+}{
+  Se observa un estancamiento en la aplicaci\'on de los conocimientos de la Universidad en el \'area de la rob\'otica b\'ipeda que sean integrados de forma funcional en este campo. Diferentes materias de pregrado y posgrado que reflejan dicho conocimiento como: Rob\'otica, Din\'amica de robots, Biom\'ecanica, T\'ecnicas de control, Identificaci\'on de sistemas, Optimizaci\'on, Control de robots, Control Robusto, Sistemas embebidos, Computaci\'on flexible, Computaci\'on gr\'afica y varias m\'as, deben ser integradas para abordar la soluci\'on de diversos problemas presentes en la caminata rob\'otica, como se reporta en todas las referencias citadas de este documento.\par
+  Una de las posibles causas por las que se haya detenido el avance de este campo es tal vez que el conocimiento requerido para ser integraci\'on proviene de distintas disciplinas}.\par
+\tagged{handout-tufte}{\vspace{-0.1cm}}
+%\subsection[Formulaci\'on]{\iftagged{handout-tufte}{\textbf{Formulaci\'on del problema}}{Formulaci\'on del problema}}
+\mode<article|presentation>{%
+  \iftagged{handout-tufte}%
+  {\subsection[Formulaci\'on]{\textbf{\textcolor{blueun}{Formulaci\'on del problema}}}}
+  {\subsection[Formulaci\'on]{Formulaci\'on del problema}}
+}
+\label{sec:formusec}
 \mode<presentation>{
   \begin{frame}[label=formulacion]
     \transduration<1->{1}
@@ -40,5 +59,18 @@ Una de las posibles causas por las que se haya detenido el avance de este campo 
     \end{center}      
   \end{frame}
 }
-El problema central a trabajar es: poder proponer, analizar e implementar en una plataforma b\'ipeda real y/o simulada, estrategias de control de caminata, control de direcci\'on, balance ante perturbaciones, generaci\'on y planeaci\'on de trayectorias, control de trote, control de saltos, implementaci\'on de agentes inteligentes, as\'i como dise\~nos que sean eficientes en el consumo de energ\'ia y que funcionen con los actuadores disponibles. Todos los problemas mencionados son de inter\'es mundial en cientos de laboratorio en el planeta.
-
+\iftagged{handout-tufte}{El problema es integrar y reanudar la l\'inea de investigaci\'on de la rob\'otica b\'ipeda}{El problema central a trabajar es: poder proponer, analizar e implementar en una plataforma b\'ipeda real y/o simulada, estrategias de control de caminata, control de direcci\'on, balance ante perturbaciones, generaci\'on y planeaci\'on de trayectorias, control de trote, control de saltos, implementaci\'on de agentes inteligentes, as\'i como dise\~nos que sean eficientes en el consumo de energ\'ia y que funcionen con los actuadores disponibles. Todos los problemas mencionados son de inter\'es mundial en cientos de laboratorio en el planeta.}
+\tagged{handout-tufte}{
+  \begin{marginfigure}[-8.0cm]
+    \centering
+    \includegraphics{../images/Problema_2.png}
+    \caption{Identificaci\'on}
+    \label{fig:ident}
+  \end{marginfigure}
+  \begin{marginfigure}[-3.0cm]
+    \centering
+    \includegraphics{../images/Problema_4.png}
+    \caption{Problema}
+    \label{fig:problema}
+  \end{marginfigure}
+}
