@@ -11,14 +11,14 @@
 \label{sec:justify}
 \mode<presentation>{
   \begin{frame}[label=justificacion]
-    \transduration{4}
+    \justificacionTime
     \frametitle{Por qu\'e esta investigaci\'on?}
     \begin{center}
       \LARGE \textbf{\textcolor{blueun}{Justificaci\'on}}
     \end{center}      
   \end{frame}
   \begin{frame}[label=laboratorios]
-    \transduration<1->{2}
+    \laboratoriosTime
     \frametitle{Por qu\'e esta investigaci\'on?}
     \framesubtitle{Universidades, Institutos, Centros y Laboratorios trabajando en Rob\'otica B\'ipeda}
     %\fbox{
@@ -39,7 +39,7 @@
     %}
   \end{frame}
   \begin{frame}[label=plataformas]
-    \transduration<1->{2}
+    \plataformasTime
     \frametitle{Por qu\'e esta investigaci\'on?}
     \framesubtitle{Algunas plataformas b\'ipedas}
     %\fbox{
@@ -66,7 +66,7 @@
     %}
   \end{frame}
   \begin{frame}<1,2>[label=multidisciplinas]
-    \transduration<1->{2}
+    \multidisciplinasTime
     \frametitle{Por qu\'e esta investigaci\'on?}
     \framesubtitle{Trabajo multidisciplinario}
     \begin{center}
@@ -141,7 +141,7 @@
   % Explicaciones de diferentes ramas en convergencia a la rob\'otica b\'ipeda
   % SISTEMAS EMBEBIDOS
   \begin{frame}[plain,t,label=exp_embebidos]
-    \transduration{3}
+    \expEmbebidosTime
     \hspace*{-0.8cm}\parbox[t]{\textwidth}{
       \only<1>{\vspace*{-0.4cm}\hspace*{-1.5cm}
         \colorbox{blueun}{
@@ -149,15 +149,16 @@
             \textcolor{white}{\Large\quad{SISTEMAS EMBEBIDOS}}
           }
         }
-      }\vspace{0.05cm}\\
+      }\vspace{0.05cm}\\\hspace*{-0.65cm}
       % \includegraphics[height=7.0cm]{../images/Embedded.png}}
-      \includegraphics[height=7.0cm]{../images/ShortEmbedded.png}}
+      % \includegraphics[height=7.0cm]{../images/ShortEmbedded.png}}
+      \animategraphics[height=7cm,autoresume,autoplay]{1}{../images/ShortEmbedded_}{0}{5}}
     \hyperlink{multidisciplinas<2>}{\beamerreturnbutton{Volver}}
   \end{frame}
   \againframe<2-3>{multidisciplinas}
   % BIOMEC\'ANICA
   \begin{frame}[plain,t,label=exp_biomecanica]
-    \transduration{3}
+    \expBiomecanicaTime
     \hspace*{-0.8cm}\parbox[t]{\textwidth}{
       \only<1>{\vspace*{-0.4cm}\hspace*{-1.5cm}
         \colorbox{blueun}{
@@ -165,15 +166,16 @@
             \textcolor{white}{\Large\quad{BIOMEC\'ANICA}}
           }
         }
-      }\vspace{0.05cm}\\
+      }\vspace{0.05cm}\\\hspace*{-0.5cm}
       % A\hspace{-1.5cm}\includegraphics[height=7.0cm]{../images/Biomechanics.png}}
-      A\hspace{-0.7cm}\includegraphics[height=7.0cm]{../images/ShortBiomechanics.png}}
+      % A\hspace{-0.7cm}\includegraphics[height=7.0cm]{../images/ShortBiomechanics.png}}
+      \animategraphics[height=7cm,autoresume,autoplay]{0.8}{../images/ShortBiomechanics_}{0}{4}}
     \hyperlink{multidisciplinas<3>}{\beamerreturnbutton{Volver}}
   \end{frame}
   \againframe<3-4>{multidisciplinas}
   % MODELADO Y S\'ISNTESIS DE MECANISMOS
   \begin{frame}[plain,t,label=exp_mecanismos]
-    \transduration{3}
+    \expMecanismosTime
     \hspace*{-0.8cm}\parbox[t]{\textwidth}{
       \only<1>{\vspace*{-0.4cm}\hspace*{-1.5cm}
         \colorbox{blueun}{
@@ -181,9 +183,10 @@
             \textcolor{white}{\Large\quad{Modelado de sistemas mec\'anicos y s\'intesis de mecanismos}}
           }
         }
-      }\vspace{0.05cm}\\
+      }\vspace{0.05cm}\\\hspace*{0.35cm}
       % \includegraphics[height=7.0cm]{../images/Mechanisms.png}}
-      \includegraphics[height=7.0cm]{../images/ShortMechanisms.png}}
+      % \includegraphics[height=7.0cm]{../images/ShortMechanisms.png}}
+      \animategraphics[height=7cm,autoresume,autoplay]{1}{../images/ShortMechanisms_}{0}{5}}
     \hyperlink{multidisciplinas<4>}{\beamerreturnbutton{Volver}}
   \end{frame}
   \againframe<4-5>{multidisciplinas}
@@ -191,7 +194,7 @@
   % \only<5>{\textbf{\textcolor{blueun}{Optimizaci\'on, computaci\'on flexible e IA}}\\
   % \includegraphics[height=6.0cm]{../images/SoftComputing.png}}
   \begin{frame}[plain,t,label=exp_computacion_flexible]
-    \transduration{3}
+    \expComputacionFlexibleTime
     \hspace*{-0.8cm}\parbox[t]{\textwidth}{
       \only<1>{\vspace*{-0.4cm}\hspace*{-1.5cm}
         \colorbox{blueun}{
@@ -199,9 +202,10 @@
             \textcolor{white}{\Large\quad{Optimizaci\'on, computaci\'on flexible e IA}}
           }
         }
-      }\vspace{0.05cm}\\
+      }\vspace{0.05cm}\\\hspace*{-1.1cm}
       % A\hspace{-1.0cm}\includegraphics[height=7.0cm]{../images/SoftComputing.png}}
-      A\hspace{-1.0cm}\includegraphics[height=7.0cm]{../images/ShortSoftComputing.png}}
+      % A\hspace{-1.0cm}\includegraphics[height=7.0cm]{../images/ShortSoftComputing.png}}
+      \animategraphics[height=7cm,autoresume,autoplay]{1}{../images/ShortSoftComputing_}{0}{5}}
     \hyperlink{multidisciplinas<5>}{\beamerreturnbutton{Volver}}
   \end{frame}
   \againframe<5-6>{multidisciplinas}
@@ -209,7 +213,7 @@
   % \only<6>{\textbf{\textcolor{blueun}{Control}}\\
   % \includegraphics[height=6.5cm]{../images/Control.png}}
   \begin{frame}[plain,t,label=exp_control]
-    \transduration{3}
+    \expControlTime
     \hspace*{-0.8cm}\parbox[t]{\textwidth}{
       \only<1>{\vspace*{-0.4cm}\hspace*{-1.5cm}
         \colorbox{blueun}{
@@ -217,9 +221,10 @@
             \textcolor{white}{\Large\quad{Control y sistemas din\'amicos}}
           }
         }
-      }\vspace{0.05cm}\\
+      }\vspace{0.05cm}\\\hspace*{1.0cm}
       % \includegraphics[height=7.0cm]{../images/Control.png}}
-      \hspace{2.0cm}\includegraphics[height=7.0cm]{../images/ShortControl.png}}
+      % \hspace{2.0cm}\includegraphics[height=7.0cm]{../images/ShortControl.png}}
+      \animategraphics[height=7cm,autoresume,autoplay]{1}{../images/ShortControl_}{0}{5}}
     \hyperlink{multidisciplinas<6>}{\beamerreturnbutton{Volver}}
   \end{frame}
   \againframe<6->{multidisciplinas}
@@ -228,11 +233,12 @@
   \label{sec:motiv}
 
   \begin{frame}[label=motivacion]
-    \transduration<1-4,6,8-18,21->{1}
-    \transduration<5>{4}
-    \transduration<7>{2}
-    \transduration<19>{3}
-    \transduration<20>{4}
+    % \transduration<1-4,6,8-18,21->{1}
+    % \transduration<5>{4}
+    % \transduration<7>{2}
+    % \transduration<19>{3}
+    % \transduration<20>{4}
+    \motivacionTime
     \frametitle{Por qu\'e esta investigaci\'on?}
     \framesubtitle{Algunos aspecto para la justificaci\'on}
     \quad\hspace{-0.8cm}\vspace{-0.5cm}

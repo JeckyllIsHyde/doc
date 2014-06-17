@@ -13,37 +13,142 @@
   \author[J.A. Castillo Le\'on]{\textbf{Proponente:} Jaime Andr\'es Castillo Le\'on \and \texorpdfstring{\\\textbf{Director:} PhD. Ing. Ricardo Ram\'irez Heredia\inst{1}}{}}
   \institute[UN]{\inst{1}Departamento de Ingenier\'ia Mec\'anica y Mecatr\'onica \\Universidad Nacional de Colombia}
 
+  \newcommand{\presentacionTime}{% 1
+    \transduration{25}%
+  }% x1 Slide
+  \newcommand{\justificacionTime}{% 2
+    \transduration{2}%
+  }% x1 Slide
+  \newcommand{\laboratoriosTime}{% 2
+    \transduration<1>{2}%
+    \transduration<2>{2}%
+  }% x2 Slides
+  \newcommand{\plataformasTime}{% 2
+    \transduration<1>{5}%
+    \transduration<2>{5}%
+    \transduration<3>{6}%
+  }% x3 Slides
+  \newcommand{\multidisciplinasTime}{% 3
+    \transduration<1>{2}%2
+    \transduration<2-6>{1.5}%2 
+    \transduration<7>{2}%2
+  }% x7 Slides
+  \newcommand{\expEmbebidosTime}{% 3
+    \transduration{6}%
+  }% x1 Slide
+  \newcommand{\expBiomecanicaTime}{% 3
+    \transduration{6}%
+  }% x1 Slide
+  \newcommand{\expMecanismosTime}{% 3
+    \transduration{6}%
+  }% x1 Slide
+  \newcommand{\expComputacionFlexibleTime}{% 3
+    \transduration{6}%
+  }% x1 Slide
+  \newcommand{\expControlTime}{% 3
+    \transduration{6}%
+  }% x1 Slide
+  \newcommand{\motivacionTime}{% 4
+    \transduration<1-4>{1.5}
+    \transduration<5>{4}
+    \transduration<6>{1}
+    \transduration<7>{2}
+    \transduration<8-18>{3}
+    \transduration<19>{3}
+    \transduration<20>{4}%
+    \transduration<21->{4}
+  }%
+  \newcommand{\objetivosTime}{% 5
+    \transduration{1}
+  }%
+  \newcommand{\defObjetivosTime}{% 5
+    \transduration<1>{10}%
+    \transduration<2->{3}%
+  }%
+  \newcommand{\defFrameworkTime}{% 5
+    \transduration<1>{1}
+    \transduration<2>{2}
+    \transduration<3->{5}%
+  }%
+  \newcommand{\objgenTime}{% 6
+    \transduration<1->{10}%
+  }%
+  \newcommand{\defObjespTime}{% 6
+    \transduration{5}%
+  }%
+  \newcommand{\arteTime}{% 7
+    \transduration{2}%
+  }%
+  \newcommand{\timelineTime}{% 7
+    \transduration{10}%
+  }%
+  \newcommand{\tendenciasTime}{% 8
+    \transduration<1->{3}%
+  }%
+  \newcommand{\tendenciasUNTime}{% 9
+    \transduration<1->{2}%
+  }%
+  \newcommand{\resumenTime}{% 10
+    \transduration<1-7>{1.5}%
+  }%
+  \newcommand{\problemaTime}{% 11
+    \transduration{1}%
+  }%
+  \newcommand{\identificacionTime}{% 12
+    \transduration<1->{3}%
+  }%
+  \newcommand{\formulacionTime}{% 13
+    \transduration<1->{3}%
+  }%
+  \newcommand{\metodologiaTime}{% 14
+    \transduration{1}%
+  }%
+  \newcommand{\makeFrameworkTime}{% 15
+    \transduration<1->{2}%
+  }%
+  \newcommand{\algoritmoMetodologiaTime}{% 16
+    \transduration{10}%
+  }%
+  \newcommand{\cronogramaTime}{% 17
+    \transduration{2}%
+  }%
+  \newcommand{\simulacionCronogramaTime}{% 18
+    \transduration<1>{2}
+    \transduration<2-3>{4}
+    \transduration<4>{2}%
+  }%
+
   \includeonlyframes{%
     presentacion,% -> 
-    % justificacion,% -> 
-    % laboratorios,%
-    % plataformas,%
-    % multidisciplinas,%
-    % motivacion,%
-    % objetivos,% -> 
-    % def_objetivos,%
-    % objgen,%
-    % def_objesp,%
-    % arte,% -> 
-    % timeline,%
-    % tendencias,%
-    % tendenciasUN,%
-    % resumen,%
-    % problema,% -> 
-    % identificacion,%
-    % formulacion,%
-    % metodogia,% -> 
-    % make_framework,%
-    % algoritmo_metodologia,%
-    % cronograma,% -> 
-    % simulacion_cronograma,%
-    % gracias,%
-    % preguntas,%
-    % exp_embebidos,%
-    % exp_biomecanica,%
-    % exp_mecanismos,%
-    % exp_computacion_flexible,%
-    % exp_control,%
+    justificacion,% -> 
+    laboratorios,%
+    plataformas,%
+    multidisciplinas,%
+    motivacion,%
+    objetivos,% -> 
+    def_objetivos,%
+    objgen,%
+    def_objesp,%
+    arte,% -> 
+    timeline,%
+    tendencias,%
+    tendenciasUN,%
+    resumen,%
+    problema,% -> 
+    identificacion,%
+    formulacion,%
+    metodogia,% -> 
+    make_framework,%
+    algoritmo_metodologia,%
+    cronograma,% -> 
+    simulacion_cronograma,%
+    gracias,%
+    preguntas,%
+    exp_embebidos,%
+    exp_biomecanica,%
+    exp_mecanismos,%
+    exp_computacion_flexible,%
+    exp_control,%
     def_framework,%
     def_problema,%
     exp_capas,%
@@ -60,7 +165,7 @@
 
 \mode<presentation>{
   \begin{frame}[label=presentacion]
-    \transduration{30}
+    \presentacionTime
     \titlepage
     \frametitle{Propuesta de Investigaci\'on}
   \end{frame}

@@ -7,7 +7,7 @@
 \label{sec:objs}
 \mode<presentation>{
   \begin{frame}[label=objetivos]
-    \transduration{1}
+    \objetivosTime
     \frametitle{Qu\'e se busca con esta investigaci\'on?}
     \begin{center}
       \LARGE \textbf{\textcolor{blueun}{Objetivo General y Objetivos Espec\'ificos}}
@@ -22,7 +22,7 @@
 \label{sec:objgen}
 \mode<presentation>{
   \begin{frame}<1-2>[label=def_objetivos]
-    \transduration<1->{5}
+    \defObjetivosTime
     \frametitle{Qu\'e se busca con esta investigaci\'on?}
     \textbf{\textcolor{blueun}{OG:}} Desarrollar un \alert<2>{marco de experiementaci\'on}\only<2-2>{\footnote{Marco o framework de investigaci\'on}}, mediante el cual se pueda implementar las hip\'otesis de soluci\'on de \alert<3>{los problemas de locomoci\'on}\only<3-3>{\footnote{Problemas actuales de robotica b\'ipeda}} de la rob\'otica subactuada y de caminadores.\\
     \hyperlink<2>{def_framework}{\beamergotobutton{Definici\'on de Framework}}
@@ -36,9 +36,7 @@
   % 4) Sistema distribuido: Implementaci\'on red de sensores-actuadores, linux embebido, puesta en marcha y configuraci\'on del sistema distruibuido.
   % 5) Capa de aplicaciones: Selecci\'on de librer\'ias, implementaci\'on en un lenguaje de alto nivel de las estrategias de control y cognicion.
   \begin{frame}[plain,t,label=def_framework]
-    \transduration<1>{1}
-    \transduration<2>{2}
-    \transduration<3->{3}
+    \defFrameworkTime
     \hspace*{-0.8cm}\parbox[t]{\textwidth}{
       \only<1->{\vspace*{-0.4cm}\hspace*{-1.5cm}
         \colorbox{blueun}{
@@ -64,9 +62,18 @@
             \\% espacio para ajustar las graficas
             \includegraphics<5>[height=4.0cm,width=3.0cm]{../images/TiposDePlataformas.png}
             \includegraphics<6>[height=4.0cm]{../images/DisenoMecanico.png}
-            \includegraphics<7>[height=4.0cm]{../images/ASIMO.png}
-            \includegraphics<8>[height=4.0cm]{../images/RABBIT.png}
-            \includegraphics<9>[height=4.0cm]{../images/TODDLE-MIT.png}
+            \includegraphics<7>[height=4.0cm]{../images/DisenoElectronico.png}
+            \includegraphics<8>[height=4.0cm,width=3.5cm]{../images/DisenoEmbebidos.png}
+            \only<9>{%
+              \begin{itemize}\scriptsize
+              \item C/C++
+              \item Matlab-Sim-Mechanics
+              \item OpenHRP3
+              \item Open Dynamics Engine ODE
+              \item Box2d
+              \item PhysX
+              \end{itemize}
+            }%\includegraphics<9>[height=4.0cm]{../images/TODDLE-MIT.png}
           \end{column}
         \end{columns}
       }\vspace{0.5cm}
@@ -75,7 +82,7 @@
   \end{frame}
   \againframe<3>{def_objetivos}
   \begin{frame}[label=objgen]
-    \transduration<1->{5}
+    \objgenTime
     \frametitle{Qu\'e se quiere lograr con esta investigaci\'on?}
     \framesubtitle{Framework de investigaci\'on y desarrollo de rob\'otica b\'ipeda}
     \begin{center}
@@ -133,7 +140,7 @@
 \label{sec:objesp}
 \mode<presentation>{
   \begin{frame}[label=def_objesp]
-    \transduration{5}
+    \defObjespTime
     \frametitle{Qu\'e se requiere y qu\'e se obtiene para el Obj. Gen?}
     \framesubtitle{Algunos logros requeridos para el objetivo principal}
     \begin{center}
