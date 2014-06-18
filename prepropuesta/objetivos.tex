@@ -1,7 +1,7 @@
 \mode*
 \mode<article|presentation>{%
   \iftagged{handout-tufte}%
-  {\section[Objetivos]{\textbf{\textcolor{blueun}{Objetivo general y objetivos espec\'ificos}}}}
+  {\vspace{-0.3cm}\section[Objetivos]{\textbf{\textcolor{blueun}{Objetivo general y objetivos espec\'ificos}}}}
   {\section[Objetivos]{Objetivo general y objetivos espec\'ificos}}
 }
 \label{sec:objs}
@@ -16,7 +16,7 @@
 }
 \mode<article|presentation>{%
   \iftagged{handout-tufte}%
-  {\subsection[General]{\textbf{Objetivo general}}}
+  {\vspace{-0.1cm}\subsection[General]{\textbf{Objetivo general}}}
   {\subsection[General]{Objetivo general}}
 }%
 \label{sec:objgen}
@@ -91,16 +91,16 @@
   \end{frame}
 }
 \tagged{handout-tufte}{
-  \begin{marginfigure}[-8.5cm]
+  \begin{marginfigure}[-0.0cm]
     \centering
     \includegraphics{../images/objGen.png}
     \caption{Objetivo General}
     \label{fig:objGen}
   \end{marginfigure}
 }
-\untagged{handout-tufte}{El principal objetivo de esta investigaci\'on se describe de forma global y gr\'afica en la Figura \ref{fig:objGen}, y es enunciado a continuaci\'on:\par}
+\untagged{handout-tufte}{El principal objetivo de esta investigaci\'on se describe de forma global y gr\'afica en la Figura \ref{fig:objGen}, y es enunciado a continuaci\'on:\par}\tagged{handout-tufte}{\small}
 \textbf{OG:} Dise\~nar y construir un \emph{\textbf{marco de experimentaci\'on}}\iftagged{handout-tufte}{%
-  \sidenote[][-2.2cm]{\textbf{Marco de Experimentaci\'on:}
+  \sidenote[][-0.0cm]{\textbf{Marco de Experimentaci\'on:}
     {\scriptsize Es un aparato de conocimiento din\'amico con ejemplos construidos de plataformas b\'ipedas rob\'oticas que siguen los siguientes pasos:}
     \begin{enumerate}\tiny
     \item Selecci\'on de plataforma
@@ -129,11 +129,11 @@
     \caption{Objetivo General}
     \label{fig:objGen}
   \end{figure}
-}
+}\tagged{handout-tufte}{\normalsize}
 
 \mode<article|presentation>{%
   \iftagged{handout-tufte}%
-  {\subsection[Especificos]{\textbf{Objetivos espec\'ificos}}}
+  {\vspace{-0.1cm}\subsection[Especificos]{\textbf{Objetivos espec\'ificos}}}
   {\subsection[Especificos]{Objetivos especificos}}
 }%
 %\subsection[Especificos]{\iftagged{handout-tufte}{\textbf{Objetivos espec\'ificos}}{Objetivos espec\'ificos}}
@@ -152,25 +152,26 @@
     \hyperlink{exp_capas}{\beamergotobutton{Explicaci\'on de Capas}}
   \end{frame}
 }
-\begin{enumerate}[\textbf{OE:} 1.]\tagged{handout-tufte}{\small}
+\begin{enumerate}[\textbf{OE:} 1.]\tagged{handout-tufte}{\footnotesize}
 \item Modelar, simular, analizar y sintetizar mecanismos subactuados que optimicen la energ\'ia para la locomoci\'on de caminar, saltar o correr.\untagged{handout-tufte}{\par}
 \item Dise\~nar y construir una plataforma rob\'otica modular modular y para prototipado (ver Figura \ref{fig:objCapas} Capa Física), capaz de configurar cadenas cinem\'aticas  controladas y/o monitoreadas bajo el sistema distribuido\untagged{handout-tufte}{.\par}
-\item Implementar un sistema distribuido de sensores y actuadores que funcione en tiempo-real  (ver Figura \ref{fig:objCapas} Capa de sensorial y de Actuaci\'on), bajo el principio de manejo por disparo-de-eventos y/o manejo por disparo-por-tiempos\untagged{handout-tufte}{\cite{Kimm2012}}.\par
-\item Dise\~nar, simular e implementar diferentes controles de locomoci\'on (ver Figura \ref{fig:objCapas} Capa de control de locomoci\'on) inspirados en las nuevas tendencias de investigaci\'on de caminadores sobre plataformas rob\'oticas modulares construidas.\par
-\item Dise\~nar, simular e implementar estrategias y actividades colaborativas usando una red de caminadores  (ver Figura \ref{fig:objCapas} Capa Cognitiva.).\par
-\end{enumerate}
-\iftagged{handout-tufte}{
-  \begin{marginfigure}[-9.0cm]
+\item Implementar un sistema distribuido de sensores y actuadores que funcione en tiempo-real  (ver Figura \ref{fig:objCapas} Capa de sensorial y de Actuaci\'on), bajo el principio de manejo por disparo-de-eventos y/o manejo por disparo-por-tiempos\untagged{handout-tufte}{\cite{Kimm2012}}.\untagged{handout-tufte}{\par}
+\item Dise\~nar, simular e implementar diferentes controles de locomoci\'on (ver Figura \ref{fig:objCapas} Capa de control de locomoci\'on) inspirados en las nuevas tendencias de investigaci\'on de caminadores sobre plataformas rob\'oticas modulares construidas.\untagged{handout-tufte}{\par}
+\item Dise\~nar, simular e implementar estrategias y actividades colaborativas usando una red de caminadores  (ver Figura \ref{fig:objCapas} Capa Cognitiva.).\untagged{handout-tufte}{\par}
+\end{enumerate}\tagged{handout-tufte}{\par}
+\iftagged{handout-tufte}{%
+  %\\Hola\\\vspace{0.0cm}
+  \begin{figure*}%[0.0cm]
     \centering
     %\parbox{11.6cm}{
-      \includegraphics[width=5.0cm]{../images/objCapaFisica.png}\\
-      \includegraphics[width=5.0cm]{../images/objCapaRAS.png}\\
-      \includegraphics[width=5.0cm]{../images/objCapaControl.png}\\
-      \includegraphics[width=5.0cm]{../images/objCapaCognitiva.png}
+      \includegraphics[width=4.2cm]{../images/objCapaFisica.png}
+      \includegraphics[width=4.2cm]{../images/objCapaRAS.png}
+      \includegraphics[width=4.2cm]{../images/objCapaControl.png}
+      \includegraphics[width=4.2cm]{../images/objCapaCognitiva.png}
     %}\\
     \caption{Objetivos Específicos}
     \label{fig:objCapas}
-  \end{marginfigure}
+  \end{figure*}
 }{\begin{figure}[!htb]
     \centering
     \includegraphics[scale=0.45]{../images/objCapaFisica.png}
