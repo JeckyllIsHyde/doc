@@ -24,16 +24,9 @@
 }
 \label{sec:identsec}
 \mode<presentation>{
-  \begin{frame}[label=identificacion]
-    \identificacionTime
-    \frametitle{Qu\'e pas\'o?}
-    \framesubtitle{Causas del receso en al investigaci\'on}
-    \begin{center}
-      \only<1>{\includegraphics[width=10.5cm]{../images/Problema_0.png}}
-      \only<2>{\includegraphics[width=10.5cm]{../images/Problema_1.png}}
-      \only<3>{\includegraphics[width=10.5cm]{../images/Problema_2.png}}
-    \end{center}      
-  \end{frame}
+  \mode<all>
+  \input{sld-identificacion}
+  \mode*
 }
 \iftagged{handout-tufte}{
   Existe una discontinuidad en la investigaci\'on de la rob\'otica b\'ipeda, ademas de que las distintas lineas de conocimiento se encuentran, pero estan dispersas.
@@ -49,15 +42,9 @@
 }
 \label{sec:formusec}
 \mode<presentation>{
-  \begin{frame}[label=formulacion]
-    \formulacionTime
-    \frametitle{Qu\'e se quiere resolver?}
-    \framesubtitle{Regreso a la frontera}
-    \begin{center}
-      \only<1>{\includegraphics[width=10.5cm]{../images/Problema_3.png}}
-      \only<2>{\includegraphics[width=10.5cm]{../images/Problema_4.png}}
-    \end{center}      
-  \end{frame}
+  \mode<all>
+  \input{sld-formulacion}
+  \mode*
 }
 \iftagged{handout-tufte}{El problema es integrar y reanudar la l\'inea de investigaci\'on de la rob\'otica b\'ipeda}{El problema central a trabajar es: poder proponer, analizar e implementar en una plataforma b\'ipeda real y/o simulada, estrategias de control de caminata, control de direcci\'on, balance ante perturbaciones, generaci\'on y planeaci\'on de trayectorias, control de trote, control de saltos, implementaci\'on de agentes inteligentes, as\'i como dise\~nos que sean eficientes en el consumo de energ\'ia y que funcionen con los actuadores disponibles. Todos los problemas mencionados son de inter\'es mundial en cientos de laboratorio en el planeta.}
 \tagged{handout-tufte}{

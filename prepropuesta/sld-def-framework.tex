@@ -1,0 +1,52 @@
+% Marco de Experimentaci\'on:
+% Es un aparato de conocimiento din\'amico con ejemplos construidos de plataformas b\'ipedas rob\'oticas que siguen los siguientes pasos
+% 1) Selecci\'on de plataforma: Que se quiere investigar o proponer? Que se quiere resolver? Que se quiere mejorar?
+% 2) Dise\~no mecanico: Planos, ensambles, elementos estandar, tipo de fabricaci\'on y presupuesto aproximado.
+% 3) Dise\~no electronico: Esquem\'aticos, PCBs(DIP,SMT), selecci\'on de microprecesadores, microcontroladores, sensores, actuadores y presupuesto aproximado.
+% 4) Sistema distribuido: Implementaci\'on red de sensores-actuadores, linux embebido, puesta en marcha y configuraci\'on del sistema distruibuido.
+% 5) Capa de aplicaciones: Selecci\'on de librer\'ias, implementaci\'on en un lenguaje de alto nivel de las estrategias de control y cognicion.
+\begin{frame}[plain,t,label=def_framework]
+  \defFrameworkTime
+  \hspace*{-0.8cm}\parbox[t]{\textwidth}{
+    \only<1->{\vspace*{-0.4cm}\hspace*{-1.5cm}
+      \colorbox{blueun}{
+        \parbox[t][1.5cm][c]{\paperwidth}{
+          \textcolor{white}{\Large\quad{MARCO DE EXPERIMENTACI\'ON}}
+        }
+      }
+    }\vspace{0.05cm}\\
+    \only<2>{\alert<2>{Framework o marco de experimentaci\'on se define en esta propuesta como:}}\\
+    \only<3->{\alert<3>{Un aparato de conocimiento din\'amico con ejemplos construidos de plataformas b\'ipedas rob\'oticas que siguen los siguientes pasos.}}
+    \only<3->{\small
+      \begin{columns}[t] %¡Columnas como en TeX normal!
+        \begin{column}{7cm}
+          \begin{enumerate}
+          \item<4-|alert@4,5> \hyperlink{def_framework<5>}{\textbf{Selecci\'on de plataforma\only<5-6>{:}} \only<5-6>{\scriptsize Qu\'e se quiere investigar o proponer? Qu\'e se quiere resolver? Qu\'e se quere mejorar?}}
+          \item<4-|alert@4,7> \hyperlink{def_framework<7>}{\textbf{Dise\~no mec\'anico\only<7-8>{:}} \only<7-8>{\scriptsize Planos, ensambles, elementos estandar, tipo de fabricaci\'on y presupuesto aproximado.}}
+          \item<4-|alert@4,9> \hyperlink{def_framework<9>}{\textbf{Dise\~no electr\'onico\only<9-10>{:}} \only<9-10>{\scriptsize Esquem\'aticos, ensambles, elementos estandar, tipo de fabricaci\'on y presupuesto aproximado.}}
+          \item<4-|alert@4,11> \hyperlink{def_framework<11>}{\textbf{Sistema embebido y distribuido\only<11-12>{:}} \only<11-12>{\scriptsize Implementaci\'on de red, GNU-Linux embebido, puesta en marcha y configuraci\'on.}}
+          \item<4-|alert@4,13> \hyperlink{def_framework<13>}{\textbf{Aplicaciones\only<13-14>{:}} \only<13-14>{\scriptsize Selecci\'on de librerias, lenguaje de alto nivel, implementaci\'on estrategias de control y congnici\'on.}}
+          \end{enumerate}
+        \end{column}
+        \begin{column}{3cm}
+          \\% espacio para ajustar las graficas
+          \includegraphics<6>[height=4.0cm,width=3.0cm]{../images/TiposDePlataformas.png}
+          \includegraphics<8>[height=4.0cm]{../images/DisenoMecanico.png}
+          \includegraphics<10>[height=4.0cm]{../images/DisenoElectronico.png}
+          \includegraphics<12>[height=4.0cm,width=3.5cm]{../images/DisenoEmbebidos.png}
+          \only<14>{%
+            \begin{itemize}\scriptsize
+            \item C/C++
+            \item Matlab-Sim-Mechanics
+            \item OpenHRP3
+            \item Open Dynamics Engine ODE
+            \item Box2d
+            \item PhysX
+            \end{itemize}
+          }%\includegraphics<9>[height=4.0cm]{../images/TODDLE-MIT.png}
+        \end{column}
+      \end{columns}
+    }\vspace{0.5cm}
+    \hyperlink<4->{def_objetivos<2>}{\beamerreturnbutton{Volver al Objetivo General}}
+  }
+\end{frame}
